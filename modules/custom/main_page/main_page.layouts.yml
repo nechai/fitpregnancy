@@ -1,0 +1,12 @@
+main_page:
+  label: Three fields
+  category: My Layouts
+  template: templates/main_page
+  css: css/main_page.css
+  regions:
+    first:
+      label: first
+    second:
+      label: second
+    three: 
+      label: three

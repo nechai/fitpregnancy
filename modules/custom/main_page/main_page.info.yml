@@ -1,0 +1,7 @@
+name: main_page
+description: Create page in drupal 8
+package: Custom
+type: module
+core: 8.x
+version: 1.0
+package: Examples
