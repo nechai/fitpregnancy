@@ -37,6 +37,10 @@ sites/simpletest
 
 # Node Modules for Gulp
 
-themes/omega_sub/style/node_modules
-themes/omega_sub/gulpfile.js
-themes/omega_sub/package.json
+# Ignore Drupal core
+core
+modules/contrib/*
+sites
+nbproject/*
+themes/*/node_modules
+themes/*/*/scss
