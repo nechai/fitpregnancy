@@ -1,0 +1,24 @@
+uuid: da86da22-de5a-478d-b7ae-c41b173f0ad6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.left-menu
+  module:
+    - system
+  theme:
+    - fitpreg
+id: fitpreg_left_menu
+theme: fitpreg
+region: header
+weight: 1
+provider: null
+plugin: 'system_menu_block:left-menu'
+settings:
+  id: 'system_menu_block:left-menu'
+  label: left_menu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

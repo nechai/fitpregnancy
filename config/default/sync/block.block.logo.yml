@@ -1,0 +1,25 @@
+uuid: aa36181d-e62c-4d27-a78a-3189ddce4d5c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:95f97c9a-607c-43f0-a4c4-5f55e5d9c428'
+  module:
+    - block_content
+  theme:
+    - drupalbook
+id: logo
+theme: drupalbook
+region: header
+weight: -1
+provider: null
+plugin: 'block_content:95f97c9a-607c-43f0-a4c4-5f55e5d9c428'
+settings:
+  id: 'block_content:95f97c9a-607c-43f0-a4c4-5f55e5d9c428'
+  label: logo
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
