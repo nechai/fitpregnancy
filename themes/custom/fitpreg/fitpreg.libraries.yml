@@ -2,9 +2,9 @@ global-styling:
   version: 1.x
   css:
     theme:
-      css/style.css: {}
+      stylesheets/fitpreg.style.css: {}
   js:
-    js/custom.js: {}
+    js/fitpreg.js: {}
   dependencies:
     - core/jquery
   template: template.html.twig

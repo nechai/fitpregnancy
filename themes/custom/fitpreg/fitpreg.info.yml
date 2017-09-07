@@ -1,10 +1,12 @@
-name: Drupalbook
-type: theme
+name: Fitpreg
+description: Custom theme for fitpregnancy site
 base theme: classy
-description: My first Drupal 8 theme.
 core: 8.x
+type: theme
+
 libraries:
-  - drupalbook/global-styling
+  - fitpreg/global-styling
+
 regions:
   header: Header
   content: Content  
