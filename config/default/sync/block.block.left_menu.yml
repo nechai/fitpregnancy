@@ -1,0 +1,24 @@
+uuid: b22eac94-cb0e-4798-891b-bd9493885a7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.left-menu
+  module:
+    - system
+  theme:
+    - drupalbook
+id: left_menu
+theme: drupalbook
+region: header
+weight: 1
+provider: null
+plugin: 'system_menu_block:left-menu'
+settings:
+  id: 'system_menu_block:left-menu'
+  label: left_menu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

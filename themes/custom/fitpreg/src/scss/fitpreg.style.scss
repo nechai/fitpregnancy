@@ -1,0 +1,16 @@
+@import "partials/variables/variables";
+@import "partials/mixins/mixins";
+
+#block-social-block {
+  .social-block-wrapper {
+    .icon {
+      border: 1px solid;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

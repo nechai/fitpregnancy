@@ -1,0 +1,46 @@
+uuid: b70b30fd-59c3-42dc-a04d-8213e7999ca3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.week.body
+    - field.field.node.week.field_img
+    - field.field.node.week.field_week
+    - node.type.week
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.week.default
+targetEntityType: node
+bundle: week
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_img:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_week:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

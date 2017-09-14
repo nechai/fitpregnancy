@@ -1,0 +1,20 @@
+uuid: 8a562a30-ce35-4eef-bc43-873c7bfc1aa9
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - drupalbook
+id: searchform
+theme: drupalbook
+region: header
+weight: 3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

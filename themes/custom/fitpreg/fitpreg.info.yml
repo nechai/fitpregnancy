@@ -1,0 +1,13 @@
+name: Fitpreg
+description: Custom theme for fitpregnancy site
+base theme: classy
+core: 8.x
+type: theme
+
+libraries:
+  - fitpreg/global-styling
+
+regions:
+  header: Header
+  content: Content  
+  footer: Footer

@@ -1,0 +1,21 @@
+uuid: 3e511ba9-6296-4e71-9fac-b4988354566c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_week
+    - node.type.week
+  module:
+    - options
+id: node.week.field_week
+field_name: field_week
+entity_type: node
+bundle: week
+label: week
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

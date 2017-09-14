@@ -1,0 +1,28 @@
+uuid: d78fe5d0-d2bc-4f78-8ca3-8efd2e7f5f1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.week.body
+    - node.type.week
+  module:
+    - text
+    - user
+id: node.week.teaser
+targetEntityType: node
+bundle: week
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

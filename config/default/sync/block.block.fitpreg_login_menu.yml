@@ -1,0 +1,24 @@
+uuid: 1d243d79-29e3-46c7-82f6-c3f15d9172cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.login-menu
+  module:
+    - system
+  theme:
+    - fitpreg
+id: fitpreg_login_menu
+theme: fitpreg
+region: header
+weight: -1
+provider: null
+plugin: 'system_menu_block:login-menu'
+settings:
+  id: 'system_menu_block:login-menu'
+  label: login_menu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }
