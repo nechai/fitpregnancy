@@ -1,0 +1,23 @@
+uuid: 096ffe0b-d012-4c17-a199-562bf08a80f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_in_main_page
+    - node.type.news
+id: node.news.field_show_in_main_page
+field_name: field_show_in_main_page
+entity_type: node
+bundle: news
+label: 'show in main page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

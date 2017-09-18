@@ -8,5 +8,13 @@ main_page:
       label: first
     second:
       label: second
-    three: 
+    three:
       label: three
+    fourth:
+      label: fourth
+    fifth:
+      label: fifth
+    sixth:
+      label: sixth
+    right:
+      label: right

@@ -1,0 +1,8 @@
+uuid: 1c9e9ca8-f417-424a-a9f8-f3d1b371af95
+langcode: en
+status: true
+dependencies: {  }
+id: devel-dregen
+label: dregen
+description: 'Description of dregen'
+locked: false

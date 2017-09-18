@@ -5,11 +5,15 @@ dependencies:
   config:
     - field.field.node.news.body
     - field.field.node.news.field_category
+    - field.field.node.news.field_comment
     - field.field.node.news.field_images
+    - field.field.node.news.field_node_in_sli
+    - field.field.node.news.field_show_in_main_page
     - field.field.node.news.field_video
     - image.style.thumbnail
     - node.type.news
   module:
+    - comment
     - image
     - text
     - video
@@ -20,7 +24,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
@@ -28,7 +32,7 @@ content:
     third_party_settings: {  }
     region: content
   field_category:
-    weight: 4
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -36,24 +40,43 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_comment:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
   field_images:
-    weight: 2
+    weight: 1
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
+  field_node_in_sli:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_show_in_main_page:
+    weight: 27
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_video:
-    weight: 1
+    weight: 28
     settings:
       file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      allowed_providers:
+        youtube: youtube
       uri_scheme: public
-      file_extensions: 'mp4 ogv webm'
-      max_filesize: ''
-      progress_indicator: throbber
     third_party_settings: {  }
-    type: video_upload
+    type: video_embed
     region: content
   title:
     type: string_textfield

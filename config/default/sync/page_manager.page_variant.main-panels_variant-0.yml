@@ -4,7 +4,14 @@ status: true
 dependencies:
   config:
     - page_manager.page.main
+    - views.view.baby_care
+    - views.view.duplicate_of_labor_and_delivery_block
+    - views.view.labor_and_delivery_block
+    - views.view.pregnancy_health_block
+    - views.view.safe_healthy_pregnancy_guide
     - views.view.slideshow
+    - views.view.the_buzz_list
+    - views.view.ttc_blocks
   module:
     - panels
     - views
@@ -36,14 +43,135 @@ variant_settings:
       weight: -1
       uuid: 3005373a-9a1f-4d48-b037-eb5088a3ce96
       context_mapping: {  }
-    6814062f-7daf-4e48-9100-50ae7c895e92:
-      id: week-block
+    f8ef1a74-3993-4a6d-b11d-d7b61c58f689:
+      id: 'views_block:pregnancy_health_block-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: three
+      weight: -10
+      uuid: f8ef1a74-3993-4a6d-b11d-d7b61c58f689
+      context_mapping: {  }
+    654d928d-5edb-44e4-8cd2-a9ff6a677cb7:
+      id: 'views_block:pregnancy_health_block-block_2'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: three
+      weight: -9
+      uuid: 654d928d-5edb-44e4-8cd2-a9ff6a677cb7
+      context_mapping: {  }
+    3640f824-ee2a-4ae6-acf3-32691c00aee2:
+      id: week_block
       label: week_block_header
       provider: week_block
       label_display: '0'
       region: first
       weight: -10
-      uuid: 6814062f-7daf-4e48-9100-50ae7c895e92
+      uuid: 3640f824-ee2a-4ae6-acf3-32691c00aee2
+      context_mapping: {  }
+    3310e9ae-3bbf-46fa-a16d-5edfe91553e9:
+      id: 'views_block:ttc_blocks-block_2'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: fourth
+      weight: -2
+      uuid: 3310e9ae-3bbf-46fa-a16d-5edfe91553e9
+      context_mapping: {  }
+    d55f9d83-cd6d-435a-95e4-84967150aa4f:
+      id: 'views_block:ttc_blocks-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: fourth
+      weight: -3
+      uuid: d55f9d83-cd6d-435a-95e4-84967150aa4f
+      context_mapping: {  }
+    78471de8-8d07-4839-bb47-fb4052cc7e23:
+      id: 'views_block:safe_healthy_pregnancy_guide-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: fifth
+      weight: -5
+      uuid: 78471de8-8d07-4839-bb47-fb4052cc7e23
+      context_mapping: {  }
+    957e029c-d95a-49ae-89ee-1177dc0d160e:
+      id: 'views_block:safe_healthy_pregnancy_guide-block_2'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: fifth
+      weight: -4
+      uuid: 957e029c-d95a-49ae-89ee-1177dc0d160e
+      context_mapping: {  }
+    90bde422-1727-4b89-9bf0-818eb912e660:
+      id: 'views_block:duplicate_of_labor_and_delivery_block-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: fifth
+      weight: -2
+      uuid: 90bde422-1727-4b89-9bf0-818eb912e660
+      context_mapping: {  }
+    41cad5c5-3270-4531-8586-d7dc68b5b2ab:
+      id: 'views_block:labor_and_delivery_block-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: fifth
+      weight: -3
+      uuid: 41cad5c5-3270-4531-8586-d7dc68b5b2ab
+      context_mapping: {  }
+    7425b5b3-ce10-4466-8770-c74398d2370c:
+      id: 'views_block:baby_care-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: sixth
+      weight: 0
+      uuid: 7425b5b3-ce10-4466-8770-c74398d2370c
+      context_mapping: {  }
+    3fb90377-b184-45c3-8a99-78a415e26308:
+      id: 'views_block:baby_care-block_2'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: sixth
+      weight: 0
+      uuid: 3fb90377-b184-45c3-8a99-78a415e26308
+      context_mapping: {  }
+    a2232d07-1aa8-4297-9df7-6523ed45f9b0:
+      id: 'views_block:the_buzz_list-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: 0
+      uuid: a2232d07-1aa8-4297-9df7-6523ed45f9b0
       context_mapping: {  }
   id: panels_variant
   uuid: fbc70d7e-3352-4324-a1ee-e9a355f67a52

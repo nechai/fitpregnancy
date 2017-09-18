@@ -1,0 +1,24 @@
+uuid: 474e2f80-01fe-4f5a-81a3-7cffeafb281a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.devel-crucluphakishu
+  module:
+    - system
+  theme:
+    - fitpreg
+id: crucluphakishu
+theme: fitpreg
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:devel-crucluphakishu'
+settings:
+  id: 'system_menu_block:devel-crucluphakishu'
+  label: crucluphakishu
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

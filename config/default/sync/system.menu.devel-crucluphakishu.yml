@@ -1,0 +1,8 @@
+uuid: 17481d4b-c486-46aa-b658-56e773bbb977
+langcode: en
+status: true
+dependencies: {  }
+id: devel-crucluphakishu
+label: crucluphakishu
+description: 'Description of crucluphakishu'
+locked: false

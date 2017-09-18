@@ -1,0 +1,24 @@
+uuid: aac1f76c-c875-43e2-9869-d8c1a4b3ce39
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.devel-prouulauanestopauet
+  module:
+    - system
+  theme:
+    - fitpreg
+id: prouulauanestopauet
+theme: fitpreg
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:devel-prouulauanestopauet'
+settings:
+  id: 'system_menu_block:devel-prouulauanestopauet'
+  label: prouulauanestopauet
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

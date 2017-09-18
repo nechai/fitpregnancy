@@ -1,0 +1,24 @@
+uuid: df83d316-e4b1-4712-95e1-b9af4d6925b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.devel-cluwedirup
+  module:
+    - system
+  theme:
+    - fitpreg
+id: cluwedirup
+theme: fitpreg
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:devel-cluwedirup'
+settings:
+  id: 'system_menu_block:devel-cluwedirup'
+  label: cluwedirup
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

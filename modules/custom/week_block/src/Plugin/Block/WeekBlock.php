@@ -8,7 +8,7 @@ use Drupal\Core\Block\BlockBase;
 use Drupal\node\NodeInterface;
   /**
  * @Block(
- *   id = "week-block",
+ *   id = "week_block",
  *   admin_label = @Translation("week_block_header")
  * )
  */

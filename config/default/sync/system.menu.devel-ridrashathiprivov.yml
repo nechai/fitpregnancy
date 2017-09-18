@@ -1,0 +1,8 @@
+uuid: eaa89127-c31a-4f75-b71a-206fe547aaa1
+langcode: en
+status: true
+dependencies: {  }
+id: devel-ridrashathiprivov
+label: ridrashathiprivov
+description: 'Description of ridrashathiprivov'
+locked: false
