@@ -11,4 +11,6 @@ global-styling:
     js/slick.min.js: {}
   dependencies:
     - core/jquery
+    - core/jquery.once
+    - core/drupal
   template: template.html.twig
