@@ -1,0 +1,8 @@
+uuid: 7bae9ba5-8acf-4808-b346-5fc8b02ec8a4
+langcode: en
+status: true
+dependencies: {  }
+id: devel-cluwedirup
+label: cluwedirup
+description: 'Description of cluwedirup'
+locked: false

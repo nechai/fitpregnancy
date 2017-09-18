@@ -1,0 +1,23 @@
+uuid: 9b311966-8e35-45a6-a53f-da0bb4de62f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_node_in_sli
+    - node.type.news
+id: node.news.field_node_in_sli
+field_name: field_node_in_sli
+entity_type: node
+bundle: news
+label: 'node in slide'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

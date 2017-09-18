@@ -1,0 +1,24 @@
+uuid: 24cb8a78-4f17-434d-912a-9abd1b4453a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.devel-phunuvulojithot
+  module:
+    - system
+  theme:
+    - fitpreg
+id: phunuvulojithot
+theme: fitpreg
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:devel-phunuvulojithot'
+settings:
+  id: 'system_menu_block:devel-phunuvulojithot'
+  label: phunuvulojithot
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 6566c00a-1cb4-4d4d-8154-14b372656252
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.devel-ridrashathiprivov
+  module:
+    - system
+  theme:
+    - fitpreg
+id: ridrashathiprivov
+theme: fitpreg
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:devel-ridrashathiprivov'
+settings:
+  id: 'system_menu_block:devel-ridrashathiprivov'
+  label: ridrashathiprivov
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

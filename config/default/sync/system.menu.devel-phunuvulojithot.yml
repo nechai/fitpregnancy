@@ -1,0 +1,8 @@
+uuid: 750f55b7-f2a1-41ee-aedc-b95d533adfaf
+langcode: en
+status: true
+dependencies: {  }
+id: devel-phunuvulojithot
+label: phunuvulojithot
+description: 'Description of phunuvulojithot'
+locked: false

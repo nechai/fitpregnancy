@@ -1,0 +1,18 @@
+uuid: 7d59424a-1d23-4d75-9a99-be3ccfbb41b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: week
+type: week
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

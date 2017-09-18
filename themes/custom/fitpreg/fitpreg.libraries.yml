@@ -2,9 +2,13 @@ global-styling:
   version: 1.x
   css:
     theme:
+      css/slick.css: {}
+      css/slick-theme.css: {}
       stylesheets/fitpreg.style.css: {}
   js:
     js/fitpreg.js: {}
+    js/slide_start.js: {}
+    js/slick.min.js: {}
   dependencies:
     - core/jquery
   template: template.html.twig

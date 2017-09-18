@@ -11,7 +11,7 @@ dependencies:
 id: fitpreg_logo
 theme: fitpreg
 region: header
-weight: -1
+weight: -2
 provider: null
 plugin: 'block_content:95f97c9a-607c-43f0-a4c4-5f55e5d9c428'
 settings:
