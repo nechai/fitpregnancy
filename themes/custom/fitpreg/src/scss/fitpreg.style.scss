@@ -1,16 +1,34 @@
 @import "partials/variables/variables";
 @import "partials/mixins/mixins";
 
-#block-social-block {
-  .social-block-wrapper {
-    .icon {
-      border: 1px solid;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
-      display: inline-block;
-      height: 40px;
-      width: 40px;
-    }
+/* Header */
+.region-header {
+  border: 1px solid red;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1170px;
+
+  // Social menu
+  #block-fitpreg-social-menu {
+    width: 30%;
+  } /* end of Social menu */
+
+  // Block for logo
+  #block-fitpreg-logo {
+    background-image: url('../images/logo.png');
+    width: 304px;
   }
-}
+
+  // Main menu
+  #block-fitpreg-main-menu {
+    .menu {
+      display: flex;
+      width: 100%;
+    }
+  } /* end of Main menu */
+  
+  // Left menu in header
+  #block-fitpreg-left-menu {
+    display: none;
+  } /* end of header left menu */
+}/* end of Header */
