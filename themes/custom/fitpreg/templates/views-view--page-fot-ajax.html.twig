@@ -63,12 +63,14 @@
 
   {% if rows %}
     <div class="view-content">
-      {{ rows }}
-      {% if attachment_after %}
-      <div class="attachment attachment-after">
-        {{ attachment_after }}
+      <div class="all-rows">
+        {{ rows }}
+        {% if attachment_after %}
+        <div class="attachment attachment-after">
+          {{ attachment_after }}
+        </div>
+        {% endif %}
       </div>
-      {% endif %}
     </div>
   {% elseif empty %}
     <div class="view-empty">
