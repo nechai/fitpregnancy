@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - page_manager.page.main
+    - system.menu.weekly-menu
     - views.view.baby_care
     - views.view.duplicate_of_labor_and_delivery_block
     - views.view.labor_and_delivery_block
@@ -14,8 +15,8 @@ dependencies:
     - views.view.ttc_blocks
   module:
     - panels
+    - system
     - views
-    - week_block
 id: main-panels_variant-0
 label: main
 variant: panels_variant
@@ -64,15 +65,6 @@ variant_settings:
       region: three
       weight: -9
       uuid: 654d928d-5edb-44e4-8cd2-a9ff6a677cb7
-      context_mapping: {  }
-    3640f824-ee2a-4ae6-acf3-32691c00aee2:
-      id: week_block
-      label: week_block_header
-      provider: week_block
-      label_display: '0'
-      region: first
-      weight: -10
-      uuid: 3640f824-ee2a-4ae6-acf3-32691c00aee2
       context_mapping: {  }
     3310e9ae-3bbf-46fa-a16d-5edfe91553e9:
       id: 'views_block:ttc_blocks-block_2'
@@ -172,6 +164,17 @@ variant_settings:
       region: right
       weight: 0
       uuid: a2232d07-1aa8-4297-9df7-6523ed45f9b0
+      context_mapping: {  }
+    ef3863d7-f4e8-4fce-b552-29098b5ffa64:
+      id: 'system_menu_block:weekly-menu'
+      label: 'weekly menu'
+      provider: system
+      label_display: '0'
+      level: 1
+      depth: 0
+      region: first
+      weight: 0
+      uuid: ef3863d7-f4e8-4fce-b552-29098b5ffa64
       context_mapping: {  }
   id: panels_variant
   uuid: fbc70d7e-3352-4324-a1ee-e9a355f67a52
