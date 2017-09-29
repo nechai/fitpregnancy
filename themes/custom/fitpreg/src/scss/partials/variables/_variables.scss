@@ -1,2 +1,16 @@
-$color: #207dba;
-$color2: pink;
+// Colors
+$border-color: #dedede;
+$color-black: #000;
+$color-grey-light: #dedede;
+$color-white: #fff;
+$icon-col-black: #2e2e2e;
+$icon-col-pink: #ec188c;
+$color-searchbg: #f5f5f5;
+
+// Fonts
+@font-face {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 24px;
+  src: url(https://fonts.googleapis.com/css?family=Montserrat);
+}

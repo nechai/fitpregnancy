@@ -1,0 +1,243 @@
+/* Header */
+.region-header {
+/*  border: 1px solid red;*/
+  margin: 0 auto;
+  max-width: 1170px;
+  
+  // First header line
+  .firstline-blocks-wrapper {
+    align-items: center;
+    border-bottom: 1px solid $color-grey-light;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+    // Social menu
+    #block-fitpreg-social-menu {
+
+      .field--name-body{
+        p { margin: 0; }
+
+        a {
+          @include square(40px, 40px);
+          border: 1px solid $icon-col-black;
+          border-radius: 50%;
+          color: $icon-col-black;
+          display: inline-block;
+          font-size: 18px;
+          line-height: 40px;
+          position: relative;
+          text-align: center;
+          text-decoration: none;
+
+          @include hover {
+            border: 1px solid $icon-col-pink;
+            color: $icon-col-pink;
+          }
+
+          img { display: none; }
+
+          &:nth-child(2) {
+            margin: 0 20px;
+          }
+          &:last-child {
+            margin-left: 20px;
+          }
+          &:first-child::after {
+            @include fa('\f09a');
+          }
+          &:nth-child(2)::after {
+            @include fa('\f231');
+          }
+          &:nth-child(3)::after {
+            @include fa('\f099');
+          }
+          &:last-child::after {
+            @include fa('\f16d');
+          }
+        }
+
+      }
+    } /* end of Social menu */
+
+    // Block for logo
+    #block-fitpreg-logo {
+      background: url('../images/logo.png') no-repeat center;
+      height: 50px;
+      width: 304px;
+    }
+
+    // login menu
+    #block-fitpreg-login-menu {
+      .menu {
+        .menu-item {
+          display: inline-block;
+          padding: 0;
+
+          &:first-child {
+            margin-right: 16px;
+          }
+
+          a {
+            @include link();
+            font-size: 13px;
+            text-transform: uppercase;
+
+            @include hover {
+              color: $icon-col-pink;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Second header line
+  .secondline-blocks-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    
+    // Main menu
+    #block-fitpreg-main-menu {
+      .menu {
+        display: flex;
+        margin: 0;
+        width: 100%;
+
+        .menu-item {
+          border-right: 1px solid $border-color;
+          margin-right: 20px;
+          padding: 0 20px 0 0;
+
+          &:last-child {
+            border-right: none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+
+            .menu { display: none; }
+
+            @include hover {
+              .menu {
+                background-color: $color-white;
+                display: block;
+                left: -20px;
+                margin: 0;
+                padding-top: 20px;
+                position: absolute;
+                width: 11rem;
+                z-index: 1;
+
+                .menu-item {
+                  border: none;
+                  margin: 0;
+                  padding: 0 20px 20px;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+
+          a {
+            @include link();
+
+            &:hover {
+              color: $icon-col-pink;
+            }
+          }
+        }
+
+        .menu-item--expanded::after {
+          @include fa('\f107');
+        }
+      }
+    } /* end of Main menu */
+
+    // Left menu in header
+    #block-fitpreg-left-menu {
+      
+      .left-menu-hamburger {
+        @include square(48px, 60px);
+        
+        .btn {
+          display: block;
+          height: auto;
+          padding: 3px 0 12px;
+          width: 100%;
+          
+          .line {
+            @include square(10px, 35px);
+            border-bottom: 1px solid $color-black;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+      
+      .left-menu-wrapper {
+        display: none;
+      }
+    } /* end of header left menu */
+
+    // Search field block
+    #block-fitpreg-searchform {
+      
+      .search-icon {
+        cursor: pointer;
+        font-size: 25px;
+      }
+
+      #search-block-form {
+        display: none;
+        position: relative;
+        margin: 0 auto;
+        width: 50%;
+
+        .form-search {
+          background-color: $color-searchbg;
+          border: none;
+          -webkit-border-radius: 40px;
+          -moz-border-radius: 40px;
+          border-radius: 40px;
+          height: 40px;
+          outline: none;
+          padding-left: 17px;
+          width: 100%;
+        }
+        #edit-actions {
+          height: 40px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 1;
+
+          &::after {
+            content: '\f002';
+            color: $icon-col-pink;
+            cursor: pointer;
+            font-family: 'FontAwesome';
+            font-size: 24px;
+            font-weight: normal;
+            position: absolute;
+            right: 0;
+            top: 7px;
+          }
+
+          #edit-submit,
+          #edit-submit--3 {
+            height: 100%;
+            opacity: 0;
+            position: relative;
+            width: 100%;
+            z-index: 1;
+          }
+        }
+      }
+    } /* end of search field block*/
+  }
+  
+  
+}/* end of Header */

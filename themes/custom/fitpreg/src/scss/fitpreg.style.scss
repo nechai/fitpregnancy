@@ -1,34 +1,24 @@
 @import "partials/variables/variables";
 @import "partials/mixins/mixins";
+@import "partials/mixins/brakepoints";
+@import "fontawesome/font-awesome.scss";
 
-/* Header */
-.region-header {
-  border: 1px solid red;
-  display: flex;
-  margin: 0 auto;
-  max-width: 1170px;
+// Components
+@import "components/header";
+@import "components/footer";
+@import "components/period-block";
+@import "components/slick-slider";
+@import "components/maincont";
 
-  // Social menu
-  #block-fitpreg-social-menu {
-    width: 30%;
-  } /* end of Social menu */
 
-  // Block for logo
-  #block-fitpreg-logo {
-    background-image: url('../images/logo.png');
-    width: 304px;
-  }
-
-  // Main menu
-  #block-fitpreg-main-menu {
-    .menu {
-      display: flex;
-      width: 100%;
-    }
-  } /* end of Main menu */
+body {
+  color: $color-black;
+  font-family: 'Montserrat';
   
-  // Left menu in header
-  #block-fitpreg-left-menu {
-    display: none;
-  } /* end of header left menu */
-}/* end of Header */
+  .region-header, .region-footer,
+  .layout-content {
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+}
+

@@ -1,0 +1,24 @@
+// Attach fontawesome by a icon code
+@mixin fa($code) {
+  content: $code;
+  font-family: 'FontAwesome';
+}
+
+@mixin square($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+// Hover behavior
+@mixin hover() {
+  &:hover {
+    @content;
+  }
+}
+
+// Theming links
+@mixin link($color: $color-black) {
+  color: $color;
+  text-decoration: none;
+  text-transform: uppercase;
+}
