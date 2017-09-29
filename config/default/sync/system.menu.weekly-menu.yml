@@ -1,0 +1,8 @@
+uuid: bfb7c71f-aa12-44db-abc6-663d5f18520e
+langcode: en
+status: true
+dependencies: {  }
+id: weekly-menu
+label: 'weekly menu'
+description: ''
+locked: false

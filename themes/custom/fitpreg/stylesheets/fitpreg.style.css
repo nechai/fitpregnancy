@@ -2530,621 +2530,627 @@ footer {
             color: #fff;
             text-decoration: none; }
 
-.block-week-block {
+.menu--weekly-menu {
   border-color: #dedede;
   border-style: solid;
   border-width: 1px 0;
   padding: 16px 10px; }
-  .block-week-block b {
-    display: inline-block;
-    font-size: 13px;
-    font-weight: normal;
-    margin-right: 12px; }
-    .block-week-block b:first-child:hover, .block-week-block b:nth-child(42):hover, .block-week-block b:last-child:hover {
-      color: #ec188c; }
-    .block-week-block b:first-child {
-      border-right: 1px solid #dedede;
-      padding-right: 12px; }
-    .block-week-block b:nth-child(2):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(2):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -9px;
-        top: -3px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(3):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(3):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -9px;
-        top: -3px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(4):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(4):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -9px;
-        top: -3px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(5):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(5):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -9px;
-        top: -3px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(6):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(6):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -9px;
-        top: -3px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(7):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(7):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -9px;
-        top: -3px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(8):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(8):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -9px;
-        top: -3px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(9):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(9):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -9px;
-        top: -3px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(10):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(10):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(11):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(11):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(12):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(12):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(13):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(13):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(14):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(14):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(15):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(15):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(16):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(16):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(17):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(17):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(18):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(18):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(19):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(19):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(20):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(20):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(21):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(21):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(22):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(22):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(23):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(23):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(24):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(24):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(25):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(25):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(26):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(26):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(27):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(27):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(28):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(28):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(29):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(29):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(30):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(30):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(31):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(31):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(32):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(32):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(33):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(33):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(34):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(34):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(35):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(35):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(36):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(36):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(37):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(37):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(38):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(38):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(39):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(39):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(40):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(40):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
-    .block-week-block b:nth-child(41):hover {
-      color: #fff;
-      cursor: pointer;
-      position: relative; }
-      .block-week-block b:nth-child(41):hover::after {
-        background-color: #ec188c;
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 23px;
-        position: absolute;
-        left: -5px;
-        top: -4px;
-        width: 23px;
-        z-index: -1; }
+  .menu--weekly-menu .menu {
+    margin: 0;
+    position: relative; }
+    .menu--weekly-menu .menu .menu-item {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: normal;
+      margin-right: 12px; }
+      .menu--weekly-menu .menu .menu-item a {
+        color: #000;
+        text-decoration: none; }
+      .menu--weekly-menu .menu .menu-item:first-child:hover a, .menu--weekly-menu .menu .menu-item:nth-child(42):hover a, .menu--weekly-menu .menu .menu-item:last-child:hover a {
+        color: #ec188c; }
+      .menu--weekly-menu .menu .menu-item:first-child {
+        border-right: 1px solid #dedede;
+        padding-right: 12px; }
+      .menu--weekly-menu .menu .menu-item:nth-child(2):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(2):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -9px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(3):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(3):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -9px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(4):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(4):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -9px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(5):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(5):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -9px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(6):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(6):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -9px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(7):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(7):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -9px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(8):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(8):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -9px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(9):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(9):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -9px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(10):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(10):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(11):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(11):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(12):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(12):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(13):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(13):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(14):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(14):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(15):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(15):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(16):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(16):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(17):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(17):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(18):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(18):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(19):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(19):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(20):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(20):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(21):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(21):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(22):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(22):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(23):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(23):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(24):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(24):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(25):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(25):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(26):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(26):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(27):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(27):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(28):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(28):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(29):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(29):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(30):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(30):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(31):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(31):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(32):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(32):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(33):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(33):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(34):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(34):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(35):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(35):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(36):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(36):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(37):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(37):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(38):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(38):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(39):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(39):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(40):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(40):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
+      .menu--weekly-menu .menu .menu-item:nth-child(41):hover a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        .menu--weekly-menu .menu .menu-item:nth-child(41):hover a::after {
+          background-color: #ec188c;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: 23px;
+          position: absolute;
+          left: -5px;
+          top: -3px;
+          width: 23px;
+          z-index: -1; }
 
 /* Slick slider on the fornt page */
 .slick-slider .slick-prev {
