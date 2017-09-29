@@ -44,3 +44,4 @@ sites
 nbproject/*
 themes/**/node_modules
 themes/*/*/scss
+themes/**/.sass-cache
