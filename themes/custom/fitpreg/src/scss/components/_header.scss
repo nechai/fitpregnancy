@@ -98,9 +98,11 @@
     display: flex;
     justify-content: space-between;
     padding-right: 15px;
+    position: relative;
     
     // Main menu
     #block-fitpreg-main-menu {
+      
       .menu {
         display: flex;
         margin: 0;
@@ -156,42 +158,67 @@
       }
     } /* end of Main menu */
 
-    // Left menu in header
-    #block-fitpreg-left-menu {
-      
-      .left-menu-hamburger {
-        @include square(48px, 60px);
-        
-        .btn {
+    // Hamburger
+    .left-menu-hamburger {
+      @include square(48px, 60px);
+
+      .btn {
+        display: block;
+        height: auto;
+        padding: 3px 0 12px;
+        width: 100%;
+
+        .line {
+          @include square(10px, 35px);
+          border-bottom: 1px solid $color-black;
           display: block;
-          height: auto;
-          padding: 3px 0 12px;
-          width: 100%;
-          
-          .line {
-            @include square(10px, 35px);
-            border-bottom: 1px solid $color-black;
-            display: block;
-            margin: 0 auto;
-          }
+          margin: 0 auto;
         }
       }
+    }
+    
+    
+    // Left menu in header
+    #block-fitpreg-left-menu {
+      background-color: $color-black;
+      display: none;
+      position: absolute;
+      width: 250px;
+      z-index: 1;
       
       .left-menu-wrapper {
-        display: none;
+        .menu {
+          margin: 0;
+        }
       }
     } /* end of header left menu */
-
-    // Search field block
-    #block-fitpreg-searchform {
-      
-      .search-icon {
+    
+    // block with awesome icons
+    .icon-wrapper {
+      .search-icon, .close-search {
         cursor: pointer;
         font-size: 25px;
+        
+        &.close {
+          display: none;
+        }
       }
-
+    }
+    
+    
+    // Search field block
+    #block-fitpreg-searchform {
+      display: none;
+      
+      &.open {
+        background-color: $color-white;
+        display: block;
+        position: absolute;
+        width: 86%;
+        z-index: 1;
+      }
+      
       #search-block-form {
-        display: none;
         position: relative;
         margin: 0 auto;
         width: 50%;
