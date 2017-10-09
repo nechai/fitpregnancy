@@ -38,7 +38,6 @@ sites/simpletest
 # Node Modules for Gulp
 
 # Ignore Drupal core
-core
 modules/contrib/*
 sites
 nbproject/*
