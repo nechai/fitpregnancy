@@ -8,8 +8,8 @@
 # name; updating Drupal core will not override your custom .gitignore file.
 
 # Ignore core and vendor when managing dependencies with Composer.
-# core
-# vendor
+core
+vendor
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
@@ -38,9 +38,13 @@ sites/simpletest
 # Node Modules for Gulp
 
 # Ignore Drupal core
-modules/contrib/*
-sites
+# modules/contrib/*
+# sites
 nbproject/*
 themes/**/node_modules
-themes/*/*/scss
-themes/**/.sass-cache
+# themes/*/*/scss
+# themes/**/.sass-cache
+
+.idea
+.idea/*
+.idea/workspace.xml
