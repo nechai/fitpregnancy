@@ -38,15 +38,19 @@ sites/simpletest
 # simpletest
 
 # Node Modules for Gulp
+themes/**/node_modules
 
 # Ignore Drupal core
 # modules/contrib/*
 # sites
 nbproject/*
-themes/**/node_modules
 # themes/*/*/scss
 # themes/**/.sass-cache
 
+# Ignore phpstorm config
 .idea
 .idea/*
 .idea/workspace.xml
+
+# Ignore
+stores/
