@@ -1,0 +1,24 @@
+uuid: 4ad4ede1-c91e-4d83-8aaa-e2cb5fbad066
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.weekly-menu
+  module:
+    - system
+  theme:
+    - fitpreg
+id: weeklymenu
+theme: fitpreg
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:weekly-menu'
+settings:
+  id: 'system_menu_block:weekly-menu'
+  label: 'weekly menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

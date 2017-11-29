@@ -9,7 +9,7 @@ dependencies:
 id: fitpreg_searchform
 theme: fitpreg
 region: header
-weight: 2
+weight: -3
 provider: null
 plugin: search_form_block
 settings:

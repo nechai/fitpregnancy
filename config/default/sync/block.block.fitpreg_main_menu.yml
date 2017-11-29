@@ -11,7 +11,7 @@ dependencies:
 id: fitpreg_main_menu
 theme: fitpreg
 region: header
-weight: 1
+weight: -4
 provider: null
 plugin: 'system_menu_block:main-menu'
 settings:
