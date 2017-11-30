@@ -1,76 +1,71 @@
 /* Slick slider on the fornt page */
-.slick-slider {
-  
-  
-  // Slide previous button
-  .slick-prev {
-    width: calc((100% - 1152px) / 2);
-  }
-  
-  // Slides
-  .slick-list {
-    margin: 0 auto;
-    max-width: 1152px;
-    
-    .slick-slide {
-      
-      .view-content {
-        display: flex;
-        
-        .views-row {
-          height: 231px;
-          position: relative;
-          width: 231px;
-          
-          &::after {
-            background-image: linear-gradient(to bottom, transparent 0, transparent 60%, $color-black 100%);
-            background-image: linear-gradient(to bottom, transparent 0, transparent 60%, $color-black 100%);
-            background-image: linear-gradient(to bottom, transparent 0, transparent 60%, $color-black 100%);
-            content: '';
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-          }
-          
-          .views-field-title {
-            bottom: 0;
-            padding: 10px;
-            position: absolute;
-            text-align: center;
-            z-index: 1;
-            
-            a {
-              color: $color-white;
-              font-size: 14px;
-              font-weight: 600;
-              text-decoration: none;
-            }
-          }
-          .views-field-field-images {
-            height: 100%;
-            background-color: $color-grey-light;
-            width: 100%;
-            
-            img {
-              height: 100%;
-              height: -webkit-fill-available;
-              width: 100%;
-            }
-          }
+
+$font-Flaticon-next: "\f100";
+$font-Flaticon-back: "\f101";
+
+.block-region-second {
+  .view-content {
+    width: 90%;
+    margin: auto;
+    .views-row {
+      position: relative;
+      height: 231px;
+      &::after {
+        background-image: linear-gradient(to bottom, transparent 0, transparent 60%, $color-black 100%);
+        background-image: linear-gradient(to bottom, transparent 0, transparent 60%, $color-black 100%);
+        background-image: linear-gradient(to bottom, transparent 0, transparent 60%, $color-black 100%);
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+      .views-field-title {
+        bottom: 0;
+        padding: 10px;
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        a {
+          color: $color-white;
+          font-size: 14px;
+          font-weight: 600;
+          text-decoration: none;
         }
-        
+      }
+      .views-field-field-images {
+        height: 100%;
+        background-color: $color-grey-light;
+        width: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
       }
     }
   }
-  
-  
-  // Slide next button
+  .slick-prev,
   .slick-next {
-    width: calc((100% - 1152px) / 2);
+    top: 44%;
+    &:before {
+      font-family: 'Flaticon';
+      font-size: 50px;
+      color: #ec188c;
+    }
   }
-  
-  // Slide slick dots
-  .slick-dots { display: none !important; }
+  .slick-prev {
+    left: -55px;
+    &:before {
+      content: $font-Flaticon-back;
+
+    }
+  }
+  .slick-next {
+    &:before {
+      content: $font-Flaticon-next;
+    }
+  }
 }
+

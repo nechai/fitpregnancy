@@ -4,6 +4,7 @@
   font-size: 14px;
   line-height: 24px;
   src: url(https://fonts.googleapis.com/css?family=Montserrat); }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -16,6 +17,7 @@
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -75,6 +77,7 @@
 
 .fa.fa-pull-left {
   margin-right: .3em; }
+
 .fa.fa-pull-right {
   margin-left: .3em; }
 
@@ -87,6 +90,7 @@
 
 .fa.pull-left {
   margin-right: .3em; }
+
 .fa.pull-right {
   margin-left: .3em; }
 
@@ -105,6 +109,7 @@
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -112,6 +117,7 @@
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
@@ -147,7 +153,8 @@
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none; }
+  -webkit-filter: none;
+          filter: none; }
 
 .fa-stack {
   position: relative;
@@ -2334,10 +2341,16 @@
   margin: 0 auto;
   max-width: 1170px; }
   .region-header .firstline-blocks-wrapper {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 1px solid #dedede;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 15px;
     /* end of Social menu */ }
     .region-header .firstline-blocks-wrapper #block-fitpreg-social-menu .field--name-body p {
@@ -2393,15 +2406,23 @@
         .region-header .firstline-blocks-wrapper #block-fitpreg-login-menu .menu .menu-item a:hover {
           color: #ec188c; }
   .region-header .secondline-blocks-wrapper {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-right: 15px;
     position: relative;
     /* end of Main menu */
     /* end of header left menu */
     /* end of search field block*/ }
     .region-header .secondline-blocks-wrapper #block-fitpreg-main-menu .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin: 0;
       width: 100%; }
@@ -2482,8 +2503,6 @@
         .region-header .secondline-blocks-wrapper #block-fitpreg-searchform #search-block-form .form-search {
           background-color: #f5f5f5;
           border: none;
-          -webkit-border-radius: 40px;
-          -moz-border-radius: 40px;
           border-radius: 40px;
           height: 40px;
           outline: none;
@@ -2532,6 +2551,8 @@ footer {
         margin: 0;
         text-transform: uppercase; }
       footer .region-footer nav .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 0; }
         footer .region-footer nav .menu .menu-item {
@@ -2562,7 +2583,9 @@ footer {
       .menu--weekly-menu .menu .menu-item a {
         color: #000;
         text-decoration: none; }
-      .menu--weekly-menu .menu .menu-item:first-child:hover a, .menu--weekly-menu .menu .menu-item:nth-child(42):hover a, .menu--weekly-menu .menu .menu-item:last-child:hover a {
+      .menu--weekly-menu .menu .menu-item:first-child:hover a,
+      .menu--weekly-menu .menu .menu-item:nth-child(42):hover a,
+      .menu--weekly-menu .menu .menu-item:last-child:hover a {
         color: #ec188c; }
       .menu--weekly-menu .menu .menu-item:first-child {
         border-right: 1px solid #dedede;
@@ -3169,50 +3192,60 @@ footer {
           z-index: -1; }
 
 /* Slick slider on the fornt page */
-.slick-slider .slick-prev {
-  width: calc((100% - 1152px) / 2); }
-.slick-slider .slick-list {
-  margin: 0 auto;
-  max-width: 1152px; }
-  .slick-slider .slick-list .slick-slide .view-content {
-    display: flex; }
-    .slick-slider .slick-list .slick-slide .view-content .views-row {
-      height: 231px;
-      position: relative;
-      width: 231px; }
-      .slick-slider .slick-list .slick-slide .view-content .views-row::after {
-        background-image: linear-gradient(to bottom, transparent 0, transparent 60%, #000 100%);
-        background-image: linear-gradient(to bottom, transparent 0, transparent 60%, #000 100%);
-        background-image: linear-gradient(to bottom, transparent 0, transparent 60%, #000 100%);
-        content: '';
+.block-region-second .view-content {
+  width: 90%;
+  margin: auto; }
+  .block-region-second .view-content .views-row {
+    position: relative;
+    height: 231px; }
+    .block-region-second .view-content .views-row::after {
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(60%, transparent), to(#000));
+      background-image: -webkit-linear-gradient(top, transparent 0, transparent 60%, #000 100%);
+      background-image: -o-linear-gradient(top, transparent 0, transparent 60%, #000 100%);
+      background-image: linear-gradient(to bottom, transparent 0, transparent 60%, #000 100%);
+      background-image: linear-gradient(to bottom, transparent 0, transparent 60%, #000 100%);
+      background-image: linear-gradient(to bottom, transparent 0, transparent 60%, #000 100%);
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+    .block-region-second .view-content .views-row .views-field-title {
+      bottom: 0;
+      padding: 10px;
+      position: absolute;
+      text-align: center;
+      z-index: 1; }
+      .block-region-second .view-content .views-row .views-field-title a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none; }
+    .block-region-second .view-content .views-row .views-field-field-images {
+      height: 100%;
+      background-color: #dedede;
+      width: 100%; }
+      .block-region-second .view-content .views-row .views-field-field-images img {
         height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
         width: 100%; }
-      .slick-slider .slick-list .slick-slide .view-content .views-row .views-field-title {
-        bottom: 0;
-        padding: 10px;
-        position: absolute;
-        text-align: center;
-        z-index: 1; }
-        .slick-slider .slick-list .slick-slide .view-content .views-row .views-field-title a {
-          color: #fff;
-          font-size: 14px;
-          font-weight: 600;
-          text-decoration: none; }
-      .slick-slider .slick-list .slick-slide .view-content .views-row .views-field-field-images {
-        height: 100%;
-        background-color: #dedede;
-        width: 100%; }
-        .slick-slider .slick-list .slick-slide .view-content .views-row .views-field-field-images img {
-          height: 100%;
-          height: -webkit-fill-available;
-          width: 100%; }
-.slick-slider .slick-next {
-  width: calc((100% - 1152px) / 2); }
-.slick-slider .slick-dots {
-  display: none !important; }
+
+.block-region-second .slick-prev,
+.block-region-second .slick-next {
+  top: 44%; }
+  .block-region-second .slick-prev:before,
+  .block-region-second .slick-next:before {
+    font-family: 'Flaticon';
+    font-size: 50px;
+    color: #ec188c; }
+
+.block-region-second .slick-prev {
+  left: -55px; }
+  .block-region-second .slick-prev:before {
+    content: ""; }
+
+.block-region-second .slick-next:before {
+  content: ""; }
 
 .three-region, .fourth-region,
 .fifth-region, .sixth-region {
@@ -3234,6 +3267,8 @@ footer {
   .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content, .sixth-region div[class*="id-block_2"] .view-content,
   .sixth-region .view-id-labor_and_delivery_block .view-content,
   .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     .three-region div[class*="id-block_2"] .view-content .views-row,
     .three-region .view-id-labor_and_delivery_block .view-content .views-row,
@@ -3245,8 +3280,13 @@ footer {
     .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row, .sixth-region div[class*="id-block_2"] .view-content .views-row,
     .sixth-region .view-id-labor_and_delivery_block .view-content .views-row,
     .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       margin-right: 20px;
       width: 25%; }
       .three-region div[class*="id-block_2"] .view-content .views-row:last-child,
@@ -3335,6 +3375,8 @@ footer {
 
 /* end of Common rules */
 .three-region .view-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px; }
   .three-region .view-content .views-row {
@@ -3388,7 +3430,6 @@ footer {
 .fifth-region .block-views-blockbaby-care-block-1 .views-row, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row,
 .sixth-region .block-views-blockbaby-care-block-1 .views-row {
   background-image: -webkit-linear-gradient(top, #dedede 10%, transparent 10%, transparent);
-  -webkit-background-size: 8px 8px;
   background-size: 8px 8px;
   margin-bottom: 20px;
   position: relative;
@@ -3409,7 +3450,6 @@ footer {
   .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper {
     background-color: #fff;
     -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     left: 2%;
     padding: 24px;
@@ -3452,6 +3492,7 @@ footer {
         color: #ec188c;
         font-size: 16px;
         text-decoration: none; }
+
 .fifth-region .view-id-labor_and_delivery_block,
 .fifth-region .view-id-duplicate_of_labor_and_delivery_block, .sixth-region .view-id-labor_and_delivery_block,
 .sixth-region .view-id-duplicate_of_labor_and_delivery_block {

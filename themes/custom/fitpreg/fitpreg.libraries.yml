@@ -2,17 +2,36 @@ global-styling:
   version: 1.x
   css:
     theme:
-      css/slick.css: {}
-      css/slick-theme.css: {}
       stylesheets/fitpreg.style.css: {}
   js:
     js/fitpreg.js: {}
     js/slide_start.js: {}
-    js/slick.min.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
     - core/drupal
   template: template.html.twig
 
+fonts:
+  css:
+    theme:
+      fonts/flaticon/flaticon.css: {}
 
+slick:
+  remote: https://github.com/kenwheeler/slick
+  version: 1.8.1
+  license:
+    name: MIT
+    url: https://github.com/kenwheeler/slick/blob/master/LICENSE
+    gpl-compatible: true
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css: { type: external }
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css: { type: external }
+      # Fonts
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/fonts/slick.eot: { type: external }
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/fonts/slick.svg: { type: external }
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/fonts/slick.ttf: { type: external }
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/fonts/slick.woff: { type: external }
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: { type: external, minified: true }
