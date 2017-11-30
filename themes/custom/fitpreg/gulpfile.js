@@ -25,7 +25,7 @@ gulp.task('sass', function () {
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer('last 4 version'))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./sylesheets'));
+        .pipe(gulp.dest('./stylesheets'));
 });
 
 function isFixed(file) {
