@@ -14,7 +14,7 @@
 
       var timer;
       var menu = document.getElementsByClassName("menu--weekly-menu");
-      var li = $(menu).children('ul.menu').children();
+      var li = $(menu).children('ul').children();
       $.each(li, function (){
         $(this, '.menu--weekly-menu div.views-row').mouseenter(function() {
           var aaa = this;
@@ -23,9 +23,17 @@
             ourRequest.open("GET", "/ajax/"+aaa.getElementsByTagName('a')[0].innerHTML);
             ourRequest.onload = function() {
               var ourData = jQuery.parseHTML(ourRequest.responseText);
-              var data = $('<div />').append(ourData).find('.view-content').html();
+              var data = $("<div>").append(ourData).find('.view-content').html();
               if(data !== undefined) {
-                aaa.insertAdjacentHTML('beforeend', data);
+                // $("<div class='ajax-block'></div>").before(aaa.closest('ul'));
+                aaa.closest('ul').insertAdjacentHTML('beforeend', data);
+
+                $('.ajax-block').css({
+                  'position': 'absolute',
+                  'top': '0',
+                  'left': '0',
+                  'background': 'green'
+                });
               }
             };
             ourRequest.send();
