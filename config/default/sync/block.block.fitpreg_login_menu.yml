@@ -11,7 +11,7 @@ dependencies:
 id: fitpreg_login_menu
 theme: fitpreg
 region: header
-weight: -6
+weight: -5
 provider: null
 plugin: 'system_menu_block:login-menu'
 settings:

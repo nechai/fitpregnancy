@@ -20,17 +20,6 @@ label: main
 variant: panels_variant
 variant_settings:
   blocks:
-    b46aaba1-5bbf-49c4-b9ee-206bf62114d9:
-      id: 'views_block:slideshow-block_2'
-      label: ''
-      provider: views
-      label_display: '0'
-      views_label: ''
-      items_per_page: none
-      region: second
-      weight: 0
-      uuid: b46aaba1-5bbf-49c4-b9ee-206bf62114d9
-      context_mapping: {  }
     3005373a-9a1f-4d48-b037-eb5088a3ce96:
       id: 'views_block:slideshow-block_1'
       label: ''
@@ -52,17 +41,6 @@ variant_settings:
       region: three
       weight: -10
       uuid: f8ef1a74-3993-4a6d-b11d-d7b61c58f689
-      context_mapping: {  }
-    654d928d-5edb-44e4-8cd2-a9ff6a677cb7:
-      id: 'views_block:pregnancy_health_block-block_2'
-      label: ''
-      provider: views
-      label_display: '0'
-      views_label: ''
-      items_per_page: none
-      region: three
-      weight: -9
-      uuid: 654d928d-5edb-44e4-8cd2-a9ff6a677cb7
       context_mapping: {  }
     3310e9ae-3bbf-46fa-a16d-5edfe91553e9:
       id: 'views_block:ttc_blocks-block_2'

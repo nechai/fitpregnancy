@@ -11,7 +11,7 @@ dependencies:
 id: fitpreg_social_menu
 theme: fitpreg
 region: header
-weight: -8
+weight: -7
 provider: null
 plugin: 'block_content:3c833ad0-a2b2-49fc-a3f0-38ed059aa9c9'
 settings:
