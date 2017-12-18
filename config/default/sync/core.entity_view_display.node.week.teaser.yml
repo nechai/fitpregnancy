@@ -5,12 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.week.body
-    - field.field.node.week.field_img
-    - field.field.node.week.field_week
     - node.type.week
   module:
-    - image
-    - options
     - text
     - user
 id: node.week.teaser
@@ -21,30 +17,12 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    weight: 101
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  field_img:
-    type: image
-    weight: 0
-    region: content
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-  field_week:
-    type: list_default
-    weight: 1
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   links:
-    weight: 3
+    weight: 100
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden: {  }
