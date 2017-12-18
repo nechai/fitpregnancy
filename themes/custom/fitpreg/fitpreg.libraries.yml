@@ -17,21 +17,9 @@ fonts:
     theme:
       fonts/flaticon/flaticon.css: {}
 
-slick:
-  remote: https://github.com/kenwheeler/slick
-  version: 1.8.1
-  license:
-    name: MIT
-    url: https://github.com/kenwheeler/slick/blob/master/LICENSE
-    gpl-compatible: true
+slick-slider:
   css:
     theme:
-      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css: { type: external }
-      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css: { type: external }
-      # Fonts
-      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/fonts/slick.eot: { type: external }
-      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/fonts/slick.svg: { type: external }
-      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/fonts/slick.ttf: { type: external }
-      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/fonts/slick.woff: { type: external }
+      libs/slick/slick.css: {}
   js:
-    https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: { type: external, minified: true }
+    libs/slick/slick.js: {}

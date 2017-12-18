@@ -6,8 +6,8 @@ type: theme
 
 libraries:
   - fitpreg/global-styling
-  - fitpreg/slick
   - fitpreg/fonts
+  - fitpreg/slick-slider
 
 regions:
   header: Header
