@@ -21,5 +21,6 @@ slick-slider:
   css:
     theme:
       libs/slick/slick.css: {}
+      libs/slick/slick-theme.css: {}
   js:
     libs/slick/slick.js: {}
