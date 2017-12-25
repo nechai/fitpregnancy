@@ -15,6 +15,7 @@
 sites/*/settings*.php
 sites/*/services*.yml
 sites/development.services.yml
+sites/default/drushrc.php
 
 
 # Ignore paths that contain user-generated content.
