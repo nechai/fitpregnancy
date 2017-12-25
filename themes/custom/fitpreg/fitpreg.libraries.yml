@@ -2,7 +2,7 @@ global-styling:
   version: 1.x
   css:
     theme:
-      stylesheets/fitpreg.style.css: {}
+      css/fitpreg.style.css: {}
   js:
     js/fitpreg.js: {}
     js/slide_start.js: {}
