@@ -1,5 +1,4 @@
 global-styling:
-  version: 1.x
   css:
     theme:
       css/fitpreg.style.css: {}
@@ -25,3 +24,8 @@ slick-slider:
       libs/slick/slick-theme.css: {}
   js:
     libs/slick/slick.js: {}
+
+animateCSS:
+  css:
+    theme:
+      libs/animateCSS/animate.min.css: {}

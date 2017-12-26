@@ -8,6 +8,7 @@ libraries:
   - fitpreg/global-styling
   - fitpreg/fonts
   - fitpreg/slick-slider
+  - fitpreg/animateCSS
 
 regions:
   header: Header
