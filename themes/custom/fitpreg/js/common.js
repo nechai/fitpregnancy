@@ -36,30 +36,21 @@
 
     Drupal.behaviors.leftMenuAnimateBehavior = {
         attach: function (context, settings) {
-            var animatedElement = $('#block-fitpreg-left-menu');
+
             $('.left-menu-hamburger').once('animateLeftMenu').click(function () {
-                if (animatedElement.css('display') === 'none') {
-                    animatedElement.css({display: 'block'});
-                }
-                animatedElement.animateCss('animated fadeInLeft', function () {
-                    $('.left-menu-hamburger').click(function () {
-                        animatedElement.animateCss('animated fadeOutLeft');
-                    })
-                })
-            });
-
-
-            // https://github.com/daneden/animate.css
-            $.fn.extend({
-                animateCss: function (animationName, callback) {
-                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                    this.addClass('animated ' + animationName).one(animationEnd, function () {
-                        $(this).removeClass('animated ' + animationName);
-                        if (callback) {
-                            callback();
-                        }
-                    });
-                    return this;
+                var animatedElement = $('#block-fitpreg-left-menu');
+                if (!animatedElement.is(':visible')) {
+                    animatedElement.addClass('animated fadeInLeft').show()
+                        .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+                            animatedElement.removeClass('animated fadeInLeft');
+                        })
+                } else {
+                    animatedElement.addClass('animated fadeOutLeft')
+                        .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+                            animatedElement
+                                .hide()
+                                .removeClass('animated fadeOutLeft');
+                        });
                 }
             });
         }
