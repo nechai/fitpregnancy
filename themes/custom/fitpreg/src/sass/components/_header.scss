@@ -182,10 +182,10 @@
     #block-fitpreg-left-menu {
       background-color: $color-black;
       display: none;
-      position: absolute;
+      //position: absolute;
       width: 250px;
       z-index: 1;
-      
+
       .left-menu-wrapper {
         .menu {
           margin: 0;

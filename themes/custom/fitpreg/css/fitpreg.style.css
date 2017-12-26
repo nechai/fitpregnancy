@@ -2478,7 +2478,6 @@
     .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu {
       background-color: #000;
       display: none;
-      position: absolute;
       width: 250px;
       z-index: 1; }
       .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper .menu {
