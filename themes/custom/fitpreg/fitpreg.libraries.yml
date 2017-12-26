@@ -4,6 +4,7 @@ global-styling:
     theme:
       css/fitpreg.style.css: {}
   js:
+    js/common.js: {}
     js/fitpreg.js: {}
     js/slide_start.js: {}
   dependencies:
