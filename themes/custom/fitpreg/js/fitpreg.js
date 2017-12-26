@@ -62,7 +62,7 @@ jQuery(document).ready(function($) {
   });
   
   //
-  $('.left-menu-hamburger').on('click', function(e) {
-    $('#block-fitpreg-left-menu').show();
-  });
+  // $('.left-menu-hamburger').on('click', function(e) {
+  //   $('#block-fitpreg-left-menu').show();
+  // });
 });
