@@ -1,10 +1,10 @@
 (function ($, Drupal, drupalSettings) {
-    Drupal.behaviors.commonBehavior = {
-        attach: function () {
+    Drupal.behaviors.weekMenuAjaxBehavior = {
+        attach: function (context, settings) {
             var menu = document.getElementsByClassName("menu--weekly-menu");
             var li = $(menu).children('ul').children();
             $.each(li, function () {
-                $(this, '.menu--weekly-menu div.views-row').mouseenter(function () {
+                $(this, '.menu--weekly-menu div.views-row').once('weekMenuAjax').mouseenter(function () {
                     var aaa = this;
                     timer = setTimeout(function () {
                         var ourRequest = new XMLHttpRequest();
@@ -15,13 +15,13 @@
                             if (data !== undefined) {
                                 // $("<div class='ajax-block'></div>").before(aaa.closest('ul'));
                                 aaa.closest('ul').insertAdjacentHTML('beforeend', data);
-
-                                $('.ajax-block').css({
-                                    'position': 'absolute',
-                                    'top': '0',
-                                    'left': '0',
-                                    'background': 'green'
-                                });
+                                //
+                                // $('.ajax-block').css({
+                                //     'position': 'absolute',
+                                //     'top': '0',
+                                //     'left': '0',
+                                //     'background': 'green'
+                                // });
                             }
                         };
                         ourRequest.send();
