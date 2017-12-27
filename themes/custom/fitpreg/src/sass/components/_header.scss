@@ -180,15 +180,29 @@
     
     // Left menu in header
     #block-fitpreg-left-menu {
-      background-color: $color-black;
       display: none;
-      //position: absolute;
+      position: absolute;
+      top: 0;
+      background-color: $color-black;
       width: 250px;
       z-index: 1;
+      animation-duration: 1s;
+      //animation-delay: 2s;
+      animation-iteration-count: 1;
 
       .left-menu-wrapper {
         .menu {
           margin: 0;
+          a {
+            display: block;
+            color: #fff;
+            text-transform: lowercase;
+            font-size: 15px;
+            line-height: 50px;
+            padding: 0 1rem;
+            text-decoration: none;
+            cursor: pointer;
+          }
         }
       }
     } /* end of header left menu */
@@ -265,6 +279,4 @@
       }
     } /* end of search field block*/
   }
-  
-  
 }/* end of Header */
