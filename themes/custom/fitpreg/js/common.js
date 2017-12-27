@@ -15,13 +15,6 @@
                             if (data !== undefined) {
                                 // $("<div class='ajax-block'></div>").before(aaa.closest('ul'));
                                 aaa.closest('ul').insertAdjacentHTML('beforeend', data);
-                                //
-                                // $('.ajax-block').css({
-                                //     'position': 'absolute',
-                                //     'top': '0',
-                                //     'left': '0',
-                                //     'background': 'green'
-                                // });
                             }
                         };
                         ourRequest.send();
@@ -40,16 +33,16 @@
             $('.left-menu-hamburger').once('animateLeftMenu').click(function () {
                 var animatedElement = $('#block-fitpreg-left-menu');
                 if (!animatedElement.is(':visible')) {
-                    animatedElement.addClass('animated fadeInLeft').show()
+                    animatedElement.addClass('animated slideInLeft').show()
                         .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
-                            animatedElement.removeClass('animated fadeInLeft');
+                            animatedElement.removeClass('animated slideInLeft');
                         })
                 } else {
-                    animatedElement.addClass('animated fadeOutLeft')
+                    animatedElement.addClass('animated slideOutLeft')
                         .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
                             animatedElement
                                 .hide()
-                                .removeClass('animated fadeOutLeft');
+                                .removeClass('animated slideOutLeft');
                         });
                 }
             });
