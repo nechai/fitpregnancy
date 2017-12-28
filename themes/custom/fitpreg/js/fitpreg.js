@@ -12,21 +12,19 @@ jQuery(document).ready(function($) {
     
   // insert hamburger block in left menu of the header
   $(
-    '<div class="left-menu-hamburger">\n\
-      <a href="#" class="btn">\n\
-        <span class="line"></span>\n\
-        <span class="line"></span>\n\
-        <span class="line"></span>\n\
-      </a>\n\
-    </div>'
-  ).insertBefore('#block-fitpreg-left-menu');
-  
-  //grouping blocks in left menu
-  $('#block-fitpreg-left-menu .menu, #block-fitpreg-left-menu .social-links-in-menu').wrapAll(
-     '<div class="left-menu-wrapper"></div>'
-  );
-  
-  // insert block with search icon in search form of the header
+    '<div class="left-menu-sandwich">\n\
+      <div class="sandwich">\n\
+        <span class="sw-topper"></span>\n\
+        <span class="sw-bottom"></span>\n\
+        <span class="sw-footer"></span>\n\
+      </div>\n\
+      </div>'
+  ).insertAfter('#block-fitpreg-left-menu');
+
+  // Make group for animating left-menu
+    $('.left-menu-sandwich, #block-fitpreg-left-menu').wrapAll('<div class="animated-group"></div>');
+
+    // insert block with search icon in search form of the header
   $(
     '<div class="icon-wrapper">\
       <div class="search-icon">\n\
