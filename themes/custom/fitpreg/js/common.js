@@ -30,21 +30,24 @@
     Drupal.behaviors.leftMenuAnimateBehavior = {
         attach: function (context, settings) {
 
-            $('.left-menu-hamburger').once('animateLeftMenu').click(function () {
-                var animatedElement = $('#block-fitpreg-left-menu');
+            $('.left-menu-sandwich').once('animateLeftMenu').click(function () {
+                var animatedElement = $('.animated-group');
                 if (!animatedElement.is(':visible')) {
+                // if (!$('#block-fitpreg-left-menu').is(':visible')) {
                     animatedElement.addClass('animated slideInLeft').show()
                         .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
                             animatedElement.removeClass('animated slideInLeft');
-                        })
+                        });
                 } else {
                     animatedElement.addClass('animated slideOutLeft')
                         .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
                             animatedElement
-                                .hide()
+                                // .hide()
                                 .removeClass('animated slideOutLeft');
+
                         });
                 }
+                $('.left-menu-sandwich').show();
             });
         }
     };
