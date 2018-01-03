@@ -178,6 +178,7 @@
       @include square(48px, 60px);
 
       .sandwich {
+        position: relative;
         display: block;
         height: auto;
         padding: 3px 0 12px;
@@ -188,6 +189,41 @@
           border-bottom: 1px solid $color-black;
           display: block;
           margin: 0 auto;
+          transition: transform 300ms ease-in-out;
+        }
+        &.sandwich-active {
+          @include square(44px, 60px);
+          background-color: #000;
+          z-index: 1;
+          span {
+            position: absolute;
+            height: 1px;
+            width: 30px;
+            background-color: #fff;
+            border: none;
+            transition: transform 500ms ease-in-out;
+            &.sw-topper {
+              top: 26px;
+              left: 15px;
+              -webkit-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+            }
+            &.sw-bottom {
+              top: 26px;
+              left: 15px;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+            &.sw-footer {
+              opacity: 0;
+              top: 0;
+              -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+            }
+          }
         }
       }
     }
@@ -247,7 +283,7 @@
     /* end of header left menu */
 
     // This class made to animate #block-fitpreg-left-menu
-    .active {
+    .menu-active {
       width: 250px !important;
       transition: width 300ms ease-in-out;
     }

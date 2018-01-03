@@ -71,11 +71,13 @@
                             overflow: 'auto',
                             height: 'auto'
                         });
-                        $hiddenMenu.toggleClass('active');
+                        $hiddenMenu.toggleClass('menu-active');
+                        $('.sandwich').toggleClass('sandwich-active');
                     });
                 }
                 // Remove $backgroundDIV and toggle 'active' class after click on $backgroundDIV or $(this)
-                $hiddenMenu.toggleClass('active')
+                $hiddenMenu.toggleClass('menu-active');
+                $('.sandwich').toggleClass('sandwich-active');
             });
         }
     };

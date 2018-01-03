@@ -2474,6 +2474,7 @@
       height: 48px;
       width: 60px; }
       .region-header .secondline-blocks-wrapper .left-menu-sandwich .sandwich {
+        position: relative;
         display: block;
         height: auto;
         padding: 3px 0 12px;
@@ -2483,7 +2484,46 @@
           width: 35px;
           border-bottom: 1px solid #000;
           display: block;
-          margin: 0 auto; }
+          margin: 0 auto;
+          -webkit-transition: -webkit-transform 300ms ease-in-out;
+          transition: -webkit-transform 300ms ease-in-out;
+          -o-transition: transform 300ms ease-in-out;
+          transition: transform 300ms ease-in-out;
+          transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out; }
+        .region-header .secondline-blocks-wrapper .left-menu-sandwich .sandwich.sandwich-active {
+          height: 44px;
+          width: 60px;
+          background-color: #000;
+          z-index: 1; }
+          .region-header .secondline-blocks-wrapper .left-menu-sandwich .sandwich.sandwich-active span {
+            position: absolute;
+            height: 1px;
+            width: 30px;
+            background-color: #fff;
+            border: none;
+            -webkit-transition: -webkit-transform 500ms ease-in-out;
+            transition: -webkit-transform 500ms ease-in-out;
+            -o-transition: transform 500ms ease-in-out;
+            transition: transform 500ms ease-in-out;
+            transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out; }
+            .region-header .secondline-blocks-wrapper .left-menu-sandwich .sandwich.sandwich-active span.sw-topper {
+              top: 26px;
+              left: 15px;
+              -webkit-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+            .region-header .secondline-blocks-wrapper .left-menu-sandwich .sandwich.sandwich-active span.sw-bottom {
+              top: 26px;
+              left: 15px;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+            .region-header .secondline-blocks-wrapper .left-menu-sandwich .sandwich.sandwich-active span.sw-footer {
+              opacity: 0;
+              top: 0;
+              -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
     .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu {
       display: block;
       background-color: #000;
@@ -2526,7 +2566,7 @@
           padding: 0 1rem;
           text-decoration: none;
           cursor: pointer; }
-    .region-header .secondline-blocks-wrapper .active {
+    .region-header .secondline-blocks-wrapper .menu-active {
       width: 250px !important;
       -webkit-transition: width 300ms ease-in-out;
       -o-transition: width 300ms ease-in-out;
