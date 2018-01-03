@@ -2493,9 +2493,31 @@
       -webkit-transition: width 200ms ease-in-out;
       -o-transition: width 200ms ease-in-out;
       transition: width 200ms ease-in-out; }
-      .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper .menu {
+      .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper > .menu {
         margin: 0; }
-        .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper .menu a {
+        .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper > .menu > .menu-item:nth-child(1),
+        .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper > .menu > .menu-item:nth-child(2) {
+          float: left;
+          width: 50%; }
+          .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper > .menu > .menu-item:nth-child(1) a,
+          .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper > .menu > .menu-item:nth-child(2) a {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 50px;
+            text-align: center;
+            padding: 0 1rem; }
+        .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper > .menu > .menu-item:nth-child(1) a {
+          position: relative; }
+          .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper > .menu > .menu-item:nth-child(1) a::after {
+            content: '';
+            position: absolute;
+            top: 15%;
+            right: -1px;
+            height: 70%;
+            width: 1px;
+            background: #3e3e3e; }
+        .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper > .menu a {
           display: block;
           color: #fff;
           text-transform: lowercase;
@@ -2505,7 +2527,7 @@
           text-decoration: none;
           cursor: pointer; }
     .region-header .secondline-blocks-wrapper .active {
-      width: 300px !important;
+      width: 250px !important;
       -webkit-transition: width 300ms ease-in-out;
       -o-transition: width 300ms ease-in-out;
       transition: width 300ms ease-in-out; }

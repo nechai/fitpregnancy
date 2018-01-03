@@ -1,9 +1,9 @@
 /* Header */
 .region-header {
-/*  border: 1px solid red;*/
+  /*  border: 1px solid red;*/
   margin: 0 auto;
   max-width: 1170px;
-  
+
   // First header line
   .firstline-blocks-wrapper {
     align-items: center;
@@ -11,12 +11,14 @@
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    
+
     // Social menu
     #block-fitpreg-social-menu {
 
-      .field--name-body{
-        p { margin: 0; }
+      .field--name-body {
+        p {
+          margin: 0;
+        }
 
         a {
           @include square(40px, 40px);
@@ -35,7 +37,9 @@
             color: $icon-col-pink;
           }
 
-          img { display: none; }
+          img {
+            display: none;
+          }
 
           &:nth-child(2) {
             margin: 0 20px;
@@ -58,7 +62,8 @@
         }
 
       }
-    } /* end of Social menu */
+    }
+    /* end of Social menu */
 
     // Block for logo
     #block-fitpreg-logo {
@@ -91,7 +96,7 @@
       }
     }
   }
-  
+
   // Second header line
   .secondline-blocks-wrapper {
     align-items: center;
@@ -99,7 +104,7 @@
     justify-content: space-between;
     padding-right: 15px;
     position: relative;
-    
+
     // Main menu
     #block-fitpreg-main-menu {
       margin: 20px auto;
@@ -120,7 +125,9 @@
             padding: 0;
             position: relative;
 
-            .menu { display: none; }
+            .menu {
+              display: none;
+            }
 
             @include hover {
               .menu {
@@ -156,9 +163,11 @@
           @include fa('\f107');
         }
       }
-    } /* end of Main menu */
+    }
+    /* end of Main menu */
 
-    .animated-group {
+    // Left menu in header
+    .animated-group { // Wrapper for left-menu
       display: flex;
       position: absolute;
       top: 0;
@@ -183,7 +192,6 @@
       }
     }
 
-    // Left menu in header
     #block-fitpreg-left-menu {
       display: block;
       background-color: $color-black;
@@ -193,8 +201,36 @@
       transition: width 200ms ease-in-out;
 
       .left-menu-wrapper {
-        .menu {
+        & > .menu {
           margin: 0;
+          & > .menu-item:nth-child(1),
+          & > .menu-item:nth-child(2) {
+            float: left;
+            width: 50%;
+            a {
+              font-size: 13px;
+              font-weight: 700;
+              text-transform: uppercase;
+              line-height: 50px;
+              text-align: center;
+              padding: 0 1rem;
+            }
+          }
+          & > .menu-item:nth-child(1) {
+            a {
+              position: relative;
+              &::after {
+                content: '';
+                position: absolute;
+                top: 15%;
+                right: -1px;
+                height: 70%;
+                width: 1px;
+                background: #3e3e3e;
+              }
+            }
+          }
+
           a {
             display: block;
             color: #fff;
@@ -207,11 +243,12 @@
           }
         }
       }
-    } /* end of header left menu */
+    }
+    /* end of header left menu */
 
     // This class made to animate #block-fitpreg-left-menu
     .active {
-      width: 300px !important;
+      width: 250px !important;
       transition: width 300ms ease-in-out;
     }
 
@@ -220,18 +257,17 @@
       .search-icon, .close-search {
         cursor: pointer;
         font-size: 25px;
-        
+
         &.close {
           display: none;
         }
       }
     }
-    
-    
+
     // Search field block
     #block-fitpreg-searchform {
       display: none;
-      
+
       &.open {
         background-color: $color-white;
         display: block;
@@ -239,7 +275,7 @@
         width: 86%;
         z-index: 1;
       }
-      
+
       #search-block-form {
         position: relative;
         margin: 0 auto;
@@ -285,6 +321,9 @@
           }
         }
       }
-    } /* end of search field block*/
+    }
+    /* end of search field block*/
   }
-}/* end of Header */
+}
+
+/* end of Header */
