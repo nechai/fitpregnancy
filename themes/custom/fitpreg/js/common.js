@@ -1,4 +1,21 @@
 (function ($, Drupal, drupalSettings) {
+
+    Drupal.behaviors.mainPageSettingsBehavior = {
+        attach: function (context, settings) {
+            $('body').once('setWindowWidth').each(function () {
+                $(this).css({
+                    "width": window.innerWidth, //full window width
+                    "overflow-x": 'hidden'
+                })
+            });
+            // $('body').once('setChangeWindowWidth').on('change', function () {
+            //     $(this).css({
+            //         "width": $(window).width(),
+            //         "overflow-x": 'hidden'
+            //     })
+            // })
+        }
+    };
     Drupal.behaviors.weekMenuAjaxBehavior = {
         attach: function (context, settings) {
             var menu = document.getElementsByClassName("menu--weekly-menu");
@@ -32,8 +49,8 @@
             $('.left-menu-sandwich').once('animateLeftMenu').click(function () {
                 var $animatedElement = $('.animated-group');
                 var $hiddenMenu = $('#block-fitpreg-left-menu');
-                // Background
-                var $backgroundDiv = $('.left-menu-background');
+                var $backgroundDiv = $('.left-menu-background'); // Background
+
                 //check if background exist
                 if ($backgroundDiv.length) {
                     // Remove background
@@ -44,6 +61,11 @@
                         height: 'auto'
                     });
                 } else {
+                    // Prevent scrolling
+                    $('html, body').css({
+                        overflow: 'hidden',
+                        height: '100%'
+                    });
                     // Create and add background for $hiddenMenu
                     var $backgroundDiv = $('<div class="left-menu-background"></div>');
                     $('.layout-container').prepend($backgroundDiv);
@@ -52,16 +74,12 @@
                         position: 'absolute',
                         top: backgroundTopPosition,
                         left: 0,
-                        width: $(window).width(),
+                        width: window.innerWidth, //full window width
                         height: $(window).height() - backgroundTopPosition,
                         backgroundColor: 'rgba(62,62,62,.5)',
                         zIndex: 1
                     }); // End processing background for $hiddenMenu
-                    // Prevent scrolling
-                    $('html, body').css({
-                        overflow: 'hidden',
-                        height: '100%'
-                    });
+
                     //TODO: Below code block repeat this "if" block. Find way for avoid DRY.
                     $backgroundDiv.click(function () {
                         // Remove background

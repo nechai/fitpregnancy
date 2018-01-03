@@ -1,3 +1,5 @@
+$transition-time: 200ms;
+
 /* Header */
 .region-header {
   /*  border: 1px solid red;*/
@@ -174,6 +176,77 @@
       left: 0;
     }
 
+    #block-fitpreg-left-menu {
+      display: block;
+      background-color: $color-black;
+      z-index: 1;
+      width: 0; // Make width=0 for animation
+      overflow: hidden;
+      transition: width $transition-time ease-in-out;
+
+      .left-menu-wrapper {
+        height: 445px;
+        overflow: hidden;
+        .menu-item {
+          padding: 0;
+        }
+        & > .menu {
+          margin: 0;
+          & > .menu-item:nth-child(1),
+          & > .menu-item:nth-child(2) {
+            float: left;
+            width: 50%;
+            a {
+              font-size: 13px;
+              font-weight: 700;
+              text-transform: uppercase;
+              line-height: 50px;
+              text-align: center;
+              padding: 0 1rem;
+            }
+          }
+          & > .menu-item:nth-child(1) {
+            a {
+              position: relative;
+              &::after {
+                content: '';
+                position: absolute;
+                top: 15%;
+                right: -1px;
+                height: 70%;
+                width: 1px;
+                background: #3e3e3e;
+              }
+            }
+          }
+          .menu-item--expanded {
+            ul.menu {
+              display: none;
+            }
+            a::after {
+              font-family: 'Flaticon';
+              content: '\f100';
+              float: right;
+              display: inline-block;
+              font-size: 14px;
+              //top: 18px;
+              //right: -5px;
+            }
+          }
+          a {
+            display: block;
+            color: #fff;
+            text-transform: lowercase;
+            font-size: 15px;
+            line-height: 50px;
+            padding: 0 1rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all $transition-time;
+          }
+        }
+      }
+    }
     .left-menu-sandwich {
       @include square(48px, 60px);
 
@@ -226,61 +299,7 @@
           }
         }
       }
-    }
-
-    #block-fitpreg-left-menu {
-      display: block;
-      background-color: $color-black;
-      z-index: 1;
-      width: 0; // Make width=0 for animation
-      overflow: hidden;
-      transition: width 200ms ease-in-out;
-
-      .left-menu-wrapper {
-        & > .menu {
-          margin: 0;
-          & > .menu-item:nth-child(1),
-          & > .menu-item:nth-child(2) {
-            float: left;
-            width: 50%;
-            a {
-              font-size: 13px;
-              font-weight: 700;
-              text-transform: uppercase;
-              line-height: 50px;
-              text-align: center;
-              padding: 0 1rem;
-            }
-          }
-          & > .menu-item:nth-child(1) {
-            a {
-              position: relative;
-              &::after {
-                content: '';
-                position: absolute;
-                top: 15%;
-                right: -1px;
-                height: 70%;
-                width: 1px;
-                background: #3e3e3e;
-              }
-            }
-          }
-
-          a {
-            display: block;
-            color: #fff;
-            text-transform: lowercase;
-            font-size: 15px;
-            line-height: 50px;
-            padding: 0 1rem;
-            text-decoration: none;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-    /* end of header left menu */
+    } /* end of header left menu */
 
     // This class made to animate #block-fitpreg-left-menu
     .menu-active {
