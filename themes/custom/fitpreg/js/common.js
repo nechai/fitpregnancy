@@ -29,25 +29,53 @@
 
     Drupal.behaviors.leftMenuAnimateBehavior = {
         attach: function (context, settings) {
-
             $('.left-menu-sandwich').once('animateLeftMenu').click(function () {
-                var animatedElement = $('.animated-group');
-                if (!animatedElement.is(':visible')) {
-                // if (!$('#block-fitpreg-left-menu').is(':visible')) {
-                    animatedElement.addClass('animated slideInLeft').show()
-                        .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
-                            animatedElement.removeClass('animated slideInLeft');
-                        });
+                var $animatedElement = $('.animated-group');
+                var $hiddenMenu = $('#block-fitpreg-left-menu');
+                // Background
+                var $backgroundDiv = $('.left-menu-background');
+                //check if background exist
+                if ($backgroundDiv.length) {
+                    // Remove background
+                    $backgroundDiv.remove();
+                    // Turn on scrolling
+                    $('html, body').css({
+                        overflow: 'auto',
+                        height: 'auto'
+                    });
                 } else {
-                    animatedElement.addClass('animated slideOutLeft')
-                        .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
-                            animatedElement
-                                // .hide()
-                                .removeClass('animated slideOutLeft');
-
+                    // Create and add background for $hiddenMenu
+                    var $backgroundDiv = $('<div class="left-menu-background"></div>');
+                    $('.layout-container').prepend($backgroundDiv);
+                    var backgroundTopPosition = $('.firstline-blocks-wrapper').outerHeight() - 1; // -1 meaning subtract one unnecessary pixel
+                    $backgroundDiv.css({
+                        position: 'absolute',
+                        top: backgroundTopPosition,
+                        left: 0,
+                        width: $(window).width(),
+                        height: $(window).height() - backgroundTopPosition,
+                        backgroundColor: 'rgba(62,62,62,.5)',
+                        zIndex: 1
+                    }); // End processing background for $hiddenMenu
+                    // Prevent scrolling
+                    $('html, body').css({
+                        overflow: 'hidden',
+                        height: '100%'
+                    });
+                    //TODO: Below code block repeat this "if" block. Find way for avoid DRY.
+                    $backgroundDiv.click(function () {
+                        // Remove background
+                        $backgroundDiv.remove();
+                        // Turn on scrolling
+                        $('html, body').css({
+                            overflow: 'auto',
+                            height: 'auto'
                         });
+                        $hiddenMenu.toggleClass('active');
+                    });
                 }
-                $('.left-menu-sandwich').show();
+                // Remove $backgroundDIV and toggle 'active' class after click on $backgroundDIV or $(this)
+                $hiddenMenu.toggleClass('active')
             });
         }
     };

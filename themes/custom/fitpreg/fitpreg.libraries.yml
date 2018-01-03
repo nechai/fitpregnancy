@@ -3,13 +3,15 @@ global-styling:
     theme:
       css/fitpreg.style.css: {}
   js:
-    js/common.js: {}
     js/fitpreg.js: {}
     js/slide_start.js: {}
+    js/common.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
     - core/drupal
+    - core/drupalSettings
+    - core/drupal.ajax
   template: template.html.twig
 
 fonts:
