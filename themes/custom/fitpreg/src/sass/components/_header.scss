@@ -175,8 +175,31 @@ $transition-time: 200ms;
       top: 0;
       left: 0;
     }
+    #back-btn {
+      display: none;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 50px;
+      padding: 0 1rem;
+      cursor: pointer;
+      animation-duration: 300ms;
+      //animation-delay: 2s;
+      animation-iteration-count: 1;
+      &::before {
+        content: '';
+        background-image: url(../images/icons/back.png);
+        background-position: 1px;
+        background-repeat: no-repeat;
+        padding-right: 19px;
+        margin-right: 2em;
+        background-size: 34px;
+      }
+    }
 
     #block-fitpreg-left-menu {
+      position: relative;
       display: block;
       background-color: $color-black;
       z-index: 1;
@@ -184,9 +207,17 @@ $transition-time: 200ms;
       overflow: hidden;
       transition: width $transition-time ease-in-out;
 
+
       .left-menu-wrapper {
-        height: 445px;
+        height: 100%; // Change by common.js
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
         overflow: hidden;
+        animation-duration: 300ms;
+        //animation-delay: 2s;
+        animation-iteration-count: 1;
         .menu-item {
           padding: 0;
         }
@@ -219,9 +250,13 @@ $transition-time: 200ms;
               }
             }
           }
-          .menu-item--expanded {
-            ul.menu {
-              display: none;
+          & > .menu-item--expanded {
+            & > ul.menu {
+              //display: none;
+              position: absolute;
+              top: 50px;
+              left: 0;
+              visibility: hidden;
             }
             a::after {
               font-family: 'Flaticon';
@@ -382,3 +417,10 @@ $transition-time: 200ms;
 }
 
 /* end of Header */
+
+.copy {
+  display: none;
+  animation-duration: 300ms !important;
+  //animation-delay: 0ms;
+  animation-iteration-count: 1;
+}

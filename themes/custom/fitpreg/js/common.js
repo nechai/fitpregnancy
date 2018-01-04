@@ -1,6 +1,6 @@
 (function ($, Drupal, drupalSettings) {
 
-    Drupal.behaviors.mainPageSettingsBehavior = {
+    Drupal.behaviors.mainBehavior = {
         attach: function (context, settings) {
             $('body').once('setWindowWidth').each(function () {
                 $(this).css({
@@ -46,11 +46,52 @@
 
     Drupal.behaviors.leftMenuAnimateBehavior = {
         attach: function (context, settings) {
+            // Remove href attribute of blind links
+            $('#block-fitpreg-left-menu').once('removeHref').each(function () {
+                var $that = $(this);
+                $that.find('.menu-item--expanded a').each(function () {
+                    if ($(this).attr('href') === '/') {
+                        $(this).removeAttr('href');
+                    }
+                })
+            });
+
+            /** Internal menu animation between links **/
+            //  1. Create back button
+
+            //  2. Initiate click on parent link:
+            //      - initiate click
+            //      - hide main menu
+            //      - show child links
+            $('#block-fitpreg-left-menu .left-menu-wrapper > .menu > .menu-item--expanded').once('betweenLinksBehavior').click(function () {
+                var $backBtn = $('<div id="back-btn">back</div>'); // Style for this block is written in _header.scss
+                var $fadingMenu = $(this).find('.menu').first().clone().addClass('copy');
+                $('.left-menu-wrapper').toggleAnimation('slideInLeft', 'slideOutLeft');
+                $('#block-fitpreg-left-menu').prepend($fadingMenu);
+                $('#block-fitpreg-left-menu').prepend($backBtn);
+                $menuItemCopy = $('.copy');
+                $backBtnSelector = $('#back-btn');
+                $menuItemCopy.toggleAnimation('slideInRight', 'slideOutRight');
+                $backBtnSelector.toggleAnimation('slideInRight', 'slideOutRight');
+                 //  3. Initiate click on back button and make:
+                 //      - hide child links
+                 //      - show main menu
+                $('#back-btn, .left-menu-background').once('backBtnBehavior').click(function () {
+                    $backBtnSelector.toggleAnimation('slideInRight', 'slideOutRight', function () {
+                        $backBtnSelector.remove();
+                    });
+                    $menuItemCopy.toggleAnimation('slideInRight', 'slideOutRight', function () {
+                        $menuItemCopy.remove();
+                    });
+                    $('.left-menu-wrapper').toggleAnimation('slideInLeft', 'slideOutLeft');
+                });
+            });
+
+            // Left menu animation
             $('.left-menu-sandwich').once('animateLeftMenu').click(function () {
                 var $animatedElement = $('.animated-group');
-                var $hiddenMenu = $('#block-fitpreg-left-menu');
+                var $hiddenMenu = $('#block-fitpreg-left-menu').css({height: $('.layout-content').height()});
                 var $backgroundDiv = $('.left-menu-background'); // Background
-
                 //check if background exist
                 if ($backgroundDiv.length) {
                     // Remove background
@@ -96,6 +137,56 @@
                 // Remove $backgroundDIV and toggle 'active' class after click on $backgroundDIV or $(this)
                 $hiddenMenu.toggleClass('menu-active');
                 $('.sandwich').toggleClass('sandwich-active');
+            });
+
+            // Declaring functions
+            $.fn.extend({
+                animateCss: function (animationName, callback) {
+                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                    this.addClass('animated ' + animationName).one(animationEnd, function() {
+                        $(this).removeClass('animated ' + animationName);
+                        if (callback) {
+                            callback();
+                        }
+                    });
+                    return this;
+                }
+            });
+
+            $.fn.extend({
+                toggleAnimation: function (show, hide, callback) {
+                    var animatedElement = $(this);
+                    if (!animatedElement.is(':visible')) {
+                        animatedElement.addClass('animated ' + show).show()
+                            .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+                                animatedElement.removeClass('animated ' + show);
+                                if (callback) {
+                                    callback();
+                                }
+                            })
+                    } else {
+                        animatedElement.addClass('animated ' + hide)
+                            .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+                                animatedElement
+                                    .hide()
+                                    .removeClass('animated ' + hide);
+                                if (callback) {
+                                    callback();
+                                }
+                            });
+                    }
+                    return animatedElement;
+                }
+            });
+
+            $.fn.extend({
+                preventClicking: function (that) {
+                    $('#back-btn, .left-menu-background, #block-fitpreg-left-menu').each(function () {
+                        $(this).on('click', function () {
+                            if (that.is(':animated')){return false}
+                        })
+                    })
+                }
             });
         }
     };
