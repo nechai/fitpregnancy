@@ -175,6 +175,7 @@ $transition-time: 200ms;
       top: 0;
       left: 0;
     }
+
     #back-btn {
       display: none;
       color: #fff;
@@ -203,7 +204,7 @@ $transition-time: 200ms;
       display: block;
       background-color: $color-black;
       z-index: 1;
-      width: 0; // Make width=0 for animation
+      width: 0; // Made width=0 for animation
       overflow: hidden;
       transition: width $transition-time ease-in-out;
 
@@ -217,6 +218,7 @@ $transition-time: 200ms;
         animation-duration: 200ms;
         //animation-delay: 2s;
         animation-iteration-count: 1;
+
         .menu-item {
           padding: 0;
         }
@@ -286,15 +288,12 @@ $transition-time: 200ms;
             background-color: rgba(46, 46, 46, 0.84);
             border-radius: 50%;
             margin-left: 12px;
-            &:hover {
+            @include hover {
               background-color: #3e3e3e;
             }
             img {
               height: 15px;
               width: auto;
-              /* border-radius: 50%; */
-              //background-color: #3e3e3e;
-              /* padding: 15px; */
               margin: 13px 15px 10px;
             }
           }
@@ -309,8 +308,6 @@ $transition-time: 200ms;
             float: right;
             display: inline-block;
             font-size: 14px;
-            //top: 18px;
-            //right: -5px;
           }
           .menu {
             margin-left: 2em;
@@ -329,6 +326,13 @@ $transition-time: 200ms;
         }
       }
     }
+
+    // This class made to animate #block-fitpreg-left-menu
+    .menu-active {
+      width: 250px !important;
+      transition: width 300ms ease-in-out;
+    }
+
     .left-menu-sandwich {
       @include square(48px, 60px);
 
@@ -383,12 +387,6 @@ $transition-time: 200ms;
       }
     }
     /* end of header left menu */
-
-    // This class made to animate #block-fitpreg-left-menu
-    .menu-active {
-      width: 250px !important;
-      transition: width 300ms ease-in-out;
-    }
 
     // block with awesome icons
     .icon-wrapper {

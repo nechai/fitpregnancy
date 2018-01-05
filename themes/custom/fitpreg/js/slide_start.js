@@ -9,6 +9,13 @@
                     slidesToShow: 5,
                     slidesToScroll: 5
                 });
+                $('#block-weeklymenu .menu').slick({
+                    dots: false,
+                    infinite: false,
+                    speed: 800,
+                    slidesToShow: 23,
+                    slidesToScroll: 20
+                });
             });
         }
     };
