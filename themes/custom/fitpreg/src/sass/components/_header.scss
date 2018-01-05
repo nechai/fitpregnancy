@@ -184,7 +184,7 @@ $transition-time: 200ms;
       line-height: 50px;
       padding: 0 1rem;
       cursor: pointer;
-      animation-duration: 300ms;
+      animation-duration: 200ms;
       //animation-delay: 2s;
       animation-iteration-count: 1;
       &::before {
@@ -207,7 +207,6 @@ $transition-time: 200ms;
       overflow: hidden;
       transition: width $transition-time ease-in-out;
 
-
       .left-menu-wrapper {
         height: 100%; // Change by common.js
         width: 100%;
@@ -215,7 +214,7 @@ $transition-time: 200ms;
         top: 0;
         left: 0;
         overflow: hidden;
-        animation-duration: 300ms;
+        animation-duration: 200ms;
         //animation-delay: 2s;
         animation-iteration-count: 1;
         .menu-item {
@@ -269,6 +268,54 @@ $transition-time: 200ms;
             }
           }
           a {
+            display: block;
+            color: #fff;
+            text-transform: lowercase;
+            font-size: 15px;
+            line-height: 50px;
+            padding: 0 1rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all $transition-time;
+          }
+        }
+        .social-links-in-menu {
+          display: flex;
+          margin-top: 20px;
+          .soc-li {
+            background-color: rgba(46, 46, 46, 0.84);
+            border-radius: 50%;
+            margin-left: 12px;
+            &:hover {
+              background-color: #3e3e3e;
+            }
+            img {
+              height: 15px;
+              width: auto;
+              /* border-radius: 50%; */
+              //background-color: #3e3e3e;
+              /* padding: 15px; */
+              margin: 13px 15px 10px;
+            }
+          }
+        }
+      }
+      .menu.copy {
+        margin-left: 0;
+        & > .menu-item--expanded {
+          > a::after {
+            font-family: 'Flaticon';
+            content: '\f100';
+            float: right;
+            display: inline-block;
+            font-size: 14px;
+            //top: 18px;
+            //right: -5px;
+          }
+          .menu {
+            margin-left: 2em;
+          }
+          a { // .menu.copy is a class with copy of menu items which making with jQuery
             display: block;
             color: #fff;
             text-transform: lowercase;
@@ -334,7 +381,8 @@ $transition-time: 200ms;
           }
         }
       }
-    } /* end of header left menu */
+    }
+    /* end of header left menu */
 
     // This class made to animate #block-fitpreg-left-menu
     .menu-active {
@@ -420,7 +468,7 @@ $transition-time: 200ms;
 
 .copy {
   display: none;
-  animation-duration: 300ms !important;
+  animation-duration: 200ms !important;
   //animation-delay: 0ms;
   animation-iteration-count: 1;
 }
