@@ -23,12 +23,12 @@
             $.each(li, function () {
                 $(this, '.menu--weekly-menu div.views-row').once('weekMenuAjax').mouseenter(function () {
                     var aaa = this;
-                    timer = setTimeout(function () {
+                    var timer = setTimeout(function () {
                         var ourRequest = new XMLHttpRequest();
                         ourRequest.open("GET", "/ajax/" + aaa.getElementsByTagName('a')[0].innerHTML);
                         ourRequest.onload = function () {
                             var ourData = jQuery.parseHTML(ourRequest.responseText);
-                            var data = $("<div>").append(ourData).find('.view-content').html();
+                            var data = $("<div class='menu-item-ajax'>").append(ourData).find('.view-content').html();
                             if (data !== undefined) {
                                 // $("<div class='ajax-block'></div>").before(aaa.closest('ul'));
                                 aaa.closest('ul').insertAdjacentHTML('beforeend', data);
