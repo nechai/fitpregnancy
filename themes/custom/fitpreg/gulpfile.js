@@ -25,7 +25,7 @@ gulp.task('sass', function () {
         .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
         .pipe(autoprefixer('last 4 version'))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./stylesheets'));
+        .pipe(gulp.dest('./css'));
 });
 
 function isFixed(file) {

@@ -2,7 +2,6 @@
 @import "partials/mixins/mixins";
 @import "partials/mixins/brakepoints";
 @import "fontawesome/font-awesome.scss";
-
 // Components
 @import "components/header";
 @import "components/footer";
@@ -10,14 +9,16 @@
 @import "components/slick-slider";
 @import "components/maincont";
 
-
 body {
   color: $color-black;
   font-family: 'Montserrat';
-  
-  .region-header, .region-footer,
-  .layout-content {
-    margin: 0 auto;
-    max-width: 1170px;
-  }
+  .layout-container {
+    position: relative;
+    .region-header, .region-footer,
+    .layout-content {
+
+      margin: 0 auto;
+      max-width: 1170px;
+    }
+  } 
 }

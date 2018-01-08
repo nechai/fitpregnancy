@@ -1,9 +1,11 @@
+$transition-time: 200ms;
+
 /* Header */
 .region-header {
-/*  border: 1px solid red;*/
+  /*  border: 1px solid red;*/
   margin: 0 auto;
   max-width: 1170px;
-  
+
   // First header line
   .firstline-blocks-wrapper {
     align-items: center;
@@ -11,12 +13,14 @@
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    
+
     // Social menu
     #block-fitpreg-social-menu {
 
-      .field--name-body{
-        p { margin: 0; }
+      .field--name-body {
+        p {
+          margin: 0;
+        }
 
         a {
           @include square(40px, 40px);
@@ -35,7 +39,9 @@
             color: $icon-col-pink;
           }
 
-          img { display: none; }
+          img {
+            display: none;
+          }
 
           &:nth-child(2) {
             margin: 0 20px;
@@ -58,7 +64,8 @@
         }
 
       }
-    } /* end of Social menu */
+    }
+    /* end of Social menu */
 
     // Block for logo
     #block-fitpreg-logo {
@@ -91,7 +98,7 @@
       }
     }
   }
-  
+
   // Second header line
   .secondline-blocks-wrapper {
     align-items: center;
@@ -99,10 +106,10 @@
     justify-content: space-between;
     padding-right: 15px;
     position: relative;
-    
+
     // Main menu
     #block-fitpreg-main-menu {
-      
+      margin: 20px auto;
       .menu {
         display: flex;
         margin: 0;
@@ -119,8 +126,11 @@
             margin: 0;
             padding: 0;
             position: relative;
+            cursor: pointer;
 
-            .menu { display: none; }
+            .menu {
+              display: none;
+            }
 
             @include hover {
               .menu {
@@ -156,60 +166,245 @@
           @include fa('\f107');
         }
       }
-    } /* end of Main menu */
+    }
+    /* end of Main menu */
 
-    // Hamburger
-    .left-menu-hamburger {
+    // Left menu in header
+    .animated-group { // Wrapper for left-menu
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    #back-btn {
+      display: none;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 50px;
+      padding: 0 1rem;
+      cursor: pointer;
+      animation-duration: 200ms;
+      //animation-delay: 2s;
+      animation-iteration-count: 1;
+      &::before {
+        content: '';
+        background-image: url(../images/icons/back.png);
+        background-position: 1px;
+        background-repeat: no-repeat;
+        padding-right: 19px;
+        margin-right: 2em;
+        background-size: 34px;
+      }
+    }
+
+    #block-fitpreg-left-menu {
+      position: relative;
+      display: block;
+      background-color: $color-black;
+      z-index: 1;
+      width: 0; // Made width=0 for animation
+      overflow: hidden;
+      transition: width $transition-time ease-in-out;
+
+      .left-menu-wrapper {
+        height: 100%; // Change by common.js
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        animation-duration: 200ms;
+        //animation-delay: 2s;
+        animation-iteration-count: 1;
+
+        .menu-item {
+          padding: 0;
+        }
+        & > .menu {
+          margin: 0;
+          & > .menu-item:nth-child(1),
+          & > .menu-item:nth-child(2) {
+            float: left;
+            width: 50%;
+            a {
+              font-size: 13px;
+              font-weight: 700;
+              text-transform: uppercase;
+              line-height: 50px;
+              text-align: center;
+              padding: 0 1rem;
+            }
+          }
+          & > .menu-item:nth-child(1) {
+            a {
+              position: relative;
+              &::after {
+                content: '';
+                position: absolute;
+                top: 15%;
+                right: -1px;
+                height: 70%;
+                width: 1px;
+                background: #3e3e3e;
+              }
+            }
+          }
+          & > .menu-item--expanded {
+            & > ul.menu {
+              //display: none;
+              position: absolute;
+              top: 50px;
+              left: 0;
+              visibility: hidden;
+            }
+            a::after {
+              font-family: 'Flaticon';
+              content: '\f100';
+              float: right;
+              display: inline-block;
+              font-size: 14px;
+              //top: 18px;
+              //right: -5px;
+            }
+          }
+          a {
+            display: block;
+            color: #fff;
+            text-transform: lowercase;
+            font-size: 15px;
+            line-height: 50px;
+            padding: 0 1rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all $transition-time;
+          }
+        }
+        .social-links-in-menu {
+          display: flex;
+          margin-top: 20px;
+          .soc-li {
+            background-color: rgba(46, 46, 46, 0.84);
+            border-radius: 50%;
+            margin-left: 12px;
+            @include hover {
+              background-color: #3e3e3e;
+            }
+            img {
+              height: 15px;
+              width: auto;
+              margin: 13px 15px 10px;
+            }
+          }
+        }
+      }
+      .menu.copy {
+        margin-left: 0;
+        & > .menu-item--expanded {
+          > a::after {
+            font-family: 'Flaticon';
+            content: '\f100';
+            float: right;
+            display: inline-block;
+            font-size: 14px;
+          }
+          .menu {
+            margin-left: 2em;
+          }
+          a { // .menu.copy is a class with copy of menu items which making with jQuery
+            display: block;
+            color: #fff;
+            text-transform: lowercase;
+            font-size: 15px;
+            line-height: 50px;
+            padding: 0 1rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all $transition-time;
+          }
+        }
+      }
+    }
+
+    // This class made to animate #block-fitpreg-left-menu
+    .menu-active {
+      width: 250px !important;
+      transition: width 300ms ease-in-out;
+    }
+
+    .left-menu-sandwich {
       @include square(48px, 60px);
 
-      .btn {
+      .sandwich {
+        position: relative;
         display: block;
         height: auto;
         padding: 3px 0 12px;
         width: 100%;
 
-        .line {
+        span {
           @include square(10px, 35px);
           border-bottom: 1px solid $color-black;
           display: block;
           margin: 0 auto;
+          transition: transform 300ms ease-in-out;
+        }
+        &.sandwich-active {
+          @include square(44px, 60px);
+          background-color: #000;
+          z-index: 1;
+          span {
+            position: absolute;
+            height: 1px;
+            width: 30px;
+            background-color: #fff;
+            border: none;
+            transition: transform 500ms ease-in-out;
+            &.sw-topper {
+              top: 26px;
+              left: 15px;
+              -webkit-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+            }
+            &.sw-bottom {
+              top: 26px;
+              left: 15px;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+            &.sw-footer {
+              opacity: 0;
+              top: 0;
+              -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+            }
+          }
         }
       }
     }
-    
-    
-    // Left menu in header
-    #block-fitpreg-left-menu {
-      background-color: $color-black;
-      display: none;
-      position: absolute;
-      width: 250px;
-      z-index: 1;
-      
-      .left-menu-wrapper {
-        .menu {
-          margin: 0;
-        }
-      }
-    } /* end of header left menu */
-    
+    /* end of header left menu */
+
     // block with awesome icons
     .icon-wrapper {
       .search-icon, .close-search {
         cursor: pointer;
         font-size: 25px;
-        
+
         &.close {
           display: none;
         }
       }
     }
-    
-    
+
     // Search field block
     #block-fitpreg-searchform {
       display: none;
-      
+
       &.open {
         background-color: $color-white;
         display: block;
@@ -217,7 +412,7 @@
         width: 86%;
         z-index: 1;
       }
-      
+
       #search-block-form {
         position: relative;
         margin: 0 auto;
@@ -263,8 +458,16 @@
           }
         }
       }
-    } /* end of search field block*/
+    }
+    /* end of search field block*/
   }
-  
-  
-}/* end of Header */
+}
+
+/* end of Header */
+
+.copy {
+  display: none;
+  animation-duration: 200ms !important;
+  //animation-delay: 0ms;
+  animation-iteration-count: 1;
+}

@@ -25,46 +25,47 @@
   @see http://twig.sensiolabs.org/doc/tags/macro.html
 #}
 <div class="menu--log"></div>
-{{ menus.menu_links(items, attributes, 0) }}
-
-{% macro menu_links(items, attributes, menu_level) %}
-  {% import _self as menus %}
-  {% if items %}
-    {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('menu') }}>
-    {% else %}
-      <ul class="menu">
-    {% endif %}
-    {% for item in items %}
-      {%
-        set classes = [
-          'menu-item',
-          item.is_expanded ? 'menu-item--expanded',
-          item.is_collapsed ? 'menu-item--collapsed',
-          item.in_active_trail ? 'menu-item--active-trail',
-        ]
-      %}
-      <li{{ item.attributes.addClass(classes) }}>
-        {{ link(item.title, item.url) }}
-        {% if item.below %}
-          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+<div class="left-menu-wrapper">
+    {{ menus.menu_links(items, attributes, 0) }}
+    {% macro menu_links(items, attributes, menu_level) %}
+      {% import _self as menus %}
+      {% if items %}
+        {% if menu_level == 0 %}
+          <ul{{ attributes.addClass('menu') }}>
+        {% else %}
+          <ul class="menu">
         {% endif %}
-      </li>
-    {% endfor %}
-    </ul>
-  {% endif %}
-{% endmacro %}
-<div class="social-links-in-menu">
-  <a class="soc-li" href="https://www.facebook.com/fitpregnancy/">
-    <img height="40px" src="/sites/default/files/inline-images/face.png" width="40px" />
-  </a>
-  <a class="soc-li" href="https://www.pinterest.com/fitpregnancy/">
-    <img height="40px" src="/sites/default/files/inline-images/parking.png" width="40px" />
-  </a>
-  <a class="soc-li" href="https://twitter.com/fitpregnancy/">
-    <img height="40px" src="/sites/default/files/inline-images/twitter.png" width="40px" />
-  </a>
-  <a class="soc-li" href="http://instagram.com/fitpregnancy/">
-    <img height="40px" src="/sites/default/files/inline-images/insta.png" width="40px" />
-  </a>
+        {% for item in items %}
+          {%
+            set classes = [
+              'menu-item',
+              item.is_expanded ? 'menu-item--expanded',
+              item.is_collapsed ? 'menu-item--collapsed',
+              item.in_active_trail ? 'menu-item--active-trail',
+            ]
+          %}
+          <li{{ item.attributes.addClass(classes) }}>
+            {{ link(item.title, item.url) }}
+            {% if item.below %}
+              {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+            {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endmacro %}
+    <div class="social-links-in-menu">
+      <a class="soc-li" href="https://www.facebook.com/fitpregnancy/">
+        <img src="/themes/custom/fitpreg/images/icons/facebook.png"/>
+      </a>
+      <a class="soc-li" href="https://www.pinterest.com/fitpregnancy/">
+        <img src="/themes/custom/fitpreg/images/icons/pinterest.png"/>
+      </a>
+      <a class="soc-li" href="https://twitter.com/fitpregnancy/">
+        <img src="/themes/custom/fitpreg/images/icons/twitter.png"/>
+      </a>
+      <a class="soc-li" href="http://instagram.com/fitpregnancy/">
+        <img src="/themes/custom/fitpreg/images/icons/instagram-logo-new.png"/>
+      </a>
+    </div>
 </div>

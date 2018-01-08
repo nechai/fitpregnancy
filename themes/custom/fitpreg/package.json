@@ -4,9 +4,10 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "animate.css": "^3.5.2"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cli": "^1.4.0",
     "gulp-eslint": "^4.0.0",
