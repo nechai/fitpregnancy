@@ -2437,7 +2437,8 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            position: relative; }
+            position: relative;
+            cursor: pointer; }
             .region-header .secondline-blocks-wrapper #block-fitpreg-main-menu .menu .menu-item:last-child .menu {
               display: none; }
             .region-header .secondline-blocks-wrapper #block-fitpreg-main-menu .menu .menu-item:last-child:hover .menu {
