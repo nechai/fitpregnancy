@@ -1,15 +1,17 @@
 global-styling:
-  version: 1.x
   css:
     theme:
       css/fitpreg.style.css: {}
   js:
     js/fitpreg.js: {}
     js/slide_start.js: {}
+    js/common.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
     - core/drupal
+    - core/drupalSettings
+    - core/drupal.ajax
   template: template.html.twig
 
 fonts:
@@ -24,3 +26,16 @@ slick-slider:
       libs/slick/slick-theme.css: {}
   js:
     libs/slick/slick.js: {}
+
+animateCSS:
+  css:
+    theme:
+      libs/animateCSS/animate.min.css: {}
+
+owl-carousel:
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css: { type: external, minified: true }
+      https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css: { type: external, minified: true }
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js: { type: external, minified: true }

@@ -4,6 +4,7 @@ $font-Flaticon-next: "\f100";
 $font-Flaticon-back: "\f101";
 
 .block-region-second {
+
   .view-content {
     width: 90%;
     margin: auto;
@@ -69,3 +70,27 @@ $font-Flaticon-back: "\f101";
   }
 }
 
+#block-weeklymenu .menu {
+  .slick-prev,
+  .slick-next {
+    top: 53%;
+    &:before {
+      font-family: 'FontAwesome';
+      font-size: 16px;
+      color: #ec188c;
+    }
+  }
+  .slick-prev {
+    left: -10px;
+    &:before {
+      content: $fa-var-arrow-left;
+
+    }
+  }
+  .slick-next {
+    right: 0;
+    &:before {
+      content: $fa-var-arrow-right;
+    }
+  }
+}
