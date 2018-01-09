@@ -18,27 +18,32 @@
     };
     Drupal.behaviors.weekMenuAjaxBehavior = {
         attach: function (context, settings) {
-            var menu = document.getElementsByClassName("menu--weekly-menu");
-            var li = $(menu).children('ul').children();
-            $.each(li, function () {
-                $(this, '.menu--weekly-menu div.views-row').once('weekMenuAjax').mouseenter(function () {
-                    var aaa = this;
-                    var timer = setTimeout(function () {
+            var menu = $('#block-weeklymenu');
+            // var li = $(menu).children('ul').children();
+            $(menu).find('.menu').first().children().each(function () {
+                $(this).once('weekMenuAjax').mouseenter(function () {
+                    var requestItem = $(this);
+                    timer = setTimeout(function () {
                         var ourRequest = new XMLHttpRequest();
-                        ourRequest.open("GET", "/ajax/" + aaa.getElementsByTagName('a')[0].innerHTML);
+                        ourRequest.open("GET", "/ajax/" + requestItem.find('a').first().text());
+                        console.log(requestItem.find('a').first().text());
                         ourRequest.onload = function () {
                             var ourData = jQuery.parseHTML(ourRequest.responseText);
-                            var data = $("<div class='menu-item-ajax'>").append(ourData).find('.view-content').html();
+                            var data = $(ourData).find('.week-menu-ajax-page').addClass("menu-item-ajax");
+
+                            // var data = $("<div>").append(ourData).find('.week-menu-ajax-page').html();
+                            // data.addClass("menu-item-ajax");
                             if (data !== undefined) {
                                 // $("<div class='ajax-block'></div>").before(aaa.closest('ul'));
-                                aaa.closest('ul').insertAdjacentHTML('beforeend', data);
+                                // requestItem.closest('ul').insertAdjacentHTML('beforeend', data);
+                                menu.after(data);
                             }
                         };
                         ourRequest.send();
                     }, 500);
                 }).mouseleave(function () {
                     clearTimeout(timer);
-                    $('.menu--weekly-menu div.views-row, .attachment-after').remove();
+                    $('.menu-item-ajax').remove();
                 });
             });
         }
