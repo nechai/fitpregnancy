@@ -49,6 +49,14 @@
         }
     };
 
+    Drupal.behaviors.ajaxPopupBehavior = {
+        attach: function (context, settings) {
+            $('.menu-item-ajax').once("ajaxPopupBehavior").each(function () {
+                $(this).magnificPopup({type:'inline'});
+            })
+        }
+    };
+
     Drupal.behaviors.leftMenuAnimateBehavior = {
         attach: function (context, settings) {
             // Remove href attribute of blind links
@@ -78,9 +86,9 @@
                 $backBtnSelector = $('#back-btn');
                 $menuItemCopy.toggleAnimation('slideInRight', 'slideOutRight');
                 $backBtnSelector.toggleAnimation('slideInRight', 'slideOutRight');
-                 //  3. Initiate click on back button and make:
-                 //      - hide child links
-                 //      - show main menu
+                //  3. Initiate click on back button and make:
+                //      - hide child links
+                //      - show main menu
                 $('#back-btn, .left-menu-background').once('backBtnBehavior').click(function () {
                     $backBtnSelector.toggleAnimation('slideInRight', 'slideOutRight', function () {
                         $backBtnSelector.remove();
@@ -148,7 +156,7 @@
             $.fn.extend({
                 animateCss: function (animationName, callback) {
                     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                    this.addClass('animated ' + animationName).one(animationEnd, function() {
+                    this.addClass('animated ' + animationName).one(animationEnd, function () {
                         $(this).removeClass('animated ' + animationName);
                         if (callback) {
                             callback();
@@ -188,12 +196,15 @@
                 preventClicking: function (that) {
                     $('#back-btn, .left-menu-background, #block-fitpreg-left-menu').each(function () {
                         $(this).on('click', function () {
-                            if (that.is(':animated')){return false}
+                            if (that.is(':animated')) {
+                                return false
+                            }
                         })
                     })
                 }
             });
         }
     };
+
 })(jQuery, Drupal, drupalSettings);
 
