@@ -2388,10 +2388,6 @@
       .region-header .firstline-blocks-wrapper #block-fitpreg-social-menu .field--name-body a:last-child::after {
         content: "";
         font-family: 'FontAwesome'; }
-    .region-header .firstline-blocks-wrapper #block-fitpreg-logo {
-      background: url("../images/logo.png") no-repeat center;
-      height: 50px;
-      width: 304px; }
     .region-header .firstline-blocks-wrapper #block-fitpreg-login-menu .menu .menu-item {
       display: inline-block;
       padding: 0; }
