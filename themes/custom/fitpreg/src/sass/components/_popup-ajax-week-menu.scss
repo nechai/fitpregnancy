@@ -1,0 +1,59 @@
+.week-menu-ajax-page {
+  background: lightgrey;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 100;
+  .all-rows {
+    display: flex;
+    .views-row:first-child {
+      flex: 2;
+      .views-field-field-img {
+        float: left;
+      }
+      .views-field-view-node {
+        a {
+          margin-top: 2rem;
+          display: inline-block;
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 18px;
+          padding: 10px 20px;
+          text-decoration: none;
+          border: 1px solid #000;
+          text-transform: uppercase;
+          border-radius: 0;
+          -webkit-appearance: none;
+          color: #000;
+          background: #fff;
+          &:hover {
+            text-decoration: none;
+            border-color: #ec188c;
+            color: #ec188c;
+          }
+        }
+      }
+    }
+    .attachment-after {
+      flex: 1;
+      .six-box-ajax {
+        display: flex;
+        .all-rows {
+          display: flex;
+          flex-wrap: wrap;
+          .views-row {
+            flex: 0 0 100px;
+            margin-top: 25px;
+            margin-left: 5%;
+            img {
+              width: 100%!important;
+              height: auto!important;
+              padding-top: 0!important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

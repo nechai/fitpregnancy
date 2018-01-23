@@ -19,7 +19,7 @@
     Drupal.behaviors.weekMenuAjaxBehavior = {
         attach: function (context, settings) {
             var menu = $('#block-weeklymenu');
-            // var li = $(menu).children('ul').children();
+
             $(menu).find('.menu').first().children().each(function () {
                 $(this).once('weekMenuAjax').mouseenter(function () {
                     var requestItem = $(this);
@@ -30,22 +30,24 @@
                         ourRequest.onload = function () {
                             var ourData = jQuery.parseHTML(ourRequest.responseText);
                             var data = $(ourData).find('.week-menu-ajax-page').addClass("menu-item-ajax");
-
-                            // var data = $("<div>").append(ourData).find('.week-menu-ajax-page').html();
-                            // data.addClass("menu-item-ajax");
                             if (data !== undefined) {
-                                // $("<div class='ajax-block'></div>").before(aaa.closest('ul'));
-                                // requestItem.closest('ul').insertAdjacentHTML('beforeend', data);
-                                menu.after(data);
+                                menu.append(data);
                             }
                         };
                         ourRequest.send();
                     }, 500);
                 }).mouseleave(function () {
                     clearTimeout(timer);
-                    $('.menu-item-ajax').remove();
                 });
             });
+
+         $('#block-weeklymenu').mouseleave(function () {
+             if ($('.menu-item-ajax').length) {
+                 $('.menu-item-ajax').each(function () {
+                     $(this).remove();
+                 })
+             }
+         })
         }
     };
 

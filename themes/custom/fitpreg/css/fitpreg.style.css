@@ -3902,6 +3902,65 @@ footer {
 
 /* end of fifth region */
 /* end of sixth region */
+.week-menu-ajax-page {
+  background: lightgrey;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 100; }
+  .week-menu-ajax-page .all-rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .week-menu-ajax-page .all-rows .views-row:first-child {
+      -webkit-box-flex: 2;
+          -ms-flex: 2;
+              flex: 2; }
+      .week-menu-ajax-page .all-rows .views-row:first-child .views-field-field-img {
+        float: left; }
+      .week-menu-ajax-page .all-rows .views-row:first-child .views-field-view-node a {
+        margin-top: 2rem;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        padding: 10px 20px;
+        text-decoration: none;
+        border: 1px solid #000;
+        text-transform: uppercase;
+        border-radius: 0;
+        -webkit-appearance: none;
+        color: #000;
+        background: #fff; }
+        .week-menu-ajax-page .all-rows .views-row:first-child .views-field-view-node a:hover {
+          text-decoration: none;
+          border-color: #ec188c;
+          color: #ec188c; }
+    .week-menu-ajax-page .all-rows .attachment-after {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      .week-menu-ajax-page .all-rows .attachment-after .six-box-ajax {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .week-menu-ajax-page .all-rows .attachment-after .six-box-ajax .all-rows {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          .week-menu-ajax-page .all-rows .attachment-after .six-box-ajax .all-rows .views-row {
+            -webkit-box-flex: 0;
+                -ms-flex: 0 0 100px;
+                    flex: 0 0 100px;
+            margin-top: 25px;
+            margin-left: 5%; }
+            .week-menu-ajax-page .all-rows .attachment-after .six-box-ajax .all-rows .views-row img {
+              width: 100% !important;
+              height: auto !important;
+              padding-top: 0 !important; }
+
 body {
   color: #000;
   font-family: 'Montserrat'; }
