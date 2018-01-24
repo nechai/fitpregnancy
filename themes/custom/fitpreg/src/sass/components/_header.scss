@@ -62,13 +62,13 @@ $transition-time: 200ms;
             @include fa('\f16d');
           }
         }
-
+ 
       }
     }
     /* end of Social menu */
 
     // Block for logo
-    #block-fitpreg-logo {
+    #block-sitebranding {
       background: url('../images/logo.png') no-repeat center;
       height: 50px;
       width: 304px;
