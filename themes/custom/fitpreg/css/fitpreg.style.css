@@ -2749,6 +2749,7 @@ footer {
             text-decoration: none; }
 
 .menu--weekly-menu {
+  position: relative;
   border-color: #dedede;
   border-style: solid;
   border-width: 1px 0;
