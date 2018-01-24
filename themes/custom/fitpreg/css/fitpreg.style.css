@@ -2389,7 +2389,6 @@
         content: "";
         font-family: 'FontAwesome'; }
     .region-header .firstline-blocks-wrapper #block-sitebranding {
-      background: url("../images/logo.png") no-repeat center;
       height: 50px;
       width: 304px; }
     .region-header .firstline-blocks-wrapper #block-fitpreg-login-menu .menu .menu-item {
