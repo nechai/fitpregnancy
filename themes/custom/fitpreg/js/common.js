@@ -19,9 +19,14 @@
     Drupal.behaviors.weekMenuAjaxBehavior = {
         attach: function (context, settings) {
             var menu = $('#block-weeklymenu');
-
             $(menu).find('.menu').first().children().each(function () {
                 $(this).once('weekMenuAjax').mouseenter(function () {
+                    // Check if exist previous result of ajax request
+                    if ($('.menu-item-ajax').length) {
+                        $('.menu-item-ajax').each(function () {
+                            $(this).remove();
+                        })
+                    }
                     var requestItem = $(this);
                     timer = setTimeout(function () {
                         var ourRequest = new XMLHttpRequest();
@@ -35,7 +40,33 @@
                             }
                         };
                         ourRequest.send();
-                    }, 500);
+                        var $background = $('.left-menu-background'); // Background
+                        //check if background exist
+                        if ($background.length) {
+                            //do nothing
+                        } else {
+                            // Create and add background for $hiddenMenu
+                            var $backgroundDiv = $('<div class="left-menu-background"></div>');
+                            var backgroundTopPosition = $('header').outerHeight()-1; // -1 meaning subtract one unnecessary pixel
+                            $backgroundDiv.css({
+                                position: 'absolute',
+                                top: backgroundTopPosition,
+                                left: 0,
+                                width: window.innerWidth, //full window width
+                                height: $(window).height() - backgroundTopPosition,
+                                backgroundColor: 'rgba(62,62,62,.5)',
+                                zIndex: 1
+                            });
+                            timerForBackground = setTimeout(function () {
+                                $('.layout-content').prepend($backgroundDiv);
+                                // Prevent scrolling
+                                $('html, body').css({
+                                    overflow: 'hidden',
+                                    height: '100%'
+                                });
+                            }, 600).clearTimeout(timerForBackground);
+                        }
+                    }, 600);
                 }).mouseleave(function () {
                     clearTimeout(timer);
                 });
@@ -46,6 +77,17 @@
                  $('.menu-item-ajax').each(function () {
                      $(this).remove();
                  })
+             }
+             var $background = $('.left-menu-background'); // Background
+             //check if background exist
+             if ($background.length) {
+                 // Remove background
+                 $background.remove();
+                 // Turn on scrolling
+                 $('html, body').css({
+                     overflow: 'auto',
+                     height: 'auto'
+                 });
              }
          })
         }
