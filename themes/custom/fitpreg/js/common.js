@@ -64,7 +64,7 @@
                                     overflow: 'hidden',
                                     height: '100%'
                                 });
-                            }, 600).clearTimeout(timerForBackground);
+                            }, 600);
                         }
                     }, 600);
                 }).mouseleave(function () {
