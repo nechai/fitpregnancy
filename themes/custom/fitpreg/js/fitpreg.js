@@ -6,7 +6,7 @@
                 var existClass;
 
                 // grouping first three block in header
-                $('.region-header #block-fitpreg-social-menu, .region-header #block-fitpreg-logo, .region-header #block-fitpreg-login-menu')
+                $('.region-header #block-fitpreg-social-menu, .region-header #block-sitebranding, .region-header #block-fitpreg-login-menu')
                     .wrapAll('<div class="firstline-blocks-wrapper"></div>');
 
                 // grouping second three block in header

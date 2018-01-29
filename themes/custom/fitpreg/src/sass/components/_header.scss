@@ -4,7 +4,6 @@ $transition-time: 200ms;
 .region-header {
   /*  border: 1px solid red;*/
   margin: 0 auto;
-  max-width: 1170px;
 
   // First header line
   .firstline-blocks-wrapper {
@@ -62,14 +61,13 @@ $transition-time: 200ms;
             @include fa('\f16d');
           }
         }
-
+ 
       }
     }
     /* end of Social menu */
 
     // Block for logo
-    #block-fitpreg-logo {
-      background: url('../images/logo.png') no-repeat center;
+    #block-sitebranding {
       height: 50px;
       width: 304px;
     }

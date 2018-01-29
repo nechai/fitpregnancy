@@ -18,29 +18,86 @@
     };
     Drupal.behaviors.weekMenuAjaxBehavior = {
         attach: function (context, settings) {
-            var menu = document.getElementsByClassName("menu--weekly-menu");
-            var li = $(menu).children('ul').children();
-            $.each(li, function () {
-                $(this, '.menu--weekly-menu div.views-row').once('weekMenuAjax').mouseenter(function () {
-                    var aaa = this;
+            var menu = $('#block-weeklymenu');
+            $(menu).find('.menu').first().children().each(function () {
+                $(this).once('weekMenuAjax').mouseenter(function () {
+                    // Check if exist previous result of ajax request
+                    if ($('.menu-item-ajax').length) {
+                        $('.menu-item-ajax').each(function () {
+                            $(this).remove();
+                        })
+                    }
+                    var requestItem = $(this);
                     timer = setTimeout(function () {
                         var ourRequest = new XMLHttpRequest();
-                        ourRequest.open("GET", "/ajax/" + aaa.getElementsByTagName('a')[0].innerHTML);
+                        ourRequest.open("GET", "/ajax/" + requestItem.find('a').first().text());
+                        console.log(requestItem.find('a').first().text());
                         ourRequest.onload = function () {
                             var ourData = jQuery.parseHTML(ourRequest.responseText);
-                            var data = $("<div>").append(ourData).find('.view-content').html();
+                            var data = $(ourData).find('.week-menu-ajax-page').addClass("menu-item-ajax");
                             if (data !== undefined) {
-                                // $("<div class='ajax-block'></div>").before(aaa.closest('ul'));
-                                aaa.closest('ul').insertAdjacentHTML('beforeend', data);
+                                menu.append(data);
                             }
                         };
                         ourRequest.send();
-                    }, 500);
+                        var $background = $('.left-menu-background'); // Background
+                        //check if background exist
+                        if ($background.length) {
+                            //do nothing
+                        } else {
+                            // Create and add background for $hiddenMenu
+                            var $backgroundDiv = $('<div class="left-menu-background"></div>');
+                            var backgroundTopPosition = $('header').outerHeight()-1; // -1 meaning subtract one unnecessary pixel
+                            $backgroundDiv.css({
+                                position: 'absolute',
+                                top: backgroundTopPosition,
+                                left: 0,
+                                width: window.innerWidth, //full window width
+                                height: $(window).height() - backgroundTopPosition,
+                                backgroundColor: 'rgba(62,62,62,.5)',
+                                zIndex: 1
+                            });
+                            timerForBackground = setTimeout(function () {
+                                $('.layout-content').prepend($backgroundDiv);
+                                // Prevent scrolling
+                                $('html, body').css({
+                                    overflow: 'hidden',
+                                    height: '100%'
+                                });
+                            }, 600);
+                        }
+                    }, 600);
                 }).mouseleave(function () {
                     clearTimeout(timer);
-                    $('.menu--weekly-menu div.views-row, .attachment-after').remove();
                 });
             });
+
+         $('#block-weeklymenu').mouseleave(function () {
+             if ($('.menu-item-ajax').length) {
+                 $('.menu-item-ajax').each(function () {
+                     $(this).remove();
+                 })
+             }
+             var $background = $('.left-menu-background'); // Background
+             //check if background exist
+             if ($background.length) {
+                 // Remove background
+                 $background.remove();
+                 // Turn on scrolling
+                 $('html, body').css({
+                     overflow: 'auto',
+                     height: 'auto'
+                 });
+             }
+         })
+        }
+    };
+
+    Drupal.behaviors.ajaxPopupBehavior = {
+        attach: function (context, settings) {
+            $('.menu-item-ajax').once("ajaxPopupBehavior").each(function () {
+                $(this).magnificPopup({type:'inline'});
+            })
         }
     };
 
@@ -73,9 +130,9 @@
                 $backBtnSelector = $('#back-btn');
                 $menuItemCopy.toggleAnimation('slideInRight', 'slideOutRight');
                 $backBtnSelector.toggleAnimation('slideInRight', 'slideOutRight');
-                 //  3. Initiate click on back button and make:
-                 //      - hide child links
-                 //      - show main menu
+                //  3. Initiate click on back button and make:
+                //      - hide child links
+                //      - show main menu
                 $('#back-btn, .left-menu-background').once('backBtnBehavior').click(function () {
                     $backBtnSelector.toggleAnimation('slideInRight', 'slideOutRight', function () {
                         $backBtnSelector.remove();
@@ -143,7 +200,7 @@
             $.fn.extend({
                 animateCss: function (animationName, callback) {
                     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                    this.addClass('animated ' + animationName).one(animationEnd, function() {
+                    this.addClass('animated ' + animationName).one(animationEnd, function () {
                         $(this).removeClass('animated ' + animationName);
                         if (callback) {
                             callback();
@@ -183,12 +240,15 @@
                 preventClicking: function (that) {
                     $('#back-btn, .left-menu-background, #block-fitpreg-left-menu').each(function () {
                         $(this).on('click', function () {
-                            if (that.is(':animated')){return false}
+                            if (that.is(':animated')) {
+                                return false
+                            }
                         })
                     })
                 }
             });
         }
     };
+
 })(jQuery, Drupal, drupalSettings);
 
