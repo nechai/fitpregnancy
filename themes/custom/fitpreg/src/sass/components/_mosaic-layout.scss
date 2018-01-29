@@ -1,0 +1,45 @@
+.view-content-by-texonomy-term {
+  .view-content {
+    margin: 0 auto;
+    .views-row {
+      max-width: 300px;
+      height: auto;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+      margin: 0 0 20px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      h3 {
+        margin: 0;
+        padding: 20px;
+        line-height: 26px;
+        font-size: 22px;
+        font-weight: 200;
+        a {
+          color: #000;
+          text-decoration: none;
+          &:hover {
+            color: #ec188c;
+          }
+        }
+      }
+      p {
+        display: block;
+        margin: -25px 20px 0;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        &:before {
+          margin: 20px 0 10px;
+          content: '';
+          width: 50px;
+          height: 2px;
+          background: #dedede;
+          display: block;
+        }
+      }
+    }
+  }
+}

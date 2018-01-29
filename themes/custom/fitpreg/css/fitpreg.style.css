@@ -3983,6 +3983,43 @@ footer {
             cursor: pointer;
             color: #aa0e63; }
 
+.view-content-by-texonomy-term .view-content {
+  margin: 0 auto; }
+  .view-content-by-texonomy-term .view-content .views-row {
+    max-width: 300px;
+    height: auto;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 0 20px; }
+    .view-content-by-texonomy-term .view-content .views-row img {
+      max-width: 100%;
+      height: auto; }
+    .view-content-by-texonomy-term .view-content .views-row h3 {
+      margin: 0;
+      padding: 20px;
+      line-height: 26px;
+      font-size: 22px;
+      font-weight: 200; }
+      .view-content-by-texonomy-term .view-content .views-row h3 a {
+        color: #000;
+        text-decoration: none; }
+        .view-content-by-texonomy-term .view-content .views-row h3 a:hover {
+          color: #ec188c; }
+    .view-content-by-texonomy-term .view-content .views-row p {
+      display: block;
+      margin: -25px 20px 0;
+      padding-bottom: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px; }
+      .view-content-by-texonomy-term .view-content .views-row p:before {
+        margin: 20px 0 10px;
+        content: '';
+        width: 50px;
+        height: 2px;
+        background: #dedede;
+        display: block; }
+
 body {
   color: #000;
   font-family: 'Montserrat'; }

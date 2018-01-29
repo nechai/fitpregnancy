@@ -10,7 +10,8 @@ libraries:
   - fitpreg/slick-slider
   - fitpreg/animateCSS
 #  - fitpreg/owl-carousel
-  - fitpreg/magnific-popup
+#  - fitpreg/magnific-popup
+  - fitpreg/mosaic
 
 regions:
   header: Header
