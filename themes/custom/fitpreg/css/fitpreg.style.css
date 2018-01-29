@@ -2338,8 +2338,7 @@
 /* Header */
 .region-header {
   /*  border: 1px solid red;*/
-  margin: 0 auto;
-  max-width: 1170px; }
+  margin: 0 auto; }
   .region-header .firstline-blocks-wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2721,7 +2720,6 @@ footer {
   footer .region-footer {
     color: #fff;
     margin: 0 auto;
-    max-width: 1170px;
     padding: 20px 0; }
     footer .region-footer nav {
       margin-bottom: 20px; }
@@ -4028,6 +4026,6 @@ body {
     body .layout-container .region-header, body .layout-container .region-footer,
     body .layout-container .layout-content {
       margin: 0 auto;
-      max-width: 1170px; }
+      max-width: 1360px; }
 
 /*# sourceMappingURL=fitpreg.style.css.map */
