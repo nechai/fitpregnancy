@@ -17,7 +17,7 @@ global-styling:
 fonts:
   css:
     theme:
-      fonts/flaticon/flaticon.css: {}
+      fonts/fi/flaticon.css: {}
 
 slick-slider:
   css:

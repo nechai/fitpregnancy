@@ -250,5 +250,27 @@
         }
     };
 
+    Drupal.behaviors.disableSlickArrowsBehavior = {
+        attach: function (context, settings) {
+            $(document).ready(function () {
+                // Check if slick button is disabled (if True - hide button)
+                $('#block-weeklymenu button').each(function () {
+                    if ($(this).hasClass('slick-disabled')) {
+                        $(this).hide();
+                    }
+                });
+                // Hide and show slick button dynamically
+                $('#block-weeklymenu button').click(function () {
+                    $('#block-weeklymenu button').each(function () {
+                        if ($(this).hasClass('slick-disabled')) {
+                            $(this).hide();
+                        } else {
+                            $(this).show();
+                        }
+                    })
+                })
+            })
+        }
+    }
 })(jQuery, Drupal, drupalSettings);
 

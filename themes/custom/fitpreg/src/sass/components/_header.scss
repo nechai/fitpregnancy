@@ -1,4 +1,5 @@
 $transition-time: 200ms;
+$font-Flaticon-next: "\f103";
 
 /* Header */
 .region-header {
@@ -260,7 +261,7 @@ $transition-time: 200ms;
             }
             a::after {
               font-family: 'Flaticon';
-              content: '\f100';
+              content: $font-Flaticon-next;
               float: right;
               display: inline-block;
               font-size: 14px;
@@ -303,7 +304,7 @@ $transition-time: 200ms;
         & > .menu-item--expanded {
           > a::after {
             font-family: 'Flaticon';
-            content: '\f100';
+            content: $font-Flaticon-next;
             float: right;
             display: inline-block;
             font-size: 14px;

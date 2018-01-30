@@ -6,8 +6,8 @@ type: theme
 
 libraries:
   - fitpreg/global-styling
-  - fitpreg/fonts
   - fitpreg/slick-slider
+  - fitpreg/fonts
   - fitpreg/animateCSS
 #  - fitpreg/owl-carousel
 #  - fitpreg/magnific-popup

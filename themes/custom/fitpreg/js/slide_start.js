@@ -12,9 +12,9 @@
                 $('#block-weeklymenu .menu').slick({
                     dots: false,
                     infinite: false,
-                    speed: 800,
-                    slidesToShow: 20,
-                    slidesToScroll: 5
+                    speed: 600,
+                    slidesToShow: 25,
+                    slidesToScroll: 10
                 });
             });
         }

@@ -2544,7 +2544,7 @@
             visibility: hidden; }
           .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .left-menu-wrapper > .menu > .menu-item--expanded a::after {
             font-family: 'Flaticon';
-            content: '\f100';
+            content: "";
             float: right;
             display: inline-block;
             font-size: 14px; }
@@ -2579,7 +2579,7 @@
         margin-left: 0; }
         .region-header .secondline-blocks-wrapper #block-fitpreg-left-menu .menu.copy > .menu-item--expanded > a::after {
           font-family: 'Flaticon';
-          content: '\f100';
+          content: "";
           float: right;
           display: inline-block;
           font-size: 14px; }
@@ -2754,9 +2754,11 @@ footer {
   padding: 0 10px; }
   .menu--weekly-menu .menu {
     margin: 10px 0;
-    padding: 0 2%; }
+    padding: 0 3%; }
     .menu--weekly-menu .menu .slick-track {
-      display: inline-block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       margin: 0;
       position: relative; }
       .menu--weekly-menu .menu .slick-track .menu-item {
@@ -3542,29 +3544,40 @@ footer {
 .block-region-second .slick-prev {
   left: -55px; }
   .block-region-second .slick-prev:before {
-    content: ""; }
+    content: ""; }
 
 .block-region-second .slick-next:before {
-  content: ""; }
+  content: ""; }
 
 #block-weeklymenu .menu .slick-prev,
 #block-weeklymenu .menu .slick-next {
   top: 45%; }
   #block-weeklymenu .menu .slick-prev:before,
   #block-weeklymenu .menu .slick-next:before {
-    font-family: 'FontAwesome';
-    font-size: 16px;
-    color: #ec188c; }
+    font-family: "Flaticon", serif;
+    font-size: 25px;
+    color: #ec188c;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased; }
 
 #block-weeklymenu .menu .slick-prev {
-  left: -10px; }
+  left: -7px; }
   #block-weeklymenu .menu .slick-prev:before {
-    content: ""; }
+    content: ""; }
 
 #block-weeklymenu .menu .slick-next {
-  right: 0; }
+  right: -3px; }
   #block-weeklymenu .menu .slick-next:before {
-    content: ""; }
+    content: ""; }
 
 .three-region, .fourth-region,
 .fifth-region, .sixth-region {
