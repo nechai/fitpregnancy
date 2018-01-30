@@ -3,20 +3,21 @@
   border-color: $color-grey-light;
   border-style: solid;
   border-width: 1px 0;
-  padding: 6px 10px;
+  padding: 0 10px;
   //overflow: hidden;
 
   .menu {
+    margin: 10px 0;
     padding: 0 2%;
     .slick-track {
-      display: flex;
+      display: inline-block;
       margin: 0;
       position: relative;
 
       .menu-item {
         position: relative;
-        flex: 1;
-        //display: inline-block;
+        display: inline-block;
+        padding-top: 0;
         font-size: 13px;
         font-weight: normal;
         margin-right: 13px;
@@ -25,8 +26,10 @@
           color: $color-black;
           text-decoration: none;
           vertical-align: middle;
+          line-height: 30px;
+
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           position: relative;
           margin-left: 60px;
           &:before {
@@ -48,7 +51,7 @@
         &:nth-child(42),
         &:last-child {
           border-right: 1px solid $color-grey-light;
-          line-height: 24px;
+          line-height: 30px;
           padding-right: 20px;
           margin-right: 20px;
           &:hover a {
@@ -65,7 +68,7 @@
         &:nth-child(14),
         &:nth-child(29),
         &:nth-child(41) {
-          margin-right: 34px;
+          margin-right: 34px !important;
           &::after {
             content: '';
             position: absolute;
@@ -77,47 +80,30 @@
           }
         }
         &:first-child {
-          padding-right: 35px;
+          padding-right: 45px;
         }
         @for $i from 2 through 41 {
           &:nth-child(#{$i}) {
-            /* height: 33px; */
-             text-align: center;
-             vertical-align: middle;
-            /* width: 30px; */
+            margin-right: 15px;
+            font-size: 13px;
+            font-weight: normal;
+            width: 30px !important;
+            height: 30px;
+            text-align: center;
+            vertical-align: middle;
             color: #000;
             cursor: pointer;
             border: 1px solid #fff;
             border-radius: 50%;
-            padding: 5px 14px;
-            @if ($i <= 14 ) {
-              //padding: 4px 16px 5px 9px
+
+            &:nth-child(#{$i}):hover {
               a {
-                position: relative;
-                top: 0;
-                right: 3px;}
+                color: #fff;
               }
-            @if ($i >= 15 ) {
-              //padding: 4px 16px 5px 9px
-              a {
-                position: relative;
-                top: 0;
-                right: 7px;}
-              }
-            //} @else if ($i > 10) {
-            //  padding: 6px 9px
-            //} @else if ($i <= 10) {
-            //  padding: 6px 11px;
-            //}
-          }
-          &:nth-child(#{$i}):hover {
-            a {
-              color: #fff;
+              background-color: #ec188c;
+              border: 1px #ec188c solid;
             }
-            background-color: #ec188c;
-            border: 1px #ec188c solid;
           }
-          //z-index: -1;
         }
       }
     }

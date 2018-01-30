@@ -2751,27 +2751,26 @@ footer {
   border-color: #dedede;
   border-style: solid;
   border-width: 1px 0;
-  padding: 6px 10px; }
+  padding: 0 10px; }
   .menu--weekly-menu .menu {
+    margin: 10px 0;
     padding: 0 2%; }
     .menu--weekly-menu .menu .slick-track {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+      display: inline-block;
       margin: 0;
       position: relative; }
       .menu--weekly-menu .menu .slick-track .menu-item {
         position: relative;
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
+        display: inline-block;
+        padding-top: 0;
         font-size: 13px;
         font-weight: normal;
         margin-right: 13px; }
         .menu--weekly-menu .menu .slick-track .menu-item a {
           color: #000;
           text-decoration: none;
-          vertical-align: middle; }
+          vertical-align: middle;
+          line-height: 30px; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(2) {
           position: relative;
           margin-left: 60px; }
@@ -2790,7 +2789,7 @@ footer {
             top: 8px; }
         .menu--weekly-menu .menu .slick-track .menu-item:first-child, .menu--weekly-menu .menu .slick-track .menu-item:nth-child(42), .menu--weekly-menu .menu .slick-track .menu-item:last-child {
           border-right: 1px solid #dedede;
-          line-height: 24px;
+          line-height: 30px;
           padding-right: 20px;
           margin-right: 20px; }
           .menu--weekly-menu .menu .slick-track .menu-item:first-child:hover a, .menu--weekly-menu .menu .slick-track .menu-item:nth-child(42):hover a, .menu--weekly-menu .menu .slick-track .menu-item:last-child:hover a {
@@ -2800,7 +2799,7 @@ footer {
         .menu--weekly-menu .menu .slick-track .menu-item:last-child {
           border: none; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(14), .menu--weekly-menu .menu .slick-track .menu-item:nth-child(29), .menu--weekly-menu .menu .slick-track .menu-item:nth-child(41) {
-          margin-right: 34px; }
+          margin-right: 34px !important; }
           .menu--weekly-menu .menu .slick-track .menu-item:nth-child(14)::after, .menu--weekly-menu .menu .slick-track .menu-item:nth-child(29)::after, .menu--weekly-menu .menu .slick-track .menu-item:nth-child(41)::after {
             content: '';
             position: absolute;
@@ -2810,767 +2809,687 @@ footer {
             height: 100%;
             background: #dedede; }
         .menu--weekly-menu .menu .slick-track .menu-item:first-child {
-          padding-right: 35px; }
+          padding-right: 45px; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(2) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(2) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(2):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(2):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(2):nth-child(2):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(2):nth-child(2):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(3) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(3) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(3):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(3):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(3):nth-child(3):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(3):nth-child(3):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(4) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(4) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(4):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(4):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(4):nth-child(4):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(4):nth-child(4):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(5) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(5) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(5):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(5):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(5):nth-child(5):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(5):nth-child(5):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(6) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(6) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(6):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(6):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(6):nth-child(6):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(6):nth-child(6):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(7) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(7) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(7):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(7):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(7):nth-child(7):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(7):nth-child(7):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(8) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(8) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(8):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(8):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(8):nth-child(8):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(8):nth-child(8):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(9) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(9) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(9):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(9):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(9):nth-child(9):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(9):nth-child(9):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(10) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(10) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(10):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(10):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(10):nth-child(10):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(10):nth-child(10):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(11) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(11) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(11):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(11):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(11):nth-child(11):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(11):nth-child(11):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(12) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(12) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(12):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(12):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(12):nth-child(12):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(12):nth-child(12):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(13) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(13) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(13):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(13):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(13):nth-child(13):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(13):nth-child(13):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(14) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(14) a {
-            position: relative;
-            top: 0;
-            right: 3px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(14):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(14):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(14):nth-child(14):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(14):nth-child(14):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(15) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(15) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(15):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(15):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(15):nth-child(15):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(15):nth-child(15):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(16) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(16) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(16):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(16):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(16):nth-child(16):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(16):nth-child(16):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(17) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(17) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(17):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(17):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(17):nth-child(17):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(17):nth-child(17):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(18) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(18) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(18):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(18):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(18):nth-child(18):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(18):nth-child(18):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(19) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(19) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(19):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(19):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(19):nth-child(19):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(19):nth-child(19):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(20) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(20) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(20):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(20):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(20):nth-child(20):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(20):nth-child(20):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(21) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(21) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(21):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(21):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(21):nth-child(21):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(21):nth-child(21):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(22) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(22) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(22):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(22):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(22):nth-child(22):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(22):nth-child(22):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(23) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(23) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(23):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(23):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(23):nth-child(23):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(23):nth-child(23):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(24) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(24) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(24):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(24):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(24):nth-child(24):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(24):nth-child(24):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(25) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(25) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(25):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(25):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(25):nth-child(25):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(25):nth-child(25):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(26) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(26) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(26):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(26):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(26):nth-child(26):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(26):nth-child(26):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(27) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(27) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(27):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(27):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(27):nth-child(27):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(27):nth-child(27):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(28) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(28) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(28):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(28):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(28):nth-child(28):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(28):nth-child(28):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(29) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(29) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(29):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(29):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(29):nth-child(29):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(29):nth-child(29):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(30) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(30) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(30):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(30):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(30):nth-child(30):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(30):nth-child(30):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(31) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(31) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(31):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(31):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(31):nth-child(31):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(31):nth-child(31):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(32) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(32) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(32):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(32):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(32):nth-child(32):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(32):nth-child(32):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(33) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(33) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(33):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(33):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(33):nth-child(33):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(33):nth-child(33):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(34) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(34) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(34):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(34):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(34):nth-child(34):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(34):nth-child(34):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(35) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(35) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(35):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(35):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(35):nth-child(35):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(35):nth-child(35):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(36) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(36) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(36):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(36):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(36):nth-child(36):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(36):nth-child(36):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(37) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(37) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(37):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(37):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(37):nth-child(37):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(37):nth-child(37):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(38) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(38) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(38):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(38):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(38):nth-child(38):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(38):nth-child(38):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(39) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(39) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(39):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(39):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(39):nth-child(39):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(39):nth-child(39):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(40) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(40) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(40):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(40):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(40):nth-child(40):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(40):nth-child(40):hover a {
+              color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(41) {
-          /* height: 33px; */
+          margin-right: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          width: 30px !important;
+          height: 30px;
           text-align: center;
           vertical-align: middle;
-          /* width: 30px; */
           color: #000;
           cursor: pointer;
           border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 5px 14px; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(41) a {
-            position: relative;
-            top: 0;
-            right: 7px; }
-        .menu--weekly-menu .menu .slick-track .menu-item:nth-child(41):hover {
-          background-color: #ec188c;
-          border: 1px #ec188c solid; }
-          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(41):hover a {
-            color: #fff; }
+          border-radius: 50%; }
+          .menu--weekly-menu .menu .slick-track .menu-item:nth-child(41):nth-child(41):hover {
+            background-color: #ec188c;
+            border: 1px #ec188c solid; }
+            .menu--weekly-menu .menu .slick-track .menu-item:nth-child(41):nth-child(41):hover a {
+              color: #fff; }
 
 /* Slick slider on the fornt page */
 .block-region-second .view-content {
@@ -3630,7 +3549,7 @@ footer {
 
 #block-weeklymenu .menu .slick-prev,
 #block-weeklymenu .menu .slick-next {
-  top: 53%; }
+  top: 45%; }
   #block-weeklymenu .menu .slick-prev:before,
   #block-weeklymenu .menu .slick-next:before {
     font-family: 'FontAwesome';
@@ -3970,7 +3889,7 @@ footer {
           margin-left: 5%; }
           .week-menu-ajax-page .all-rows .attachment-after .six-box-ajax .view-content .views-row img {
             width: 100px;
-            height: 150px;
+            height: auto;
             padding-top: 0; }
           .week-menu-ajax-page .all-rows .attachment-after .six-box-ajax .view-content .views-row a {
             text-decoration: none;
