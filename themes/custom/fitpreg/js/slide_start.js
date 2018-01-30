@@ -13,8 +13,8 @@
                     dots: false,
                     infinite: false,
                     speed: 800,
-                    slidesToShow: 23,
-                    slidesToScroll: 20
+                    slidesToShow: 20,
+                    slidesToScroll: 5
                 });
             });
         }
