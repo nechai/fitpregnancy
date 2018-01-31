@@ -1,5 +1,5 @@
-name: 'Fitpreg'
+name: Fitpreg
 type: module
 description: 'Module for making general tasks and alterations.'
 core: 8.x
-package: 'Custom'
+package: Custom
