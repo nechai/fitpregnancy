@@ -13,7 +13,8 @@
         "drupal/easy_breadcrumb": "^1.6",
         "drupal/menu_breadcrumb": "^1.5",
         "drupal/pathauto": "^1.0",
-        "drupal/console": "^1.5"
+        "drupal/console": "^1.5",
+        "drupal/search_kint": "^1.0"
     },
     "replace": {
         "drupal/core": "~8.3"
