@@ -1,0 +1,21 @@
+#block-breadcrumbs {
+  .breadcrumb {
+    font-size: 13px;
+    li {
+      &::before {
+        content: '/';
+        padding: 0 5px;
+        color: #a9a5a7;
+      }
+      &:first-child::before {
+        display: none;
+      }
+      a {
+        line-height: 3em;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ec188c;
+      }
+    }
+  }
+}

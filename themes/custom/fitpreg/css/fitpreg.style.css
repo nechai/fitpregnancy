@@ -3950,6 +3950,20 @@ footer {
         background: #dedede;
         display: block; }
 
+#block-breadcrumbs .breadcrumb {
+  font-size: 13px; }
+  #block-breadcrumbs .breadcrumb li::before {
+    content: '/';
+    padding: 0 5px;
+    color: #a9a5a7; }
+  #block-breadcrumbs .breadcrumb li:first-child::before {
+    display: none; }
+  #block-breadcrumbs .breadcrumb li a {
+    line-height: 3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ec188c; }
+
 body {
   color: #000;
   font-family: 'Montserrat'; }
