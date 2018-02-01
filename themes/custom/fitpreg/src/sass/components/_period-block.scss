@@ -1,3 +1,5 @@
+$line-height: 27px;
+
 .menu--weekly-menu { // #block-weeklymenu
   position: relative;
   border-color: $color-grey-light;
@@ -26,7 +28,7 @@
           color: $color-black;
           text-decoration: none;
           vertical-align: middle;
-          line-height: 30px;
+          line-height: $line-height;
 
         }
         &:nth-child(2) {
@@ -34,7 +36,7 @@
           margin-left: 60px;
           &:before {
             content: 'Week';
-            font-size: 13px;
+            font-size: 12px;
             pointer-events: none;
             display: inline-block;
             position: absolute;
@@ -44,14 +46,14 @@
             font-weight: 700;
             text-transform: uppercase;
             left: -61px;
-            top: 8px;
+            top: 6px;
           }
         }
         &:first-child,
         &:nth-child(42),
         &:last-child {
           border-right: 1px solid $color-grey-light;
-          line-height: 30px;
+          line-height: $line-height;
           padding-right: 20px;
           margin-right: 20px;
           &:hover a {
@@ -87,8 +89,8 @@
             margin-right: 15px;
             font-size: 13px;
             font-weight: normal;
-            width: 30px !important;
-            height: 30px;
+            width: 28px !important;
+            height: 26px;
             text-align: center;
             vertical-align: middle;
             color: #000;
