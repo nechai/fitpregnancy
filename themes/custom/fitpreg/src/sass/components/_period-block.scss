@@ -33,7 +33,7 @@ $line-height: 27px;
         }
         &:nth-child(2) {
           position: relative;
-          margin-left: 60px;
+          margin-left: 60px !important;
           &:before {
             content: 'Week';
             font-size: 12px;
@@ -86,7 +86,7 @@ $line-height: 27px;
         }
         @for $i from 2 through 41 {
           &:nth-child(#{$i}) {
-            margin-right: 15px;
+            margin: 0 8px;
             font-size: 13px;
             font-weight: normal;
             width: 28px !important;

@@ -74,7 +74,7 @@ $font-Flaticon-next: "\f103";
 #block-weeklymenu .menu {
   .slick-prev,
   .slick-next {
-    top: 45%;
+    top: 42%;
     &:before {
       font-family: "Flaticon", serif;
       font-size: 25px;
@@ -93,14 +93,14 @@ $font-Flaticon-next: "\f103";
     }
   }
   .slick-prev {
-    left: -7px;
+    left: 5px;
     &:before {
       content: $font-Flaticon-arrows-1;
 
     }
   }
   .slick-next {
-    right: -3px;
+    right: 5px;
     &:before {
       content: $font-Flaticon-arrows;
     }

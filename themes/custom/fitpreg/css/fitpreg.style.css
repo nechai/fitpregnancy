@@ -2775,7 +2775,7 @@ footer {
           line-height: 27px; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(2) {
           position: relative;
-          margin-left: 60px; }
+          margin-left: 60px !important; }
           .menu--weekly-menu .menu .slick-track .menu-item:nth-child(2):before {
             content: 'Week';
             font-size: 12px;
@@ -2813,7 +2813,7 @@ footer {
         .menu--weekly-menu .menu .slick-track .menu-item:first-child {
           padding-right: 45px; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(2) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -2830,7 +2830,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(2):nth-child(2):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(3) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -2847,7 +2847,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(3):nth-child(3):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(4) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -2864,7 +2864,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(4):nth-child(4):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(5) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -2881,7 +2881,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(5):nth-child(5):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(6) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -2898,7 +2898,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(6):nth-child(6):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(7) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -2915,7 +2915,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(7):nth-child(7):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(8) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -2932,7 +2932,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(8):nth-child(8):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(9) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -2949,7 +2949,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(9):nth-child(9):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(10) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -2966,7 +2966,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(10):nth-child(10):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(11) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -2983,7 +2983,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(11):nth-child(11):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(12) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3000,7 +3000,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(12):nth-child(12):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(13) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3017,7 +3017,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(13):nth-child(13):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(14) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3034,7 +3034,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(14):nth-child(14):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(15) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3051,7 +3051,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(15):nth-child(15):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(16) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3068,7 +3068,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(16):nth-child(16):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(17) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3085,7 +3085,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(17):nth-child(17):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(18) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3102,7 +3102,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(18):nth-child(18):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(19) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3119,7 +3119,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(19):nth-child(19):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(20) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3136,7 +3136,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(20):nth-child(20):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(21) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3153,7 +3153,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(21):nth-child(21):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(22) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3170,7 +3170,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(22):nth-child(22):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(23) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3187,7 +3187,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(23):nth-child(23):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(24) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3204,7 +3204,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(24):nth-child(24):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(25) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3221,7 +3221,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(25):nth-child(25):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(26) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3238,7 +3238,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(26):nth-child(26):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(27) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3255,7 +3255,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(27):nth-child(27):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(28) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3272,7 +3272,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(28):nth-child(28):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(29) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3289,7 +3289,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(29):nth-child(29):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(30) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3306,7 +3306,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(30):nth-child(30):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(31) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3323,7 +3323,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(31):nth-child(31):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(32) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3340,7 +3340,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(32):nth-child(32):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(33) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3357,7 +3357,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(33):nth-child(33):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(34) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3374,7 +3374,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(34):nth-child(34):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(35) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3391,7 +3391,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(35):nth-child(35):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(36) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3408,7 +3408,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(36):nth-child(36):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(37) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3425,7 +3425,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(37):nth-child(37):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(38) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3442,7 +3442,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(38):nth-child(38):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(39) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3459,7 +3459,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(39):nth-child(39):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(40) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3476,7 +3476,7 @@ footer {
             .menu--weekly-menu .menu .slick-track .menu-item:nth-child(40):nth-child(40):hover a {
               color: #fff; }
         .menu--weekly-menu .menu .slick-track .menu-item:nth-child(41) {
-          margin-right: 15px;
+          margin: 0 8px;
           font-size: 13px;
           font-weight: normal;
           width: 28px !important;
@@ -3551,7 +3551,7 @@ footer {
 
 #block-weeklymenu .menu .slick-prev,
 #block-weeklymenu .menu .slick-next {
-  top: 45%; }
+  top: 42%; }
   #block-weeklymenu .menu .slick-prev:before,
   #block-weeklymenu .menu .slick-next:before {
     font-family: "Flaticon", serif;
@@ -3570,12 +3570,12 @@ footer {
     font-smoothing: antialiased; }
 
 #block-weeklymenu .menu .slick-prev {
-  left: -7px; }
+  left: 5px; }
   #block-weeklymenu .menu .slick-prev:before {
     content: ""; }
 
 #block-weeklymenu .menu .slick-next {
-  right: -3px; }
+  right: 5px; }
   #block-weeklymenu .menu .slick-next:before {
     content: ""; }
 

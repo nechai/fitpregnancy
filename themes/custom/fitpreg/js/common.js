@@ -276,6 +276,12 @@
                 $('#block-weeklymenu button').each(function () {
                     if ($(this).hasClass('slick-disabled')) {
                         $(this).hide();
+                        if ($(this).hasClass('slick-prev')) {
+                            $('#block-weeklymenu .menu').css({'padding-left': '1%'})
+                        }
+                        if ($(this).hasClass('slick-next')) {
+                            $('#block-weeklymenu .menu').css({'padding-right': '1%'})
+                        }
                     }
                 });
                 // Hide and show slick button dynamically
@@ -283,8 +289,20 @@
                     $('#block-weeklymenu button').each(function () {
                         if ($(this).hasClass('slick-disabled')) {
                             $(this).hide();
+                            if ($(this).hasClass('slick-prev')) {
+                                $('#block-weeklymenu .menu').css({'padding-left': '1%'})
+                            }
+                            if ($(this).hasClass('slick-next')) {
+                                $('#block-weeklymenu .menu').css({'padding-right': '1%'})
+                            }
                         } else {
                             $(this).show();
+                            if ($(this).hasClass('slick-prev')) {
+                                $('#block-weeklymenu .menu').css({'padding-left': '3%'})
+                            }
+                            if ($(this).hasClass('slick-next')) {
+                                $('#block-weeklymenu .menu').css({'padding-right': '3%'})
+                            }
                         }
                     })
                 })
