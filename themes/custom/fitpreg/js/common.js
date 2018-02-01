@@ -19,84 +19,89 @@
     Drupal.behaviors.weekMenuAjaxBehavior = {
         attach: function (context, settings) {
             var menu = $('#block-weeklymenu');
-            $(menu).find('.menu').first().children().each(function () {
+            $(menu).find('.menu .menu-item').each(function () {
                 $(this).once('weekMenuAjax').mouseenter(function () {
                     // Check if exist previous result of ajax request
-                    if ($('.menu-item-ajax').length) {
-                        $('.menu-item-ajax').each(function () {
-                            $(this).remove();
-                        })
-                    }
+                    // and delete it
+
                     var requestItem = $(this);
                     timer = setTimeout(function () {
                         var ourRequest = new XMLHttpRequest();
                         ourRequest.open("GET", "/ajax/" + requestItem.find('a').first().text());
                         console.log(requestItem.find('a').first().text());
+                        ourRequest.send();
                         ourRequest.onload = function () {
                             var ourData = jQuery.parseHTML(ourRequest.responseText);
                             var data = $(ourData).find('.week-menu-ajax-page').addClass("menu-item-ajax");
                             if (data !== undefined) {
+                                if ($('.menu-item-ajax').length) {
+                                    $('.menu-item-ajax').each(function () {
+                                        $(this).remove();
+                                    })
+                                }
+                                // Append ajax result to Document
                                 menu.append(data);
+                                // Create background
+                                var $background = $('.left-menu-background'); // Background
+                                //check if background exist
+                                if ($background.length) {
+                                    //do nothing
+                                } else {
+                                    // Create and add background for $hiddenMenu
+                                    var $backgroundDiv = $('<div class="left-menu-background"></div>');
+                                    var backgroundTopPosition = $('header').outerHeight() - $('#block-breadcrumbs').outerHeight() - 1; // -1 meaning subtract one unnecessary pixel
+                                    $backgroundDiv.css({
+                                        position: 'absolute',
+                                        top: backgroundTopPosition,
+                                        left: 0,
+                                        width: window.innerWidth, //full window width
+                                        height: $(window).height() - backgroundTopPosition,
+                                        backgroundColor: 'rgba(62,62,62,.5)',
+                                        zIndex: 1
+                                    });
+                                    $('.layout-content').prepend($backgroundDiv);
+                                    // Prevent scrolling
+                                    $('html, body').css({
+                                        overflow: 'hidden',
+                                        height: '100%'
+                                    });
+                                }
+
                             }
                         };
-                        ourRequest.send();
-                        var $background = $('.left-menu-background'); // Background
-                        //check if background exist
-                        if ($background.length) {
-                            //do nothing
-                        } else {
-                            // Create and add background for $hiddenMenu
-                            var $backgroundDiv = $('<div class="left-menu-background"></div>');
-                            var backgroundTopPosition = $('header').outerHeight()-1; // -1 meaning subtract one unnecessary pixel
-                            $backgroundDiv.css({
-                                position: 'absolute',
-                                top: backgroundTopPosition,
-                                left: 0,
-                                width: window.innerWidth, //full window width
-                                height: $(window).height() - backgroundTopPosition,
-                                backgroundColor: 'rgba(62,62,62,.5)',
-                                zIndex: 1
-                            });
-                            timerForBackground = setTimeout(function () {
-                                $('.layout-content').prepend($backgroundDiv);
-                                // Prevent scrolling
-                                $('html, body').css({
-                                    overflow: 'hidden',
-                                    height: '100%'
-                                });
-                            }, 600);
-                        }
-                    }, 600);
+
+
+                    }, 500);
                 }).mouseleave(function () {
                     clearTimeout(timer);
                 });
             });
 
-         $('#block-weeklymenu').mouseleave(function () {
-             if ($('.menu-item-ajax').length) {
-                 $('.menu-item-ajax').each(function () {
-                     $(this).remove();
-                 })
-             }
-             var $background = $('.left-menu-background'); // Background
-             //check if background exist
-             if ($background.length) {
-                 // Remove background
-                 $background.remove();
-                 // Turn on scrolling
-                 $('html, body').css({
-                     overflow: 'auto',
-                     height: 'auto'
-                 });
-             }
-         })
+            $('#block-weeklymenu').mouseleave(function () {
+                if ($('.menu-item-ajax').length) {
+                    $('.menu-item-ajax').each(function () {
+                        $(this).remove();
+                    })
+                }
+                var $background = $('.left-menu-background'); // Background
+                //check if background exist
+                if ($background.length) {
+                    // Remove background
+                    $background.remove();
+                    // Turn on scrolling
+                    $('html, body').css({
+                        overflow: 'auto',
+                        height: 'auto'
+                    });
+                }
+            })
         }
     };
 
     Drupal.behaviors.ajaxPopupBehavior = {
         attach: function (context, settings) {
             $('.menu-item-ajax').once("ajaxPopupBehavior").each(function () {
-                $(this).magnificPopup({type:'inline'});
+                $(this).magnificPopup({type: 'inline'});
             })
         }
     };
@@ -245,6 +250,20 @@
                             }
                         })
                     })
+                }
+            });
+            $.fn.extend({
+                hoverTimer: function () {
+                    return this.on({
+                        'mouseenter.timer': function (ev) {
+                            $(this).data('enter', ev.timeStamp);
+                        },
+                        'mouseleave.timer': function (ev) {
+                            var enter = $(this).data('enter');
+                            enter = ev.timeStamp - enter;
+                            return enter;
+                        }
+                    });
                 }
             });
         }
