@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains fitpreg.module.
+ * Contains fitpregnancy.module.
  */
 
 use Drupal\Core\Breadcrumb\Breadcrumb;
@@ -11,10 +11,10 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_help().
  */
-function fitpreg_help($route_name, RouteMatchInterface $route_match) {
+function fitpregnancy_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    // Main module help for the fitpreg module.
-    case 'help.page.fitpreg':
+    // Main module help for the fitpregnancy module.
+    case 'help.page.fitpregnancy':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('Module for making general tasks and alterations.') . '</p>';
@@ -27,9 +27,9 @@ function fitpreg_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_theme().
  */
-function fitpreg_theme() {
+function fitpregnancy_theme() {
   return [
-    'fitpreg' => [
+    'fitpregnancy' => [
       'render element' => 'children',
     ],
   ];
@@ -38,7 +38,7 @@ function fitpreg_theme() {
 /**
  * Implements hook_system_breadcrumb_alter().
  */
-function fitpreg_system_breadcrumb_alter(\Drupal\Core\Breadcrumb\Breadcrumb &$breadcrumb, \Drupal\Core\Routing\RouteMatchInterface $route_match, array $context) {
+function fitpregnancy_system_breadcrumb_alter(\Drupal\Core\Breadcrumb\Breadcrumb &$breadcrumb, \Drupal\Core\Routing\RouteMatchInterface $route_match, array $context) {
   $excess_links = array('Pregnancy', 'Baby names', 'Nutrition', 'Baby', 'More', 'Exercise', 'Parenting');
   $links = $breadcrumb->getLinks();
 //  kint($breadcrumb);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\fitpreg\Functional;
+namespace Drupal\Tests\fitpregnancy\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group fitpreg
+ * @group fitpregnancy
  */
 class LoadTest extends BrowserTestBase {
 
@@ -17,7 +17,7 @@ class LoadTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['fitpreg'];
+  public static $modules = ['fitpregnancy'];
 
   /**
    * A user with permission to administer site configuration.

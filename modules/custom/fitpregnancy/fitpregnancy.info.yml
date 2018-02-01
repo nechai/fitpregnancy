@@ -1,5 +1,6 @@
-name: Fitpreg
+name: Fitpregnancy
 type: module
+version: 1.0
 description: 'Module for making general tasks and alterations.'
 core: 8.x
 package: Custom
