@@ -106,10 +106,10 @@
         }
     };
 
-    Drupal.behaviors.leftMenuAnimateBehavior = {
+    Drupal.behaviors.menuRemoveHrefAttrBehavior = {
         attach: function (context, settings) {
             // Remove href attribute of blind links
-            $('#block-fitpreg-left-menu').once('removeHref').each(function () {
+            $('#block-fitpreg-left-menu, #block-fitpreg-main-menu').once('removeHref').each(function () {
                 var $that = $(this);
                 $that.find('.menu-item--expanded a').each(function () {
                     if ($(this).attr('href') === '/') {
