@@ -4,12 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.week.body
+    - field.field.node.week.field_category
     - field.field.node.week.field_img
     - field.field.node.week.field_week
+    - field.field.node.week.field_week_link
     - image.style.thumbnail
     - node.type.week
   module:
     - image
+    - link
     - path
     - text
 id: node.week.default
@@ -32,6 +35,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_category:
+    weight: 35
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_img:
     weight: 32
     settings:
@@ -45,6 +57,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_week_link:
+    weight: 34
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   path:
     type: path

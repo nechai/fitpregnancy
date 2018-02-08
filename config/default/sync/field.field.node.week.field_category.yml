@@ -1,0 +1,32 @@
+uuid: 735a55d0-844e-48e8-be47-ffa31777a08d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.week
+    - taxonomy.vocabulary.category
+  content:
+    - 'taxonomy_term:category:edf0ab6a-7a3d-4316-b56e-a3593bf96db6'
+id: node.week.field_category
+field_name: field_category
+entity_type: node
+bundle: week
+label: category
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: edf0ab6a-7a3d-4316-b56e-a3593bf96db6
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      category: category
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

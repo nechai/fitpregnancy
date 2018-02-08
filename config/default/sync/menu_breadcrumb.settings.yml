@@ -1,0 +1,102 @@
+determine_menu: true
+disable_admin_page: true
+append_current_page: true
+current_page_as_link: true
+append_member_page: false
+member_page_as_link: false
+remove_home: false
+add_home: true
+home_as_site_name: true
+menu_breadcrumb_menus:
+  main:
+    enabled: 1
+    weight: -10
+    taxattach: 0
+    langhandle: 0
+  admin:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  devel-dris:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  devel-ridrashathiprivov:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  devel-prouulauanestopauet:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  devel-phunuvulojithot:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  main-menu:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  login-menu:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  left-menu:
+    enabled: 1
+    taxattach: 1
+    weight: 0
+    langhandle: 0
+  devel-dregen:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  devel:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  devel-crucluphakishu:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  devel-creswuc:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  devel-cluwedirup:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  account:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  tools:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  footer:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  weekly-menu:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+_core:
+  default_config_hash: cQ5PlGtatt2RcAsy3ZvFrnpvCRT-VdbdrFEV-XUpEAI

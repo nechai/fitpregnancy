@@ -1,0 +1,9 @@
+uuid: 03206a9c-00a9-4456-9855-71ab133511d3
+langcode: en
+status: true
+dependencies: {  }
+id: image_text
+label: 'Image + Text'
+icon_uuid: null
+description: "Use Image + Text for adding an image on the left and a text on the right.\t\r\n"
+behavior_plugins: {  }
