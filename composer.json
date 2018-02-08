@@ -14,7 +14,9 @@
         "drupal/menu_breadcrumb": "^1.5",
         "drupal/pathauto": "^1.0",
         "drupal/console": "^1.5",
-        "drupal/search_kint": "^1.0"
+        "drupal/search_kint": "^1.0",
+        "drupal/paragraphs": "^1.2",
+        "drupal/search_api": "^1.6"
     },
     "replace": {
         "drupal/core": "~8.3"
