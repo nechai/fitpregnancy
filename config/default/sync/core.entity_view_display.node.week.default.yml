@@ -6,9 +6,11 @@ dependencies:
     - field.field.node.week.body
     - field.field.node.week.field_img
     - field.field.node.week.field_week
+    - field.field.node.week.field_week_link
     - node.type.week
   module:
     - image
+    - link
     - options
     - text
     - user
@@ -39,6 +41,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_week_link:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 100

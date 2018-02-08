@@ -1,0 +1,21 @@
+uuid: ca4f6470-3168-419b-8b70-33dd806ea440
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_link
+    - paragraphs.paragraphs_type.list
+  module:
+    - text
+id: paragraph.list.field_body_link
+field_name: field_body_link
+entity_type: paragraph
+bundle: list
+label: 'body link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,9 @@
+uuid: c605cabc-4cf0-4498-a8df-69312ce3e8b9
+langcode: en
+status: true
+dependencies: {  }
+id: list
+label: List
+icon_uuid: null
+description: List
+behavior_plugins: {  }

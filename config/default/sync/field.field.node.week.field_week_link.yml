@@ -1,0 +1,28 @@
+uuid: c93aca5a-d477-4dfb-87ea-a976474db8da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_week_link
+    - node.type.week
+  module:
+    - link
+id: node.week.field_week_link
+field_name: field_week_link
+entity_type: node
+bundle: week
+label: 'week link'
+description: 'Link for getting each one week-node in weeks view.'
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/weeks/node/%'
+    title: 'Read more about being number weeks pregnant.'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link
