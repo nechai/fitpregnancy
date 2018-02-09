@@ -1,0 +1,37 @@
+uuid: 094ad343-19e7-47b5-9c51-00e2a28d0908
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tips_and_todos
+    - node.type.week
+    - paragraphs.paragraphs_type.tips_and_todos
+  module:
+    - entity_reference_revisions
+id: node.week.field_tips_and_todos
+field_name: field_tips_and_todos
+entity_type: node
+bundle: week
+label: 'Tips and TODO''s'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tips_and_todos: tips_and_todos
+    target_bundles_drag_drop:
+      image_text:
+        weight: 4
+        enabled: false
+      list:
+        weight: 5
+        enabled: false
+      tips_and_todos:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

@@ -4,25 +4,29 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.week.body
+    - field.field.node.week.field_category
+    - field.field.node.week.field_see_all_weeks
+    - field.field.node.week.field_tips_and_todos
+    - field.field.node.week.field_week
+    - field.field.node.week.field_week_link
+    - field.field.node.week.field_your_growing_baby
+    - field.field.node.week.field_your_growing_belly
     - node.type.week
   module:
-    - text
     - user
 id: node.week.teaser
 targetEntityType: node
 bundle: week
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_category: true
+  field_see_all_weeks: true
+  field_tips_and_todos: true
+  field_week: true
+  field_week_link: true
+  field_your_growing_baby: true
+  field_your_growing_belly: true

@@ -1,0 +1,9 @@
+uuid: d75cfdf8-1e6f-4de3-9f84-dee431032e27
+langcode: en
+status: true
+dependencies: {  }
+id: tips_and_todos
+label: 'Tips and TODO''s (for week content type)'
+icon_uuid: null
+description: 'Use this in week content types.'
+behavior_plugins: {  }

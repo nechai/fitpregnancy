@@ -1,4 +1,4 @@
-uuid: a190b05a-16a3-4c79-9379-64ce912a75cb
+uuid: 53067fc1-ce16-4683-adef-70a0f9c4c921
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: node.week.field_img
 field_name: field_img
 entity_type: node
 bundle: week
-label: image
+label: Image
 description: ''
 required: false
 translatable: false
@@ -28,11 +28,11 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
-    alt: ''
+    uuid: 2980b15e-830c-4140-af04-c50769a81fa5
+    alt: alt
     title: ''
-    width: null
-    height: null
+    width: 270
+    height: 300
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

@@ -1,0 +1,31 @@
+uuid: 650c0d3e-539d-480d-b163-2147d587fd39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tips_and_todos.field_description
+    - field.field.paragraph.tips_and_todos.field_title
+    - paragraphs.paragraphs_type.tips_and_todos
+  module:
+    - text
+id: paragraph.tips_and_todos.default
+targetEntityType: paragraph
+bundle: tips_and_todos
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

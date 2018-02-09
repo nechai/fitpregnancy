@@ -1,0 +1,26 @@
+uuid: 38b95f14-b6f0-44c4-9088-fb36e03d7663
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_your_growing_baby
+    - node.type.week
+  module:
+    - text
+id: node.week.field_your_growing_baby
+field_name: field_your_growing_baby
+entity_type: node
+bundle: week
+label: 'Your Growing Baby'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    summary: ''
+    value: "<p>The nose and lips are completely formed, and the fetus begins to produce and excrete urine.</p>\r\n\r\n<p>Your baby is 2 1/2 to 3 inches long, the size of a medium goldfish. She weighs about one ounce. Your baby is shorter than a finger, but her face is already showing individual features and characteristics. Your baby spends her time in your womb flexing her new and developing muscles and joints. Bouts of prenatal hiccups are strengthening your baby's diaphragm, which is preparing her respiratory system for breathing. Less glamorous but highly necessary organ systems for making hormones, absorbing nutrients, and filtering waste are also in place this week. The pancreas, gall bladder, and thyroid have developed, the kidneys can make urine, and her bone marrow is making white blood cells to help fight infection after she's born.</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

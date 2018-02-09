@@ -3,14 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.week.body
     - field.field.node.week.field_category
     - field.field.node.week.field_img
     - field.field.node.week.field_see_all_weeks
+    - field.field.node.week.field_tips_and_todos
     - field.field.node.week.field_week
     - field.field.node.week.field_week_link
+    - field.field.node.week.field_your_growing_baby
+    - field.field.node.week.field_your_growing_belly
     - node.type.week
   module:
+    - entity_reference_revisions
     - image
     - link
     - options
@@ -21,23 +24,16 @@ targetEntityType: node
 bundle: week
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_category:
-    weight: 105
+    type: entity_reference_label
+    weight: 7
+    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_img:
-    weight: 102
+    weight: 9
     label: above
     settings:
       image_style: ''
@@ -46,8 +42,8 @@ content:
     type: image
     region: content
   field_see_all_weeks:
-    weight: 106
-    label: above
+    weight: 3
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -57,15 +53,26 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_week:
-    weight: 103
+  field_tips_and_todos:
+    type: entity_reference_revisions_entity_view
+    weight: 6
     label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_week:
+    weight: 2
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_week_link:
-    weight: 104
+    type: link
+    weight: 8
+    region: content
     label: above
     settings:
       trim_length: 80
@@ -74,9 +81,23 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+  field_your_growing_baby:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_your_growing_belly:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

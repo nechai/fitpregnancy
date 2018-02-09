@@ -1,0 +1,21 @@
+uuid: 668379fa-d8ae-4f27-9785-16e712f8a34d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.tips_and_todos
+id: paragraph.tips_and_todos.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: tips_and_todos
+label: Title
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Water Baby'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,4 +1,4 @@
-uuid: d0b12dd5-ce1c-48dd-bc69-9ba9cff8906d
+uuid: f941f496-12e8-4024-a4d9-7302356c21d6
 langcode: en
 status: true
 dependencies:
@@ -13,17 +13,17 @@ type: image
 settings:
   uri_scheme: public
   default_image:
-    uuid: ''
-    alt: ''
+    uuid: 3b3b6bdb-116a-41f8-bbea-b260c51afa6d
+    alt: alt
     title: ''
-    width: null
-    height: null
+    width: 270
+    height: 300
   target_type: file
   display_field: false
   display_default: false
 module: image
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

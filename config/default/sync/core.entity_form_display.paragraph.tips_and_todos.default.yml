@@ -1,0 +1,35 @@
+uuid: c4c143d1-1a67-42cd-bcfb-742f0653bb63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tips_and_todos.field_description
+    - field.field.paragraph.tips_and_todos.field_title
+    - paragraphs.paragraphs_type.tips_and_todos
+  module:
+    - text
+id: paragraph.tips_and_todos.default
+targetEntityType: paragraph
+bundle: tips_and_todos
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

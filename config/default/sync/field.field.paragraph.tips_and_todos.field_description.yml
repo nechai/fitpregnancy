@@ -1,0 +1,24 @@
+uuid: 95383e54-f876-4597-9e1b-1e72c894a120
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.tips_and_todos
+  module:
+    - text
+id: paragraph.tips_and_todos.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: tips_and_todos
+label: Description
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>When you do exercises in water, your abdominal muscles are engaged and lengthened because they're working to keep you balanced. And the buoyancy of the water makes it easier to hold poses—such as yoga's Warrior III—that you might not be able to hold as well on land, providing you with more toning benefits and enabling deeper stretches. Ease pregnancy discomforts and stay in shape safely with this cool pool workout.&nbsp;When you do exercises in water, your abdominal muscles are engaged and lengthened because they're working to keep you balanced. And the buoyancy of the water makes it easier to hold poses—such as yoga's Warrior III—that you might not be able to hold as well on land, providing you with more toning benefits and enabling deeper stretches. Ease pregnancy discomforts and stay in shape safely with this cool pool workout.</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

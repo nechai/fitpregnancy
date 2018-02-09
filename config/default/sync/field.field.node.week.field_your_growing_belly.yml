@@ -1,0 +1,26 @@
+uuid: 90852f0a-cb24-404a-baf5-423ec01eb5dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_your_growing_belly
+    - node.type.week
+  module:
+    - text
+id: node.week.field_your_growing_belly
+field_name: field_your_growing_belly
+entity_type: node
+bundle: week
+label: 'Your Growing Belly'
+description: 'Set ONLY thematic text.'
+required: false
+translatable: false
+default_value:
+  -
+    summary: ''
+    value: "<p>Good news—by week 13, you'll have more energy and less nausea (it could be gone entirely by weeks 14 to 15), as placenta takes over hormone production. Your smell and taste aversions will probably stick with you for the rest of your pregnancy, but unless you're very unlucky, the spontaneous throwing up will ease. If you're starting to feel better, this could be a good time to try a new exercise. If you haven't tried lately, check out why many care providers call it the perfect pregnancy exercise. Yoga is another low-impact activity that can help you feel better. Choose an establishment that offers a specialized prenatal yoga class. Feel calm, centered and prepared for labor with these safe yoga poses</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
