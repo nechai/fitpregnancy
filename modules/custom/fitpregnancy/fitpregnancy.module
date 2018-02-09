@@ -7,6 +7,8 @@
 
 use Drupal\Core\Breadcrumb\Breadcrumb;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+use Drupal\views\ViewExecutable;
 
 /**
  * Implements hook_help().
@@ -50,4 +52,23 @@ function fitpregnancy_system_breadcrumb_alter(\Drupal\Core\Breadcrumb\Breadcrumb
   }
   $breadcrumb = new Breadcrumb();
   $breadcrumb->setLinks($links);
+}
+
+/**
+ * Implements hook_views_query_alter().
+ * @param ViewExecutable $view
+ * @param QueryPluginBase $query
+ */
+function fitpregnancy_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+  /*
+   * Change sort criteria: set sort by integer (default DB field type is char)
+   */
+  if ($view->id() == 'weeks' && $view->current_display === 'page_1') {
+    if ($query->orderby[0]['field'] == 'node__field_week_field_week_value') {
+      $query->addOrderBy(NULL, "CONVERT(node__field_week.field_week_value, SIGNED)", 'ASC', 'order_field');
+      $sorting = $query->orderby[1]['field'];
+      $query->orderby[0]['field'] = $sorting;
+      unset($query->orderby[1]);
+    }
+  }
 }
