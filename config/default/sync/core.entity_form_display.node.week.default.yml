@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.week.body
     - field.field.node.week.field_category
     - field.field.node.week.field_img
+    - field.field.node.week.field_see_all_weeks
     - field.field.node.week.field_week
     - field.field.node.week.field_week_link
     - image.style.thumbnail
@@ -51,6 +52,14 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_see_all_weeks:
+    weight: 36
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_week:
     weight: 33

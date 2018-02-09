@@ -1,0 +1,28 @@
+uuid: 0215944e-06f1-4da2-a722-a788bfc8b148
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_see_all_weeks
+    - node.type.week
+  module:
+    - link
+id: node.week.field_see_all_weeks
+field_name: field_see_all_weeks
+entity_type: node
+bundle: week
+label: 'See all weeks'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/pregnancy/week-by-week'
+    title: 'See all'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
