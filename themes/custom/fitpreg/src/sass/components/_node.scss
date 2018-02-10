@@ -11,6 +11,11 @@ main {
     	line-height: 52px;
     	margin: .5rem 0 0;
     	font-weight: 200;
+    }
+
+		.field__label {
+			display: none;
+			}
 		}
 
 		.views-field-field-short-description {
@@ -93,7 +98,7 @@ main {
 		.views-field-field-paragraphs {
 			margin-top: 20px;
 
-			.field--type-image {
+			.field--name-field-image-demo {
 				float: left;
 				margin: 0 16px 16px 0;
 			}
@@ -104,12 +109,85 @@ main {
 					margin: 1.25rem 0;
 					line-height: 1.5rem;
 				}
+
 				a {
 					margin: 1.25rem 0;
 					line-height: 1.5rem;
 					text-decoration: none;
 					color: #ec188c;
 				}
+			}
+
+			.paragraph--type--list {
+				border-bottom: 1px solid #dedede;
+
+				.field--type-integer {
+					border: 1px solid #dedede;
+    			width: 70px;
+    			height: 70px;
+    			border-radius: 50%;
+    			margin-right: 20px;
+    			float: left;
+
+    			.field__item {
+						margin: 30% auto;
+    				text-align: center;
+    				font-size: 24px;
+    				font-weight: 200;
+    			}
+				}
+
+				img {
+					float: left;
+					margin: 0 16px 16px 0;
+				}
+
+				.field--name-field-description-link {
+					height: 20px;
+				}
+
+				.field--name-field-body-link {
+					height: 20px;
+				}
+			}
+
+			.paragraph--type--content-image {
+
+				.field--name-field-title-left {
+					height: 20px;
+
+					h2 {
+						font-size: 22px;
+	    			line-height: 26px;
+	    			font-weight: 200;
+					}
+				}
+
+			.field--name-field-image-right {
+					float: right;
+    			margin: 0 0 16px 16px;
+				}
+
+			.field--name-field-body-left {
+				font-size: 14px;
+    		line-height: 1.5rem;
+    		font-weight: 400;
+				}
+
+			.paragraph--type--text-image {
+
+				h3 {
+					font-weight: 700;
+    			font-size: 24px;
+    			line-height: 28px;
+				}
+			}
+		}
+
+		.field--name-field-video-paragraph {
+
+			iframe {
+				width: 100%;
 			}
 		}
 	}
