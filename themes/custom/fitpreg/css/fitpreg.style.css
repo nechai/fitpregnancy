@@ -3964,51 +3964,50 @@ footer {
     text-transform: uppercase;
     color: #ec188c; }
 
-main {
+.news-paragraph {
   max-width: 78.875rem;
-  margin: 0 auto; }
-  main .region-content {
-    width: 74.6%;
-    font-family: Montserrat,Arial,sans-serif; }
-    main .region-content .views-field-title {
-      font-size: 48px;
-      line-height: 52px;
-      margin: .5rem 0 0;
-      font-weight: 200; }
-    main .region-content .field__label {
-      display: none; }
-  main .views-field-field-short-description {
+  margin: 0 0 0 3.3%;
+  width: 74.6%;
+  font-family: Montserrat,Arial,sans-serif; }
+  .news-paragraph .views-field-title {
+    font-size: 48px;
+    line-height: 52px;
+    margin: .5rem 0 0;
+    font-weight: 200; }
+  .news-paragraph .field__label {
+    display: none; }
+  .news-paragraph .views-field-field-short-description {
     font-size: 18px;
     line-height: 26px;
     max-height: none;
     font-weight: 400;
     margin: .5rem 0; }
-    main .views-field-field-short-description p {
+    .news-paragraph .views-field-field-short-description p {
       margin-bottom: 0; }
-  main .views-field-uid {
+  .news-paragraph .views-field-uid {
     margin: .5rem 0;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
     font-weight: 700; }
-    main .views-field-uid a {
+    .news-paragraph .views-field-uid a {
       text-decoration: none;
       color: #000; }
-  main .sharethis-wrapper {
+  .news-paragraph .sharethis-wrapper {
     padding-bottom: 15px;
     border-bottom: 1px solid #dedede; }
-    main .sharethis-wrapper .st_plusone_button {
+    .news-paragraph .sharethis-wrapper .st_plusone_button {
       display: none; }
-    main .sharethis-wrapper .st_fblike_button {
+    .news-paragraph .sharethis-wrapper .st_fblike_button {
       display: none; }
-    main .sharethis-wrapper .stButton {
+    .news-paragraph .sharethis-wrapper .stButton {
       font-size: 0;
       width: 28%;
       max-width: 100px;
       height: 44px;
       text-align: center;
       margin: 0; }
-      main .sharethis-wrapper .stButton .st-facebook-counter {
+      .news-paragraph .sharethis-wrapper .stButton .st-facebook-counter {
         width: 100%;
         height: 100% !important;
         background: #3b5998;
@@ -4016,7 +4015,7 @@ main {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 26px; }
-      main .sharethis-wrapper .stButton .st-pinterest-counter {
+      .news-paragraph .sharethis-wrapper .stButton .st-pinterest-counter {
         width: 100%;
         height: 100% !important;
         background: #cc2127;
@@ -4024,67 +4023,107 @@ main {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 26px; }
-      main .sharethis-wrapper .stButton .st-email-counter {
+      .news-paragraph .sharethis-wrapper .stButton .st-email-counter {
         width: 100%;
         height: 100% !important;
         background: #3e3e3e;
-        background-image: url("../images/icons/email.png") !important;
+        background-image: url("../images/icons/mail.png") !important;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 26px; }
-  main .views-field-field-paragraphs {
+  .news-paragraph .views-field-field-paragraphs {
     margin-top: 20px; }
-    main .views-field-field-paragraphs .field--name-field-image-demo {
+    .news-paragraph .views-field-field-paragraphs .field--name-field-image-demo {
       float: left;
       margin: 0 16px 16px 0; }
-    main .views-field-field-paragraphs .field--type-text-long p {
+    .news-paragraph .views-field-field-paragraphs .field--type-text-long p {
       margin: 1.25rem 0;
       line-height: 1.5rem; }
-    main .views-field-field-paragraphs .field--type-text-long a {
+    .news-paragraph .views-field-field-paragraphs .field--type-text-long a {
       margin: 1.25rem 0;
       line-height: 1.5rem;
       text-decoration: none;
       color: #ec188c; }
-    main .views-field-field-paragraphs .paragraph--type--list {
+    .news-paragraph .views-field-field-paragraphs .paragraph--type--images {
+      text-align: center; }
+    .news-paragraph .views-field-field-paragraphs .paragraph--type--image-text h2 {
+      font-size: 22px;
+      line-height: 26px;
+      margin: 1.25rem 0;
+      font-weight: 200; }
+    .news-paragraph .views-field-field-paragraphs .paragraph--type--list-mini {
       border-bottom: 1px solid #dedede; }
-      main .views-field-field-paragraphs .paragraph--type--list .field--type-integer {
+      .news-paragraph .views-field-field-paragraphs .paragraph--type--list-mini .field--type-integer {
         border: 1px solid #dedede;
         width: 70px;
         height: 70px;
         border-radius: 50%;
         margin-right: 20px;
         float: left; }
-        main .views-field-field-paragraphs .paragraph--type--list .field--type-integer .field__item {
+        .news-paragraph .views-field-field-paragraphs .paragraph--type--list-mini .field--type-integer .field__item {
           margin: 30% auto;
           text-align: center;
           font-size: 24px;
           font-weight: 200; }
-      main .views-field-field-paragraphs .paragraph--type--list img {
+      .news-paragraph .views-field-field-paragraphs .paragraph--type--list-mini img {
         float: left;
         margin: 0 16px 16px 0; }
-      main .views-field-field-paragraphs .paragraph--type--list .field--name-field-description-link {
-        height: 20px; }
-      main .views-field-field-paragraphs .paragraph--type--list .field--name-field-body-link {
-        height: 20px; }
-    main .views-field-field-paragraphs .paragraph--type--content-image .field--name-field-title-left {
+      .news-paragraph .views-field-field-paragraphs .paragraph--type--list-mini h2 {
+        font-weight: 200; }
+      .news-paragraph .views-field-field-paragraphs .paragraph--type--list-mini p {
+        margin: 10px 0; }
+      .news-paragraph .views-field-field-paragraphs .paragraph--type--list-mini ul {
+        padding-left: 52%; }
+    .news-paragraph .views-field-field-paragraphs .paragraph--type--content-image .field--name-field-title-left {
       height: 20px; }
-      main .views-field-field-paragraphs .paragraph--type--content-image .field--name-field-title-left h2 {
+      .news-paragraph .views-field-field-paragraphs .paragraph--type--content-image .field--name-field-title-left h2 {
         font-size: 22px;
         line-height: 26px;
         font-weight: 200; }
-    main .views-field-field-paragraphs .paragraph--type--content-image .field--name-field-image-right {
+    .news-paragraph .views-field-field-paragraphs .paragraph--type--content-image .field--name-field-image-right {
       float: right;
       margin: 0 0 16px 16px; }
-    main .views-field-field-paragraphs .paragraph--type--content-image .field--name-field-body-left {
+    .news-paragraph .views-field-field-paragraphs .paragraph--type--content-image .field--name-field-body-left {
       font-size: 14px;
       line-height: 1.5rem;
       font-weight: 400; }
-    main .views-field-field-paragraphs .paragraph--type--content-image .paragraph--type--text-image h3 {
+    .news-paragraph .views-field-field-paragraphs .paragraph--type--content-image .paragraph--type--text-image h3 {
       font-weight: 700;
       font-size: 24px;
       line-height: 28px; }
-    main .views-field-field-paragraphs .field--name-field-video-paragraph iframe {
+    .news-paragraph .views-field-field-paragraphs .field--name-field-video-paragraph iframe {
       width: 100%; }
+
+.title_last_news {
+  font-size: 20px;
+  height: 24px;
+  line-height: 24px;
+  font-family: "montserrat-light",arial;
+  font-weight: 200;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  margin: 0;
+  width: 74.6%; }
+
+.view-display-id-you_might_also_like {
+  margin: 0;
+  width: 100%;
+  padding-top: 10px; }
+  .view-display-id-you_might_also_like .clearfix {
+    margin-bottom: 10px; }
+  .view-display-id-you_might_also_like .views-field-title {
+    width: 219px;
+    font-size: 0;
+    line-height: 0; }
+    .view-display-id-you_might_also_like .views-field-title a {
+      color: #000;
+      text-decoration: none;
+      padding: 3px 0 0px;
+      text-align: left;
+      line-height: 1.5;
+      font-size: 14px; }
+    .view-display-id-you_might_also_like .views-field-title a:hover {
+      color: #ec188c; }
 
 body {
   color: #000;
