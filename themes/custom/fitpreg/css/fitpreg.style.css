@@ -3579,258 +3579,289 @@ footer {
   #block-weeklymenu .menu .slick-next:before {
     content: ""; }
 
-.three-region, .fourth-region,
-.fifth-region, .sixth-region {
-  margin-bottom: 52px; }
-  .three-region .view-header, .three-region h2, .fourth-region .view-header, .fourth-region h2,
-  .fifth-region .view-header,
-  .fifth-region h2, .sixth-region .view-header, .sixth-region h2 {
-    font-size: 28px;
-    font-weight: normal;
-    margin: 8px 0 20px;
-    text-transform: uppercase; }
-  .three-region div[class*="id-block_2"] .view-content,
-  .three-region .view-id-labor_and_delivery_block .view-content,
-  .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content, .fourth-region div[class*="id-block_2"] .view-content,
-  .fourth-region .view-id-labor_and_delivery_block .view-content,
-  .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content,
-  .fifth-region div[class*="id-block_2"] .view-content,
-  .fifth-region .view-id-labor_and_delivery_block .view-content,
-  .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content, .sixth-region div[class*="id-block_2"] .view-content,
-  .sixth-region .view-id-labor_and_delivery_block .view-content,
-  .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .three-region div[class*="id-block_2"] .view-content .views-row,
-    .three-region .view-id-labor_and_delivery_block .view-content .views-row,
-    .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row, .fourth-region div[class*="id-block_2"] .view-content .views-row,
-    .fourth-region .view-id-labor_and_delivery_block .view-content .views-row,
-    .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row,
-    .fifth-region div[class*="id-block_2"] .view-content .views-row,
-    .fifth-region .view-id-labor_and_delivery_block .view-content .views-row,
-    .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row, .sixth-region div[class*="id-block_2"] .view-content .views-row,
-    .sixth-region .view-id-labor_and_delivery_block .view-content .views-row,
-    .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      margin-right: 20px;
-      width: 25%; }
-      .three-region div[class*="id-block_2"] .view-content .views-row:last-child,
-      .three-region .view-id-labor_and_delivery_block .view-content .views-row:last-child,
-      .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row:last-child, .fourth-region div[class*="id-block_2"] .view-content .views-row:last-child,
-      .fourth-region .view-id-labor_and_delivery_block .view-content .views-row:last-child,
-      .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row:last-child,
-      .fifth-region div[class*="id-block_2"] .view-content .views-row:last-child,
-      .fifth-region .view-id-labor_and_delivery_block .view-content .views-row:last-child,
-      .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row:last-child, .sixth-region div[class*="id-block_2"] .view-content .views-row:last-child,
-      .sixth-region .view-id-labor_and_delivery_block .view-content .views-row:last-child,
-      .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row:last-child {
-        margin-right: 0; }
-      .three-region div[class*="id-block_2"] .view-content .views-row .views-field-field-image,
-      .three-region div[class*="id-block_2"] .view-content .views-row .views-field-title,
-      .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-image,
-      .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title,
-      .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-image,
-      .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title, .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-image,
-      .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-title,
-      .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-image,
-      .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title,
-      .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-image,
-      .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title,
-      .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-image,
-      .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-title,
-      .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-image,
-      .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title,
-      .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-image,
-      .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title, .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-image,
-      .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-title,
-      .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-image,
-      .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title,
-      .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-image,
-      .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title {
-        width: 100%; }
-      .three-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images,
-      .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images,
-      .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images, .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images,
-      .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images,
-      .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images,
-      .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images,
-      .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images,
-      .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images, .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images,
-      .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images,
-      .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images {
-        height: 220px;
-        margin-bottom: 10px; }
-        .three-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a,
-        .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a,
-        .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a, .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a,
-        .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a,
-        .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a,
-        .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a,
-        .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a,
-        .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a, .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a,
-        .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a,
-        .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a {
-          display: block; }
-          .three-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a img,
-          .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a img,
-          .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a img, .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a img,
-          .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a img,
-          .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a img,
-          .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a img,
-          .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a img,
-          .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a img, .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a img,
-          .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a img,
-          .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a img {
-            height: 220px;
-            width: 100%; }
-      .three-region div[class*="id-block_2"] .view-content .views-row .views-field-title a,
-      .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title a,
-      .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title a, .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-title a,
-      .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title a,
-      .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title a,
-      .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-title a,
-      .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title a,
-      .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title a, .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-title a,
-      .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title a,
-      .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title a {
-        color: #ec188c;
-        font-size: 17px;
-        line-height: 24px;
-        text-decoration: none; }
-
-/* end of Common rules */
-.three-region .view-content {
+.content_front_page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px; }
-  .three-region .view-content .views-row {
-    width: 50%; }
-    .three-region .view-content .views-row:first-child {
-      margin-right: 20px; }
-    .three-region .view-content .views-row .views-field-field-images img {
-      height: auto;
-      width: 100%; }
-    .three-region .view-content .views-row .views-field-title {
-      font-size: 28px; }
-      .three-region .view-content .views-row .views-field-title a {
-        color: #000;
-        font-weight: normal;
-        text-decoration: none; }
-        .three-region .view-content .views-row .views-field-title a:hover {
-          color: #ec188c; }
-    .three-region .view-content .views-row .views-field-body h5, .three-region .view-content .views-row .views-field-body p {
-      font-size: 16px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /* end of Common rules */
+  /* end of third region */
+  /* end of fourth region */
+  /* end of fifth region */ }
+  .content_front_page .three-region, .content_front_page .fourth-region,
+  .content_front_page .fifth-region, .content_front_page .sixth-region {
+    margin-bottom: 52px; }
+    .content_front_page .three-region .view-header, .content_front_page .three-region h2, .content_front_page .fourth-region .view-header, .content_front_page .fourth-region h2,
+    .content_front_page .fifth-region .view-header,
+    .content_front_page .fifth-region h2, .content_front_page .sixth-region .view-header, .content_front_page .sixth-region h2 {
+      font-size: 28px;
       font-weight: normal;
-      line-height: 24px;
-      margin: 8px 0 20px 0; }
-    .three-region .view-content .views-row .views-field-view-node a {
-      color: #ec188c;
-      font-weight: normal;
-      text-decoration: none;
+      margin: 8px 0 20px;
       text-transform: uppercase; }
-
-/* end of third region */
-.fourth-region .view-id-ttc_blocks .views-row {
-  overflow: auto; }
-  .fourth-region .view-id-ttc_blocks .views-row .views-field-title, .fourth-region .view-id-ttc_blocks .views-row .views-field-body,
-  .fourth-region .view-id-ttc_blocks .views-row .views-field-view-node {
-    overflow: hidden; }
-  .fourth-region .view-id-ttc_blocks .views-row .views-field-field-images {
-    float: left;
-    margin-right: 20px; }
-  .fourth-region .view-id-ttc_blocks .views-row .views-field-title a {
-    color: #000;
-    font-size: 25px;
-    font-weight: normal;
-    text-decoration: none; }
-    .fourth-region .view-id-ttc_blocks .views-row .views-field-title a:hover {
-      color: #ec188c; }
-  .fourth-region .view-id-ttc_blocks .views-row .views-field-view-node a {
-    color: #ec188c;
-    text-decoration: none; }
-
-/* end of fourth region */
-.fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row,
-.fifth-region .block-views-blockbaby-care-block-1 .views-row, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row,
-.sixth-region .block-views-blockbaby-care-block-1 .views-row {
-  background-image: -webkit-linear-gradient(top, #dedede 10%, transparent 10%, transparent);
-  background-size: 8px 8px;
-  margin-bottom: 20px;
-  position: relative;
-  text-align: right; }
-  .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .views-field-field-images,
-  .fifth-region .block-views-blockbaby-care-block-1 .views-row .views-field-field-images, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .views-field-field-images,
-  .sixth-region .block-views-blockbaby-care-block-1 .views-row .views-field-field-images {
-    display: inline-block;
-    height: 697px;
-    width: 697px; }
-    .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .views-field-field-images img,
-    .fifth-region .block-views-blockbaby-care-block-1 .views-row .views-field-field-images img, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .views-field-field-images img,
-    .sixth-region .block-views-blockbaby-care-block-1 .views-row .views-field-field-images img {
-      height: 100%;
-      width: 100%; }
-  .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper,
-  .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper,
-  .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper {
-    background-color: #fff;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    left: 2%;
-    padding: 24px;
-    position: absolute;
-    text-align: left;
-    top: 13%;
-    width: 280px; }
-    .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title,
-    .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title,
-    .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title {
-      font-size: 29px; }
-      .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title a,
-      .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title a, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title a,
-      .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title a {
-        color: #000;
-        text-decoration: none; }
-        .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title a:hover,
-        .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title a:hover, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title a:hover,
-        .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title a:hover {
+    .content_front_page .three-region div[class*="id-block_2"] .view-content,
+    .content_front_page .three-region .view-id-labor_and_delivery_block .view-content,
+    .content_front_page .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content, .content_front_page .fourth-region div[class*="id-block_2"] .view-content,
+    .content_front_page .fourth-region .view-id-labor_and_delivery_block .view-content,
+    .content_front_page .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content,
+    .content_front_page .fifth-region div[class*="id-block_2"] .view-content,
+    .content_front_page .fifth-region .view-id-labor_and_delivery_block .view-content,
+    .content_front_page .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content, .content_front_page .sixth-region div[class*="id-block_2"] .view-content,
+    .content_front_page .sixth-region .view-id-labor_and_delivery_block .view-content,
+    .content_front_page .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .content_front_page .three-region div[class*="id-block_2"] .view-content .views-row,
+      .content_front_page .three-region .view-id-labor_and_delivery_block .view-content .views-row,
+      .content_front_page .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row, .content_front_page .fourth-region div[class*="id-block_2"] .view-content .views-row,
+      .content_front_page .fourth-region .view-id-labor_and_delivery_block .view-content .views-row,
+      .content_front_page .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row,
+      .content_front_page .fifth-region div[class*="id-block_2"] .view-content .views-row,
+      .content_front_page .fifth-region .view-id-labor_and_delivery_block .view-content .views-row,
+      .content_front_page .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row, .content_front_page .sixth-region div[class*="id-block_2"] .view-content .views-row,
+      .content_front_page .sixth-region .view-id-labor_and_delivery_block .view-content .views-row,
+      .content_front_page .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-right: 20px;
+        width: 25%; }
+        .content_front_page .three-region div[class*="id-block_2"] .view-content .views-row:last-child,
+        .content_front_page .three-region .view-id-labor_and_delivery_block .view-content .views-row:last-child,
+        .content_front_page .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row:last-child, .content_front_page .fourth-region div[class*="id-block_2"] .view-content .views-row:last-child,
+        .content_front_page .fourth-region .view-id-labor_and_delivery_block .view-content .views-row:last-child,
+        .content_front_page .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row:last-child,
+        .content_front_page .fifth-region div[class*="id-block_2"] .view-content .views-row:last-child,
+        .content_front_page .fifth-region .view-id-labor_and_delivery_block .view-content .views-row:last-child,
+        .content_front_page .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row:last-child, .content_front_page .sixth-region div[class*="id-block_2"] .view-content .views-row:last-child,
+        .content_front_page .sixth-region .view-id-labor_and_delivery_block .view-content .views-row:last-child,
+        .content_front_page .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row:last-child {
+          margin-right: 0; }
+        .content_front_page .three-region div[class*="id-block_2"] .view-content .views-row .views-field-field-image,
+        .content_front_page .three-region div[class*="id-block_2"] .view-content .views-row .views-field-title,
+        .content_front_page .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-image,
+        .content_front_page .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title,
+        .content_front_page .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-image,
+        .content_front_page .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title, .content_front_page .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-image,
+        .content_front_page .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-title,
+        .content_front_page .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-image,
+        .content_front_page .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title,
+        .content_front_page .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-image,
+        .content_front_page .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title,
+        .content_front_page .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-image,
+        .content_front_page .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-title,
+        .content_front_page .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-image,
+        .content_front_page .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title,
+        .content_front_page .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-image,
+        .content_front_page .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title, .content_front_page .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-image,
+        .content_front_page .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-title,
+        .content_front_page .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-image,
+        .content_front_page .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title,
+        .content_front_page .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-image,
+        .content_front_page .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title {
+          width: 100%; }
+        .content_front_page .three-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images,
+        .content_front_page .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images,
+        .content_front_page .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images, .content_front_page .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images,
+        .content_front_page .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images,
+        .content_front_page .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images,
+        .content_front_page .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images,
+        .content_front_page .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images,
+        .content_front_page .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images, .content_front_page .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images,
+        .content_front_page .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images,
+        .content_front_page .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images {
+          height: 220px;
+          margin-bottom: 10px; }
+          .content_front_page .three-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a,
+          .content_front_page .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a,
+          .content_front_page .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a, .content_front_page .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a,
+          .content_front_page .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a,
+          .content_front_page .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a,
+          .content_front_page .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a,
+          .content_front_page .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a,
+          .content_front_page .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a, .content_front_page .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a,
+          .content_front_page .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a,
+          .content_front_page .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a {
+            display: block; }
+            .content_front_page .three-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a img,
+            .content_front_page .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a img,
+            .content_front_page .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a img, .content_front_page .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a img,
+            .content_front_page .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a img,
+            .content_front_page .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a img,
+            .content_front_page .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a img,
+            .content_front_page .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a img,
+            .content_front_page .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a img, .content_front_page .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-field-images a img,
+            .content_front_page .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-field-images a img,
+            .content_front_page .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-field-images a img {
+              height: 220px;
+              width: 100%; }
+        .content_front_page .three-region div[class*="id-block_2"] .view-content .views-row .views-field-title a,
+        .content_front_page .three-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title a,
+        .content_front_page .three-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title a, .content_front_page .fourth-region div[class*="id-block_2"] .view-content .views-row .views-field-title a,
+        .content_front_page .fourth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title a,
+        .content_front_page .fourth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title a,
+        .content_front_page .fifth-region div[class*="id-block_2"] .view-content .views-row .views-field-title a,
+        .content_front_page .fifth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title a,
+        .content_front_page .fifth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title a, .content_front_page .sixth-region div[class*="id-block_2"] .view-content .views-row .views-field-title a,
+        .content_front_page .sixth-region .view-id-labor_and_delivery_block .view-content .views-row .views-field-title a,
+        .content_front_page .sixth-region .view-id-duplicate_of_labor_and_delivery_block .view-content .views-row .views-field-title a {
           color: #ec188c;
-          font-weight: normal; }
-    .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-body,
-    .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-body, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-body,
-    .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-body {
-      padding-top: 20px;
-      top: 15%; }
-      .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-body h5,
-      .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-body h5, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-body h5,
-      .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-body h5 {
-        font-size: 18px;
-        font-weight: normal;
-        margin: 0; }
-    .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-view-node,
-    .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-view-node, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-view-node,
-    .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-view-node {
-      padding-top: 20px; }
-      .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-view-node a,
-      .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-view-node a, .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-view-node a,
-      .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-view-node a {
-        color: #ec188c;
+          font-size: 17px;
+          line-height: 24px;
+          text-decoration: none; }
+  .content_front_page .three-region .view-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px; }
+    .content_front_page .three-region .view-content .views-row {
+      width: 50%; }
+      .content_front_page .three-region .view-content .views-row:first-child {
+        margin-right: 20px; }
+      .content_front_page .three-region .view-content .views-row .views-field-field-images img {
+        height: auto;
+        width: 100%; }
+      .content_front_page .three-region .view-content .views-row .views-field-title {
+        font-size: 28px; }
+        .content_front_page .three-region .view-content .views-row .views-field-title a {
+          color: #000;
+          font-weight: normal;
+          text-decoration: none; }
+          .content_front_page .three-region .view-content .views-row .views-field-title a:hover {
+            color: #ec188c; }
+      .content_front_page .three-region .view-content .views-row .views-field-body h5, .content_front_page .three-region .view-content .views-row .views-field-body p {
         font-size: 16px;
-        text-decoration: none; }
+        font-weight: normal;
+        line-height: 24px;
+        margin: 8px 0 20px 0; }
+      .content_front_page .three-region .view-content .views-row .views-field-view-node a {
+        color: #ec188c;
+        font-weight: normal;
+        text-decoration: none;
+        text-transform: uppercase; }
+  .content_front_page .fourth-region .view-id-ttc_blocks .views-row {
+    overflow: auto; }
+    .content_front_page .fourth-region .view-id-ttc_blocks .views-row .views-field-title, .content_front_page .fourth-region .view-id-ttc_blocks .views-row .views-field-body,
+    .content_front_page .fourth-region .view-id-ttc_blocks .views-row .views-field-view-node {
+      overflow: hidden; }
+    .content_front_page .fourth-region .view-id-ttc_blocks .views-row .views-field-field-images {
+      float: left;
+      margin-right: 20px; }
+    .content_front_page .fourth-region .view-id-ttc_blocks .views-row .views-field-title a {
+      color: #000;
+      font-size: 25px;
+      font-weight: normal;
+      text-decoration: none; }
+      .content_front_page .fourth-region .view-id-ttc_blocks .views-row .views-field-title a:hover {
+        color: #ec188c; }
+    .content_front_page .fourth-region .view-id-ttc_blocks .views-row .views-field-view-node a {
+      color: #ec188c;
+      text-decoration: none; }
+  .content_front_page .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row,
+  .content_front_page .fifth-region .block-views-blockbaby-care-block-1 .views-row, .content_front_page .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row,
+  .content_front_page .sixth-region .block-views-blockbaby-care-block-1 .views-row {
+    background-image: -webkit-linear-gradient(top, #dedede 10%, transparent 10%, transparent);
+    background-size: 8px 8px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: right; }
+    .content_front_page .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .views-field-field-images,
+    .content_front_page .fifth-region .block-views-blockbaby-care-block-1 .views-row .views-field-field-images, .content_front_page .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .views-field-field-images,
+    .content_front_page .sixth-region .block-views-blockbaby-care-block-1 .views-row .views-field-field-images {
+      display: inline-block;
+      height: 697px;
+      width: 697px; }
+      .content_front_page .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .views-field-field-images img,
+      .content_front_page .fifth-region .block-views-blockbaby-care-block-1 .views-row .views-field-field-images img, .content_front_page .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .views-field-field-images img,
+      .content_front_page .sixth-region .block-views-blockbaby-care-block-1 .views-row .views-field-field-images img {
+        height: 100%;
+        width: 100%; }
+    .content_front_page .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper,
+    .content_front_page .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper, .content_front_page .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper,
+    .content_front_page .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper {
+      background-color: #fff;
+      -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+      left: 2%;
+      padding: 24px;
+      position: absolute;
+      text-align: left;
+      top: 13%;
+      width: 280px; }
+      .content_front_page .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title,
+      .content_front_page .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title, .content_front_page .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title,
+      .content_front_page .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title {
+        font-size: 29px; }
+        .content_front_page .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title a,
+        .content_front_page .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title a, .content_front_page .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title a,
+        .content_front_page .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title a {
+          color: #000;
+          text-decoration: none; }
+          .content_front_page .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title a:hover,
+          .content_front_page .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title a:hover, .content_front_page .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-title a:hover,
+          .content_front_page .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-title a:hover {
+            color: #ec188c;
+            font-weight: normal; }
+      .content_front_page .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-body,
+      .content_front_page .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-body, .content_front_page .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-body,
+      .content_front_page .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-body {
+        padding-top: 20px;
+        top: 15%; }
+        .content_front_page .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-body h5,
+        .content_front_page .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-body h5, .content_front_page .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-body h5,
+        .content_front_page .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-body h5 {
+          font-size: 18px;
+          font-weight: normal;
+          margin: 0; }
+      .content_front_page .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-view-node,
+      .content_front_page .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-view-node, .content_front_page .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-view-node,
+      .content_front_page .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-view-node {
+        padding-top: 20px; }
+        .content_front_page .fifth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-view-node a,
+        .content_front_page .fifth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-view-node a, .content_front_page .sixth-region .block-views-blocksafe-healthy-pregnancy-guide-block-1 .views-row .fields-wrapper .views-field-view-node a,
+        .content_front_page .sixth-region .block-views-blockbaby-care-block-1 .views-row .fields-wrapper .views-field-view-node a {
+          color: #ec188c;
+          font-size: 16px;
+          text-decoration: none; }
+  .content_front_page .fifth-region .view-id-labor_and_delivery_block,
+  .content_front_page .fifth-region .view-id-duplicate_of_labor_and_delivery_block, .content_front_page .sixth-region .view-id-labor_and_delivery_block,
+  .content_front_page .sixth-region .view-id-duplicate_of_labor_and_delivery_block {
+    margin-top: 42px; }
+  .content_front_page .seven-region {
+    width: 60%;
+    margin: 0 4% 0 2%;
+    padding-top: 1.7%; }
+    .content_front_page .seven-region h2 {
+      margin: 0;
+      padding-bottom: 15px;
+      font-weight: 200;
+      text-transform: uppercase;
+      line-height: 24px;
+      font-family: Montserrat;
+      font-size: 24px; }
+    .content_front_page .seven-region .views-row {
+      padding-bottom: 8px; }
+      .content_front_page .seven-region .views-row .views-field-title {
+        width: 143px; }
+        .content_front_page .seven-region .views-row .views-field-title a {
+          font-family: Montserrat;
+          color: #000;
+          padding: 3px 0 0px;
+          text-align: left;
+          line-height: 1.25;
+          font-size: 14px;
+          font-weight: 300;
+          text-decoration: none; }
+        .content_front_page .seven-region .views-row .views-field-title a:hover {
+          color: #ec188c; }
 
-.fifth-region .view-id-labor_and_delivery_block,
-.fifth-region .view-id-duplicate_of_labor_and_delivery_block, .sixth-region .view-id-labor_and_delivery_block,
-.sixth-region .view-id-duplicate_of_labor_and_delivery_block {
-  margin-top: 42px; }
-
-/* end of fifth region */
 /* end of sixth region */
 .week-menu-ajax-page {
   padding: 2%;
@@ -3967,7 +3998,6 @@ footer {
 .news-paragraph {
   max-width: 78.875rem;
   margin: 0 0 0 3.3%;
-  width: 74.6%;
   font-family: Montserrat,Arial,sans-serif; }
   .news-paragraph .views-field-title {
     font-size: 48px;
@@ -4125,6 +4155,34 @@ footer {
     .view-display-id-you_might_also_like .views-field-title a:hover {
       color: #ec188c; }
 
+.layout-sidebar-first {
+  width: 30%;
+  margin: 0 4% 0 2%;
+  padding-top: 20px; }
+  .layout-sidebar-first h2 {
+    margin: 0;
+    padding-bottom: 15px;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-family: Montserrat;
+    font-size: 24px; }
+  .layout-sidebar-first .views-row {
+    padding-bottom: 8px; }
+    .layout-sidebar-first .views-row .views-field-title {
+      width: 143px; }
+      .layout-sidebar-first .views-row .views-field-title a {
+        font-family: Montserrat;
+        color: #000;
+        padding: 3px 0 0px;
+        text-align: left;
+        line-height: 1.25;
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration: none; }
+      .layout-sidebar-first .views-row .views-field-title a:hover {
+        color: #ec188c; }
+
 body {
   color: #000;
   font-family: 'Montserrat'; }
@@ -4134,5 +4192,15 @@ body {
     body .layout-container .layout-content {
       margin: 0 auto;
       max-width: 1360px; }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1360px;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=fitpreg.style.css.map */
