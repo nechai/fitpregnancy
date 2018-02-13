@@ -1,251 +1,296 @@
-// Common rules
-.three-region, .fourth-region,
-.fifth-region, .sixth-region {
-  margin-bottom: 52px;
-  
-  // Title
-  .view-header, h2 {
-    font-size: 28px;
-    font-weight: normal;
-    margin: 8px 0 20px;
-    text-transform: uppercase;
-  }
-  
-  div[class *= "id-block_2"],
-  .view-id-labor_and_delivery_block, 
-  .view-id-duplicate_of_labor_and_delivery_block {
+.content_front_page {
+  display: flex;
+  flex-direction: row;
+
+  // Common rules
+  .three-region, .fourth-region,
+  .fifth-region, .sixth-region {
+    margin-bottom: 52px;
     
-    .view-content {
-      display: flex;
+    // Title
+    .view-header, h2 {
+      font-size: 28px;
+      font-weight: normal;
+      margin: 8px 0 20px;
+      text-transform: uppercase;
+    }
+    
+    div[class *= "id-block_2"],
+    .view-id-labor_and_delivery_block, 
+    .view-id-duplicate_of_labor_and_delivery_block {
       
-      .views-row {
+      .view-content {
         display: flex;
-        flex-direction: column;
-        margin-right: 20px;
-        width: 25%;
         
-        &:last-child {
-          margin-right: 0;
-        }
-        
-        .views-field-field-image,
-        .views-field-title {
-          width: 100%;
-        }
-        
-        .views-field-field-images {
-          height: 220px;
-          margin-bottom: 10px;
+        .views-row {
+          display: flex;
+          flex-direction: column;
+          margin-right: 20px;
+          width: 25%;
           
-          a {
-            display: block;
+          &:last-child {
+            margin-right: 0;
+          }
+          
+          .views-field-field-image,
+          .views-field-title {
+            width: 100%;
+          }
+          
+          .views-field-field-images {
+            height: 220px;
+            margin-bottom: 10px;
             
-            img {
-              height: 220px;
-              width: 100%;
+            a {
+              display: block;
+              
+              img {
+                height: 220px;
+                width: 100%;
+              }
+            }
+          }
+          
+          .views-field-title {
+            a {
+              color: $icon-col-pink;
+              font-size: 17px;
+              line-height: 24px;
+              text-decoration: none;
             }
           }
         }
-        
-        .views-field-title {
-          a {
-            color: $icon-col-pink;
-            font-size: 17px;
-            line-height: 24px;
-            text-decoration: none;
-          }
-        }
       }
     }
-  }
-} /* end of Common rules */
+  } /* end of Common rules */
 
 
-// Third region
-.three-region {
-  
-  .view-content {
-    display: flex;
-    margin-bottom: 20px;
-    
-    .views-row {
-      width: 50%;
-      
-      &:first-child {
-        margin-right: 20px;
-      }
-      
-      .views-field-field-images {
-        
-        img {
-          height: auto;
-          width: 100%;
-        }
-      }
-      
-      .views-field-title {
-        font-size: 28px;
-        
-        a {
-          color: $color-black;
-          font-weight: normal;
-          text-decoration: none;
-          
-          @include hover {
-            color: $icon-col-pink;
-          }
-        }
-      }
-      
-      .views-field-body {
-        
-        h5, p {
-          font-size: 16px;
-          font-weight: normal;
-          line-height: 24px;
-          margin: 8px 0 20px 0;
-        }
-      }
-      
-      .views-field-view-node {
-        a {
-          color: $icon-col-pink;
-          font-weight: normal;
-          text-decoration: none;
-          text-transform: uppercase;
-        }
-      }
-    }
-  }
-} /* end of third region */
+  // Third region
+  .three-region {
 
-
-
-// Fourth region
-.fourth-region {
-  
-  .view-id-ttc_blocks {
-    
-    .views-row {
-      overflow: auto;
-      
-      .views-field-title, .views-field-body,
-      .views-field-view-node {
-        overflow: hidden;
-      }
-      
-      .views-field-field-images {
-        float: left;
-        margin-right: 20px;
-      }
-      
-      .views-field-title {
-        
-        a {
-          color: $color-black;
-          font-size: 25px;
-          font-weight: normal;
-          text-decoration: none;
-          
-          &:hover {
-            color: $icon-col-pink;
-          }
-        }
-      }
-      
-      .views-field-view-node {
-        
-        a {
-          color: $icon-col-pink;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-} /* end of fourth region */
-
-// Fifth and sixth regions
-.fifth-region, .sixth-region {
-  
-  .block-views-blocksafe-healthy-pregnancy-guide-block-1,
-  .block-views-blockbaby-care-block-1 {
-    
-    .views-row {
-      background-image: -webkit-linear-gradient(top,#dedede 10%,transparent 10%,transparent);
-      -webkit-background-size: 8px 8px;
-      background-size: 8px 8px;
+    .view-content {
+      display: flex;
       margin-bottom: 20px;
-      position: relative;
-      text-align: right;
       
-      .views-field-field-images {
-        display: inline-block;
-        height: 697px;
-        width: 697px;
+      .views-row {
+        width: 50%;
         
-        img {
-          height: 100%;
-          width: 100%;
+        &:first-child {
+          margin-right: 20px;
         }
-      }
-      
-      .fields-wrapper {
-        background-color: $color-white;
-        -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);;
-        -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);;
-        box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);;
-        left: 2%;
-        padding: 24px;
-        position: absolute;
-        text-align: left;
-        top: 13%;
-        width: 280px;
+        
+        .views-field-field-images {
+          
+          img {
+            height: auto;
+            width: 100%;
+          }
+        }
         
         .views-field-title {
-          font-size: 29px;
+          font-size: 28px;
           
           a {
             color: $color-black;
+            font-weight: normal;
             text-decoration: none;
             
             @include hover {
               color: $icon-col-pink;
-              font-weight: normal;
             }
           }
         }
         
         .views-field-body {
-          padding-top: 20px;
-          top: 15%;
           
-          h5 {
-            font-size: 18px;
+          h5, p {
+            font-size: 16px;
             font-weight: normal;
-            margin: 0;
+            line-height: 24px;
+            margin: 8px 0 20px 0;
           }
         }
         
         .views-field-view-node {
-          padding-top: 20px;
+          a {
+            color: $icon-col-pink;
+            font-weight: normal;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  } /* end of third region */
+
+
+
+  // Fourth region
+  .fourth-region {
+
+    .view-id-ttc_blocks {
+      
+      .views-row {
+        overflow: auto;
+        
+        .views-field-title, .views-field-body,
+        .views-field-view-node {
+          overflow: hidden;
+        }
+        
+        .views-field-field-images {
+          float: left;
+          margin-right: 20px;
+        }
+        
+        .views-field-title {
+          
+          a {
+            color: $color-black;
+            font-size: 25px;
+            font-weight: normal;
+            text-decoration: none;
+            
+            &:hover {
+              color: $icon-col-pink;
+            }
+          }
+        }
+        
+        .views-field-view-node {
           
           a {
             color: $icon-col-pink;
-            font-size: 16px;
             text-decoration: none;
           }
         }
       }
     }
-  }
-  .view-id-labor_and_delivery_block,
-  .view-id-duplicate_of_labor_and_delivery_block {
-    margin-top: 42px;
-  }
-  
-} /* end of fifth region */
+  } /* end of fourth region */
 
-// Sixth region
-.sixth-region {
-  
+  // Fifth and sixth regions
+  .fifth-region, .sixth-region {
+
+    .block-views-blocksafe-healthy-pregnancy-guide-block-1,
+    .block-views-blockbaby-care-block-1 {
+      
+      .views-row {
+        background-image: -webkit-linear-gradient(top,#dedede 10%,transparent 10%,transparent);
+        -webkit-background-size: 8px 8px;
+        background-size: 8px 8px;
+        margin-bottom: 20px;
+        position: relative;
+        text-align: right;
+        
+        .views-field-field-images {
+          display: inline-block;
+          height: 697px;
+          width: 697px;
+          
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        
+        .fields-wrapper {
+          background-color: $color-white;
+          -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);;
+          -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);;
+          box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);;
+          left: 2%;
+          padding: 24px;
+          position: absolute;
+          text-align: left;
+          top: 13%;
+          width: 280px;
+          
+          .views-field-title {
+            font-size: 29px;
+            
+            a {
+              color: $color-black;
+              text-decoration: none;
+              
+              @include hover {
+                color: $icon-col-pink;
+                font-weight: normal;
+              }
+            }
+          }
+          
+          .views-field-body {
+            padding-top: 20px;
+            top: 15%;
+            
+            h5 {
+              font-size: 18px;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+          
+          .views-field-view-node {
+            padding-top: 20px;
+            
+            a {
+              color: $icon-col-pink;
+              font-size: 16px;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .view-id-labor_and_delivery_block,
+    .view-id-duplicate_of_labor_and_delivery_block {
+      margin-top: 42px;
+    }
+    
+  } /* end of fifth region */
+
+  // Sixth region
+  .sixth-region {
+
+    }
+
+  .seven-region {
+    width: 60%;
+    margin: 0 4% 0 2%;
+    padding-top: 1.7%;
+
+    h2 {
+    margin: 0;
+    padding-bottom: 15px;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-family: Montserrat;
+    font-size: 24px;
+    }
+
+    .views-row {
+    padding-bottom: 8px;
+
+      .views-field-title {
+        width: 143px;
+
+        a {
+          font-family: Montserrat;
+          color: #000;
+          padding: 3px 0 0px;
+          text-align: left;
+          line-height: 1.25;
+          font-size: 14px;
+          font-weight: 300;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #ec188c;
+        }
+      }
+    } 
+  }
+
 } /* end of sixth region */
