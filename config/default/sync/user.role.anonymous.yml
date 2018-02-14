@@ -13,5 +13,6 @@ permissions:
   - 'access content'
   - 'access content overview'
   - 'access site-wide contact form'
+  - 'access to pager for content type'
   - 'search content'
   - 'use text format restricted_html'
