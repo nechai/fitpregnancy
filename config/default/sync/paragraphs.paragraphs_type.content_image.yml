@@ -1,0 +1,9 @@
+uuid: 46246207-0617-46ac-ab7f-d225ff811de7
+langcode: en
+status: true
+dependencies: {  }
+id: content_image
+label: 'Content + Image'
+icon_uuid: null
+description: 'Adding image and title,body. Styles: image - right, title and body - left.'
+behavior_plugins: {  }

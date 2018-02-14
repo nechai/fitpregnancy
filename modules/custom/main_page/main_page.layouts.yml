@@ -16,5 +16,7 @@ main_page:
       label: fifth
     sixth:
       label: sixth
+    seven:
+      label: seven
     right:
       label: right

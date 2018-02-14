@@ -141,16 +141,16 @@ variant_settings:
       weight: 0
       uuid: 3fb90377-b184-45c3-8a99-78a415e26308
       context_mapping: {  }
-    a2232d07-1aa8-4297-9df7-6523ed45f9b0:
+    f970613c-90db-4ee7-9eec-e35763e0d16f:
       id: 'views_block:the_buzz_list-block_1'
       label: ''
       provider: views
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: right
-      weight: 0
-      uuid: a2232d07-1aa8-4297-9df7-6523ed45f9b0
+      region: seven
+      weight: -5
+      uuid: f970613c-90db-4ee7-9eec-e35763e0d16f
       context_mapping: {  }
   id: panels_variant
   uuid: fbc70d7e-3352-4324-a1ee-e9a355f67a52

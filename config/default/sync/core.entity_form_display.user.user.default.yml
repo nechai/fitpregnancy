@@ -3,10 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_are_you_
+    - field.field.user.user.field_confirmation
+    - field.field.user.user.field_sign_up_for_free_newslette
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
-    - image
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -16,23 +17,35 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
-    region: content
-  contact:
-    weight: 5
-    region: content
-  language:
     weight: 0
     region: content
-  timezone:
-    weight: 6
-    region: content
-  user_picture:
-    type: image_image
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+    settings: {  }
     third_party_settings: {  }
-    weight: -1
+  field_are_you_:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
-hidden: {  }
+  field_confirmation:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_sign_up_for_free_newslette:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  language:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  contact: true
+  langcode: true
+  timezone: true
+  user_picture: true

@@ -1,0 +1,14 @@
+uuid: a23936df-90c2-42bb-ad17-8f9261f0e4d0
+langcode: en
+status: true
+dependencies: {  }
+name: buzz_list
+label: 'Buzz list'
+effects:
+  e9dcbfe7-4fc8-4f1b-ac7c-22bcf4d1fcd1:
+    uuid: e9dcbfe7-4fc8-4f1b-ac7c-22bcf4d1fcd1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 143
+      height: 143

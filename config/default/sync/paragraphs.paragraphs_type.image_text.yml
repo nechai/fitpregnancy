@@ -1,9 +1,11 @@
-uuid: 03206a9c-00a9-4456-9855-71ab133511d3
+uuid: 3783f452-34fe-4f39-b437-b7016400913c
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: GQK4RFszwiDZ1mB_lc7Y5XZUiV0PW38Mt9bjH0wVijs
 id: image_text
 label: 'Image + Text'
 icon_uuid: null
-description: "Use Image + Text for adding an image on the left and a text on the right.\t\r\n"
+description: 'Adding image and text. Image float left and text.'
 behavior_plugins: {  }

@@ -1,0 +1,45 @@
+uuid: 89077657-4063-4d9f-a1be-ab6667430d3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_mini.field_link_img
+    - field.field.paragraph.list_mini.field_link_inc
+    - field.field.paragraph.list_mini.field_title_list
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.list_mini
+  module:
+    - image
+    - text
+id: paragraph.list_mini.default
+targetEntityType: paragraph
+bundle: list_mini
+mode: default
+content:
+  field_link_img:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link_inc:
+    weight: 0
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_title_list:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

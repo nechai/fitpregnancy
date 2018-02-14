@@ -16,7 +16,9 @@
         "drupal/console": "^1.5",
         "drupal/search_kint": "^1.0",
         "drupal/paragraphs": "^1.2",
-        "drupal/search_api": "^1.6"
+        "drupal/search_api": "^1.6",
+        "drupal/sharethis": "^2.0@beta",
+        "drupal/twig_tweak": "^1.9"
     },
     "replace": {
         "drupal/core": "~8.3"

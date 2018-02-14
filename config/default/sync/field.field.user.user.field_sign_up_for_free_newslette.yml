@@ -1,0 +1,25 @@
+uuid: 512e7a16-2869-4213-8533-4f781e73641f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_sign_up_for_free_newslette
+  module:
+    - options
+    - user
+id: user.user.field_sign_up_for_free_newslette
+field_name: field_sign_up_for_free_newslette
+entity_type: user
+bundle: user
+label: 'Sign-up for Free Newsletters'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Fit Pregnancy Weekly Update'
+  -
+    value: 'Parents Daily (Pregnancy to Age 8)'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

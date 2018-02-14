@@ -5,5 +5,5 @@ dependencies: {  }
 id: list
 label: List
 icon_uuid: null
-description: List
+description: 'Adding list with int, image, title, description and body.'
 behavior_plugins: {  }

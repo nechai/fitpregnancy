@@ -1,0 +1,43 @@
+uuid: dc2ad54b-48c3-4bd9-b491-c024d77f8c94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_mini.field_link_img
+    - field.field.paragraph.list_mini.field_link_inc
+    - field.field.paragraph.list_mini.field_title_list
+    - paragraphs.paragraphs_type.list_mini
+  module:
+    - image
+    - text
+id: paragraph.list_mini.default
+targetEntityType: paragraph
+bundle: list_mini
+mode: default
+content:
+  field_link_img:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link_inc:
+    weight: 0
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_title_list:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

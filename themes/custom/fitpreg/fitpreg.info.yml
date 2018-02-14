@@ -15,5 +15,6 @@ libraries:
 
 regions:
   header: Header
-  content: Content  
+  content: Content 
+  sidebar_first: 'Right Sidebar'   
   footer: Footer

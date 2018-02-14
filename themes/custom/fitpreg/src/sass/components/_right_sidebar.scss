@@ -1,0 +1,38 @@
+.layout-sidebar-first {
+	width: 30%;
+	margin: 0 4% 0 2%;
+	padding-top: 20px;
+
+	h2 {
+		margin: 0;
+    padding-bottom: 15px;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-family: Montserrat;
+    font-size: 24px;
+	}
+
+	.views-row {
+		padding-bottom: 8px;
+
+		.views-field-title {
+			width: 143px;
+
+			a {
+				font-family: Montserrat;
+		  	color: #000;
+		  	padding: 3px 0 0px;
+		  	text-align: left;
+		  	line-height: 1.25;
+		  	font-size: 14px;
+		  	font-weight: 300;
+		  	text-decoration: none;
+			}
+
+			a:hover {
+				color: #ec188c;
+			}
+		}
+	}
+}

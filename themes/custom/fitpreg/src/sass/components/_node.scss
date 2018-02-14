@@ -1,0 +1,249 @@
+.news-paragraph {
+	max-width: 78.875rem;
+  margin: 0 0 0 3.3%;
+	font-family: Montserrat,Arial,sans-serif;
+
+	.views-field-title {
+		font-size: 48px;
+    line-height: 52px;
+    margin: .5rem 0 0;
+    font-weight: 200;
+   }
+
+	.field__label {
+		display: none;
+		}
+
+		.views-field-field-short-description {
+			font-size: 18px;
+			line-height: 26px;
+    	max-height: none;
+    	font-weight: 400;
+    	margin: .5rem 0;
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		.views-field-uid {
+			margin: .5rem 0;
+    	font-size: 13px;
+    	line-height: 18px;
+    	text-transform: uppercase;
+    	font-weight: 700;
+
+    	a {
+    		text-decoration: none;
+    		color: #000;
+    	}
+		}
+
+		.sharethis-wrapper {
+			padding-bottom: 15px;
+    	border-bottom: 1px solid #dedede;
+
+			.st_plusone_button {
+    			display: none;
+    	}
+
+    	.st_fblike_button {
+    		display: none;
+    	}
+
+    	.stButton {
+    		font-size: 0;
+    		width: 28%;
+    		max-width: 100px;
+    		height: 44px;
+    		text-align: center;
+    		margin: 0;
+
+    		.st-facebook-counter {
+    			width: 100%;
+    			height: 100% !important;
+    			background: #3b5998;
+    			background-image: url('../images/icons/facebook.png') !important;
+    			background-repeat: no-repeat;
+    			background-position: center;
+    			background-size: 26px;
+    		}
+
+    		.st-pinterest-counter {
+    			width: 100%;
+    			height: 100%!important;
+    			background: #cc2127;
+    			background-image: url('../images/icons/pinterest.png') !important;
+    			background-repeat: no-repeat;
+    			background-position: center;
+    			background-size: 26px;
+    		}
+
+    		.st-email-counter {
+    			width: 100%;
+    			height: 100%!important;
+    			background: #3e3e3e;
+    			background-image: url('../images/icons/mail.png') !important;
+    			background-repeat: no-repeat;
+    			background-position: center;
+    			background-size: 26px;
+    		}
+    	}
+		}
+
+		.views-field-field-paragraphs {
+			margin-top: 20px;
+
+			.field--name-field-image-demo {
+				float: left;
+				margin: 0 16px 16px 0;
+			}
+
+			.field--type-text-long {
+
+				p {
+					margin: 1.25rem 0;
+					line-height: 1.5rem;
+				}
+
+				a {
+					margin: 1.25rem 0;
+					line-height: 1.5rem;
+					text-decoration: none;
+					color: #ec188c;
+				}
+			}
+
+			.paragraph--type--images {
+				text-align: center;
+			}
+
+			.paragraph--type--image-text {
+
+				h2 {
+					font-size: 22px;
+	    		line-height: 26px;
+	    		margin: 1.25rem 0;
+	    		font-weight: 200;
+				}
+			}
+
+			.paragraph--type--list-mini {
+				border-bottom: 1px solid #dedede;
+
+				.field--type-integer {
+					border: 1px solid #dedede;
+    			width: 70px;
+    			height: 70px;
+    			border-radius: 50%;
+    			margin-right: 20px;
+    			float: left;
+
+    			.field__item {
+						margin: 30% auto;
+    				text-align: center;
+    				font-size: 24px;
+    				font-weight: 200;
+    			}
+				}
+
+				img {
+					float: left;
+					margin: 0 16px 16px 0;
+				}
+
+				h2 {
+					font-weight: 200;
+				}
+
+				p {
+					margin: 10px 0;
+				}
+
+				ul {
+					padding-left: 52%;
+				}
+			}
+
+			.paragraph--type--content-image {
+
+				.field--name-field-title-left {
+					height: 20px;
+
+					h2 {
+						font-size: 22px;
+	    			line-height: 26px;
+	    			font-weight: 200;
+					}
+				}
+
+			.field--name-field-image-right {
+					float: right;
+    			margin: 0 0 16px 16px;
+				}
+
+			.field--name-field-body-left {
+				font-size: 14px;
+    		line-height: 1.5rem;
+    		font-weight: 400;
+				}
+
+			.paragraph--type--text-image {
+
+				h3 {
+					font-weight: 700;
+    			font-size: 24px;
+    			line-height: 28px;
+				}
+			}
+		}
+
+		.field--name-field-video-paragraph {
+
+			iframe {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.title_last_news {
+	font-size: 20px;
+  height: 24px;
+  line-height: 24px;
+  font-family: "montserrat-light",arial;
+  font-weight: 200;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  margin: 0;
+	width: 74.6%;
+}
+
+.view-display-id-you_might_also_like {
+	margin: 0;
+  width: 100%;
+  padding-top: 10px;
+
+  .clearfix {
+  	margin-bottom: 10px;
+  }
+
+  .views-field-title {
+  	width: 219px;
+  	font-size: 0;
+    line-height: 0;
+
+  	a{
+  		color: #000;
+  		text-decoration: none;
+  		padding: 3px 0 0px;
+    	text-align: left;
+    	line-height: 1.5;
+    	font-size: 14px;
+  	}
+
+  	a:hover {
+  		color: #ec188c;
+  	}
+  }
+}

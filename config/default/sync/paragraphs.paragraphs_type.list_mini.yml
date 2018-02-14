@@ -1,0 +1,9 @@
+uuid: 77f7be44-ba8e-49dd-bec4-7db17aac2afc
+langcode: en
+status: true
+dependencies: {  }
+id: list_mini
+label: 'List mini'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

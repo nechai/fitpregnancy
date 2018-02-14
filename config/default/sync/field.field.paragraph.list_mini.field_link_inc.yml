@@ -1,0 +1,23 @@
+uuid: 5c022379-8890-413b-8bcc-32ca45e69cc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_inc
+    - paragraphs.paragraphs_type.list_mini
+id: paragraph.list_mini.field_link_inc
+field_name: field_link_inc
+entity_type: paragraph
+bundle: list_mini
+label: 'link inc'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
