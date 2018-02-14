@@ -1,0 +1,21 @@
+uuid: 45ee9cdf-2fad-4e41-981c-f5bc0d418ac1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_list
+    - paragraphs.paragraphs_type.list_mini
+  module:
+    - text
+id: paragraph.list_mini.field_title_list
+field_name: field_title_list
+entity_type: paragraph
+bundle: list_mini
+label: 'title list'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

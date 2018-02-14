@@ -1,0 +1,14 @@
+uuid: cf9736ba-22bf-456f-9f35-379ee535d3e3
+langcode: en
+status: true
+dependencies: {  }
+name: last_content
+label: 'Last Content'
+effects:
+  e4f38b99-a0bf-4ea5-8963-1f045b295a5c:
+    uuid: e4f38b99-a0bf-4ea5-8963-1f045b295a5c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 219
+      height: 146

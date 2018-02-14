@@ -1,0 +1,66 @@
+button_option: stbc_button
+comments: 0
+late_load: 0
+location: content
+node_types:
+  news: news
+  week: week
+  article: null
+  page: null
+  paragraphed_content_demo: null
+option_extras:
+  'Google Plus One:plusone': 'Google Plus One:plusone'
+  'Facebook Like:fblike': 'Facebook Like:fblike'
+option_neworzero: 0
+option_onhover: 1
+option_shorten: 1
+service_option: '''Facebook:facebook'',''Pinterest:pinterest'',''Email:email'''
+twitter_handle: ''
+twitter_recommends: ''
+twitter_suffix: ''
+webform_options: ''
+weight: 10
+widget_option: st_multi
+cns:
+  donotcopy: null
+  hashaddress: null
+sharethisnodes:
+  article:
+    full: full
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    teaser: '0'
+    token: '0'
+  page:
+    full: full
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    teaser: '0'
+    token: '0'
+  news:
+    full: '0'
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    teaser: '0'
+    token: '0'
+  paragraphed_content_demo:
+    full: '0'
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    teaser: '0'
+    token: '0'
+  week:
+    full: '0'
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    teaser: '0'
+    token: '0'
+_core:
+  default_config_hash: OUePCWmQ_tUOCD4VF7-AP0maPJi2Y18f0JvNTgThhRQ
+publisherID: dr-9e1d160b-1d1d-e8d7-2bb-1cce3cebac6c
+callesi: '0'

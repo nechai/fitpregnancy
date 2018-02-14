@@ -3,10 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_are_you_
+    - field.field.user.user.field_confirmation
+    - field.field.user.user.field_sign_up_for_free_newslette
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
+    - options
     - user
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
@@ -15,6 +19,27 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_are_you_:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_confirmation:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_sign_up_for_free_newslette:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   member_for:
     weight: 5
     region: content
@@ -27,4 +52,5 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
-hidden: {  }
+hidden:
+  langcode: true

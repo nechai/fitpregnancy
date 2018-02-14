@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.news.field_images
     - field.field.node.news.field_node_in_sli
     - field.field.node.news.field_paragraphs
+    - field.field.node.news.field_short_description
     - field.field.node.news.field_show_in_main_page
     - field.field.node.news.field_video
     - node.type.news
@@ -28,7 +29,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -42,7 +43,7 @@ content:
     type: comment_default
     region: content
   field_images:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       image_style: ''
@@ -58,6 +59,13 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_short_description:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_show_in_main_page:
     weight: 5
@@ -80,10 +88,11 @@ content:
     type: video_embed_player
     region: content
   links:
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_category: true
   field_node_in_sli: true
+  langcode: true

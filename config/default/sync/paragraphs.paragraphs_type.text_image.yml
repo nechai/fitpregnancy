@@ -1,0 +1,11 @@
+uuid: a7d77e33-869f-4ffd-a99a-cb78cd81031a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: J-7pS4Mmv7m9PutVFCiU3gPDwnXT0ozMnEJRmQ4x7AI
+id: text_image
+label: 'Text + Image'
+icon_uuid: null
+description: 'Adding text and image without float.'
+behavior_plugins: {  }

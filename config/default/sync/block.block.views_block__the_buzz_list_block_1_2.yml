@@ -1,0 +1,30 @@
+uuid: ccfbce3d-f3bb-4f98-a1b9-7fd3841f7a23
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.the_buzz_list
+  module:
+    - system
+    - views
+  theme:
+    - fitpreg
+id: views_block__the_buzz_list_block_1_2
+theme: fitpreg
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:the_buzz_list-block_1'
+settings:
+  id: 'views_block:the_buzz_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/node/*'
+    negate: false
+    context_mapping: {  }

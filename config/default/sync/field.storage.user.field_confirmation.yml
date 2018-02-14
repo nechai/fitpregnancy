@@ -1,0 +1,24 @@
+uuid: 0864d6dc-313f-48fa-bf4d-c92a49c2a4b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_confirmation
+field_name: field_confirmation
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '<b>Yes,</b> I''d like to receive news and offers from the Meredith family of sites via e-mail. Your email address will not be sold or rented to third parties.'
+      label: '<b>Yes,</b> I''d like to receive news and offers from the Meredith family of sites via e-mail. Your email address will not be sold or rented to third parties.'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

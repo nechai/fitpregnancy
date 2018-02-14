@@ -1,0 +1,21 @@
+uuid: b3b87b08-e7c3-47ce-b697-22a33473fa3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_are_you_
+  module:
+    - options
+    - user
+id: user.user.field_are_you_
+field_name: field_are_you_
+entity_type: user
+bundle: user
+label: 'Are you...?'
+description: '(Please pick one)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

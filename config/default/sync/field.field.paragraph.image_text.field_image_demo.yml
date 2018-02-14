@@ -1,30 +1,32 @@
-uuid: 7763bfaf-008a-444b-b240-d01ba72952f7
+uuid: 0bd74e87-89fd-4a11-859c-8c6bf5d6c35b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image_content
+    - field.storage.paragraph.field_image_demo
     - paragraphs.paragraphs_type.image_text
   module:
     - image
-id: paragraph.image_text.field_image_content
-field_name: field_image_content
+_core:
+  default_config_hash: l97adFDbCjwYeAjJDpC_lW9hDr2n0sMemYeDFXwgX5g
+id: paragraph.image_text.field_image_demo
+field_name: field_image_demo
 entity_type: paragraph
 bundle: image_text
-label: 'image content'
+label: Image
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_directory: ''
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: true
-  alt_field_required: true
+  alt_field: false
+  alt_field_required: false
   title_field: false
   title_field_required: false
   default_image:

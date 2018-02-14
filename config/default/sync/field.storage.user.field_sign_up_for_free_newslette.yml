@@ -1,0 +1,36 @@
+uuid: f11b5827-9f9c-412a-8948-6a6fe273683a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_sign_up_for_free_newslette
+field_name: field_sign_up_for_free_newslette
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Fit Pregnancy Weekly Update'
+      label: 'Fit Pregnancy Weekly Update'
+    -
+      value: 'Parents Daily (Pregnancy to Age 8)'
+      label: 'Parents Daily (Pregnancy to Age 8)'
+    -
+      value: 'Family Feed'
+      label: 'Family Feed'
+    -
+      value: 'Fit Pregnancy Partner Offers'
+      label: 'Fit Pregnancy Partner Offers'
+    -
+      value: 'Preparing for Pregnancy'
+      label: 'Preparing for Pregnancy'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: d72105ae-fb86-482e-bba2-9a338292fb85
+langcode: en
+status: true
+dependencies: {  }
+id: video
+label: Video
+icon_uuid: null
+description: 'Adding video pinned to the left corner.'
+behavior_plugins: {  }
