@@ -1,0 +1,58 @@
+.all-weeks {
+  .view-content {
+    .views-row {
+      padding-left: 20em;
+      position: relative;
+      min-height: 300px;
+      .views-field {
+        margin-bottom: 1.5em;
+      }
+      .views-field-field-week {
+        text-transform: capitalize;
+        font-weight: normal;
+        font-size: 1.5em;
+        span {
+          margin-right: 2px;
+        }
+      }
+      .views-field-field-week-link {
+        a {
+          text-decoration: none;
+          color: #ec188c;
+        }
+      }
+      .views-field-field-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          height: calc(100% + 1.25rem);
+          width: 1px;
+          background: #dedede;
+          top: 10px;
+          right: -1.25rem;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #ec188c;
+          top: 10px;
+          right: -23px;
+        }
+      }
+    }
+    .views-row:nth-child(40) {
+      .views-field-field-img::before {
+        height: 95%;
+      }
+    }
+  }
+}
