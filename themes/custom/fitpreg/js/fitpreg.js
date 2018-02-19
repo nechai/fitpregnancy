@@ -62,12 +62,9 @@
 
                 })
             });
-
-            //
-            // $('.left-menu-hamburger').on('click', function(e) {
-            //   $('#block-fitpreg-left-menu').show();
-
-            // });
+            // grouping second three block in header
+            $('.week-only-page > .attachment, .week-only-page > .view-content')
+                .wrapAll('<div class="week-page-wrapper"></div>');
         }
     }
 })(jQuery, Drupal, drupalSettings);
