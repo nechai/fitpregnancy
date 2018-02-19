@@ -14,9 +14,12 @@ function fitpreg_preprocess_views_view_fields__weeks__attachment(&$variables) {
   // Create label for all links:
   $links['#label'] = t('week');
   if ($view->id() == 'weeks') {
-    $node = \Drupal::routeMatch()->getParameter('node');
-    if ($node instanceof NodeInterface) {
+    $current_path = explode('/', \Drupal::service('path.current')->getPath());
+    $week_number = intval($current_path[2]);
+    if ($current_path[1] == 'week' && is_numeric($week_number)) {
       // You can get nid and anything else you need from the node object.
+      $node = \Drupal::entityTypeManager()->getListBuilder('node')->getStorage()->loadByProperties(['field_week' => $week_number]);
+      $node = reset($node);
       $week_curr = $node->get('field_week')->getValue()[0]['value'];
 
       // Get previous week link
