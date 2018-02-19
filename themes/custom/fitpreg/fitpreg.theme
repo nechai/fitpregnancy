@@ -1,56 +1,50 @@
 <?php
 
-use \Drupal\node\Entity\Node;
-use \Drupal\node\NodeInterface;
-
 /**
  * Implements template_preprocess_views_view().
  * @param $variables
  */
 function fitpreg_preprocess_views_view_fields__weeks__attachment(&$variables) {
   $view = $variables['view'];
-  // $links will contains created fields.
-  $links = array();
-  // Create label for all links:
+  $links = [];
+  // Create label for all links (#label is using in template):
   $links['#label'] = t('week');
+  $label = $links['#label'];
   if ($view->id() == 'weeks') {
     $current_path = explode('/', \Drupal::service('path.current')->getPath());
     $week_number = intval($current_path[2]);
     if ($current_path[1] == 'week' && is_numeric($week_number)) {
-      // You can get nid and anything else you need from the node object.
       $node = \Drupal::entityTypeManager()->getListBuilder('node')->getStorage()->loadByProperties(['field_week' => $week_number]);
-      $node = reset($node);
-      $week_curr = $node->get('field_week')->getValue()[0]['value'];
-
-      // Get previous week link
+      if ($node = reset($node)) {
+        $week_curr = $node->get('field_week')->getValue()[0]['value'];
+      }
+      // Get previous week link:
       $previous_week = intval($week_curr) - 1;
-      $previous_week = strval($previous_week);
-      $previous_node = \Drupal::entityTypeManager()->getListBuilder('node')->getStorage()->loadByProperties(['field_week' => $previous_week]);
-      if ($previous_node = reset($previous_node)) {
-        // Found $node that matches the title:
-        $previous_link = $previous_node->toLink()->toRenderable();
-        $previous_link['#title'] = $previous_week;
-        $links['previous'] = $previous_link;
-      }
-
-      // Get next week link
+      $links['previous'] = create_week_link($previous_week, $label);
+      // Get next week link:
       $next_week = intval($week_curr) + 1;
-      $next_week = strval($next_week);
-      $query = \Drupal::entityQuery('node')
-        ->condition('status', 1)
-        ->condition('type', 'week')
-        ->condition('field_week', $next_week, '=');
-      $nid = $query->execute();
-      $next_node = Node::loadMultiple($nid);
-      if ($next_node = reset($next_node)) {
-        // Found $node that matches the title:
-        $next_link = $next_node->toLink()->toRenderable();
-        $next_link['#title'] = $next_week;
-        $links['next'] = $next_link;
-      }
+      $links['next'] = create_week_link($next_week, $label);
     }
   }
   $variables['week_links'] = $links;
   return $variables;
 }
 
+/**
+ * Custom function for creating next and previous links for Week-paginator view.
+ * @param $target_week_number
+ * @param $label
+ * @return array|bool
+ */
+function create_week_link($target_week_number, $label) {
+  $node = \Drupal::entityTypeManager()->getListBuilder('node')->getStorage()->loadByProperties(['field_week' => $target_week_number]);
+  if ($node = reset($node)) {
+    $viewBuilder = \Drupal::entityTypeManager()->getViewBuilder('node');
+    $link = $node->get("field_week_link");
+    $link = $viewBuilder->viewField($link, 'full');
+    $link['#title'] = FALSE;
+    $link['0']['#title'] = $label . ' ' . $target_week_number;
+    return $link;
+  }
+  return FALSE;
+}
