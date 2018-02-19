@@ -3995,10 +3995,17 @@ footer {
     text-transform: uppercase;
     color: #ec188c; }
 
+.view-header {
+  padding-bottom: 20px; }
+  .view-header span {
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 200; }
+
 .news-paragraph {
   max-width: 78.875rem;
   margin: 0 0 0 3.3%;
-  font-family: Montserrat,Arial,sans-serif; }
+  font-family: Montserrat, Arial, sans-serif; }
   .news-paragraph .views-field-title {
     font-size: 48px;
     line-height: 52px;
@@ -4128,7 +4135,7 @@ footer {
   font-size: 20px;
   height: 24px;
   line-height: 24px;
-  font-family: "montserrat-light",arial;
+  font-family: "montserrat-light", arial;
   font-weight: 200;
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -4227,6 +4234,7 @@ footer {
   height: 95%; }
 
 .week-only-page .week-page-wrapper {
+  border-top: 1px solid lightgray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4267,30 +4275,40 @@ footer {
         width: 70px;
         height: 70px;
         margin: 0 0 1.5rem;
-        font-size: 14px;
+        font-size: 13px;
         z-index: 10;
         border: 1px solid #dedede;
         border-radius: 50%;
         background: white; }
         .week-only-page .week-page-wrapper .attachment-before .week-paginator h3 a {
+          font-size: 20px;
           text-decoration: none;
           font-weight: 400;
-          line-height: 21px;
+          line-height: 40px;
           color: #9e9e9e;
           display: block;
           text-align: center;
           position: relative;
           top: 25px; }
-          .week-only-page .week-page-wrapper .attachment-before .week-paginator h3 a:hover {
-            cursor: pointer;
-            color: #ec188c; }
+      .week-only-page .week-page-wrapper .attachment-before .week-paginator .field--name-field-week-link:hover .field__label,
+      .week-only-page .week-page-wrapper .attachment-before .week-paginator .field--name-field-week-link:hover a {
+        cursor: pointer;
+        color: #ec188c; }
+      .week-only-page .week-page-wrapper .attachment-before .week-paginator .field--name-field-week-link .field__label {
+        position: absolute;
+        top: 18px;
+        left: 15px;
+        font-weight: 200;
+        color: #9e9e9e; }
       .week-only-page .week-page-wrapper .attachment-before .week-paginator .views-field-field-week {
         background: #000;
         border-color: #000;
         font-weight: 400;
         color: white; }
         .week-only-page .week-page-wrapper .attachment-before .week-paginator .views-field-field-week .week-label {
-          margin-top: 22px; }
+          margin-top: 19px; }
+        .week-only-page .week-page-wrapper .attachment-before .week-paginator .views-field-field-week .field-content {
+          font-size: 20px; }
       .week-only-page .week-page-wrapper .attachment-before .week-paginator .views-field-field-see-all-weeks a {
         text-decoration: none;
         font-size: 12px;

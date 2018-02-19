@@ -42,8 +42,8 @@ function create_week_link($target_week_number, $label) {
     $viewBuilder = \Drupal::entityTypeManager()->getViewBuilder('node');
     $link = $node->get("field_week_link");
     $link = $viewBuilder->viewField($link, 'full');
-    $link['#title'] = FALSE;
-    $link['0']['#title'] = $label . ' ' . $target_week_number;
+    $link['#title'] = $label;
+    $link['0']['#title'] = $target_week_number;
     return $link;
   }
   return FALSE;

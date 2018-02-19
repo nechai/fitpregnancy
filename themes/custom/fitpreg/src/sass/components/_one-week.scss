@@ -1,5 +1,6 @@
 .week-only-page {
   .week-page-wrapper { //this class is added by fitpreg.js
+    border-top: 1px solid lightgray;
     display: flex;
     padding-top: 30px;
     .attachment-before {
@@ -32,24 +33,35 @@
           width: 70px;
           height: 70px;
           margin: 0 0 1.5rem;
-          font-size: 14px;
+          font-size: 13px;
           z-index: 10;
           border: 1px solid #dedede;
           border-radius: 50%;
           background: white;
           a {
+            font-size: 20px;
             text-decoration: none;
             font-weight: 400;
-            line-height: 21px;
+            line-height: 40px;
             color: #9e9e9e;
             display: block;
             text-align: center;
             position: relative;
             top: 25px;
-            &:hover {
-              cursor: pointer;
-              color: #ec188c;
-            }
+          }
+        }
+        .field--name-field-week-link {
+          &:hover .field__label,
+          &:hover a {
+            cursor: pointer;
+            color: #ec188c;
+          }
+          .field__label {
+            position: absolute;
+            top: 18px;
+            left: 15px;
+            font-weight: 200;
+            color: #9e9e9e;
           }
         }
         .views-field-field-week {
@@ -58,7 +70,10 @@
           font-weight: 400;
           color: white;
           .week-label {
-            margin-top: 22px;
+            margin-top: 19px;
+          }
+          .field-content {
+            font-size: 20px;
           }
         }
         .views-field-field-see-all-weeks {
