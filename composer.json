@@ -19,8 +19,7 @@
         "drupal/search_api": "^1.6",
         "drupal/sharethis": "^2.0@beta",
         "drupal/twig_tweak": "^1.9",
-        "drupal/views_url_alias": "^1.0",
-        "drupal/redirect": "^1.0"
+        "drupal/views_url_alias": "^1.0"
     },
     "replace": {
         "drupal/core": "~8.3"
